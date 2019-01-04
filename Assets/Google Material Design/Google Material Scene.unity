@@ -708,6 +708,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 22459942, guid: 1c50ec863f7455941bb6710b4de2a3bc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 11459934, guid: 1c50ec863f7455941bb6710b4de2a3bc, type: 3}
       propertyPath: animationParts.AtomicAnimation
       value: 1
@@ -715,10 +719,6 @@ PrefabInstance:
     - target: {fileID: 11459940, guid: 1c50ec863f7455941bb6710b4de2a3bc, type: 3}
       propertyPath: animationParts.AtomicAnimation
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22459942, guid: 1c50ec863f7455941bb6710b4de2a3bc, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c50ec863f7455941bb6710b4de2a3bc, type: 3}
@@ -1552,6 +1552,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 22467822, guid: 634a246ab7c34054c94de5e8d8946294, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 634a246ab7c34054c94de5e8d8946294, type: 3}
 --- !u!1 &1075605240
@@ -1771,9 +1775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56014e6f11eff044ebf3cfef8ec3788e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WaveObject: {fileID: 100000, guid: 9b803f85cde2c1c4db04360f0106130a, type: 2}
+  WaveObject: {fileID: 100000, guid: 9b803f85cde2c1c4db04360f0106130a, type: 3}
   CanvasMain: {fileID: 1322711704}
   PoolSize: 5
 --- !u!114 &1322711706
