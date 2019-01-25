@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DictionaryLearning.unity
     guid: 0c5b11a936d88466ebd13cc2f457fc46
+  - enabled: 1
+    path: Assets/Scenes/ListView.unity
+    guid: 13ac60008656b4a9eb284836ab7ad5c4
   m_configObjects: {}
