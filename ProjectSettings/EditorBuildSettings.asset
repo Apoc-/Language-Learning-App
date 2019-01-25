@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainScene.unity
+    guid: 673608976ced4e84688bd0af5c3de43d
+  - enabled: 1
+    path: Assets/Scenes/DictionaryOption.unity
+    guid: e2adce2da463c4471908220c0bd53da9
+  - enabled: 1
+    path: Assets/Scenes/DictionaryLearning.unity
+    guid: 0c5b11a936d88466ebd13cc2f457fc46
   m_configObjects: {}
