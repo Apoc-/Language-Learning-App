@@ -12,20 +12,45 @@ public class ViewHandler : MonoBehaviour
 
     private View currentView;
     public View initialView;
-    
-    public View[] views;
-    #endregion
+    public Dictionary<String,GameObject> views;
 
+    #endregion
+    private void Awake()
+    {
+        views = new Dictionary<String, GameObject>();
+
+        // Add all views to the dictionary
+        views.Add("LanguageOption", GameObject.Find("/Ui/LanguageCanvas"));
+        views.Add("ListView", GameObject.Find("/Ui/ListViewCanvas"));
+        views.Add("DictrionaryOption", GameObject.Find("/Ui/DictionaryOptionCanvas"));
+        views.Add("DictionaryLanguage", GameObject.Find("/Ui/DictionaryLanguageCanvas"));
+        views.Add("Category", GameObject.Find("/Ui/CategoryCanvas"));
+
+        // Hiding all view
+        foreach (GameObject view in views.Values)
+        {
+            view.active = false;
+        }
+    }
     private void Start()
     {
+
+        views["LanguageOption"].active = true;
+
+
+        //a.active = false;
+
+        Debug.Log("Text: " + "test");
         SwitchToView(initialView);
     }
+
+  
 
     private void SwitchToView(View targetView)
     {
         if (currentView == targetView) return;
         
-        foreach (var view in views)
+        foreach (var view in views.Values)
         {
             if (view == targetView)
             {
@@ -51,9 +76,10 @@ public class ViewHandler : MonoBehaviour
 
     private View GetViewByTitle(String title)
     {
-        foreach (var view in views)
+        
+        foreach (var view in views.Values)
         {
-            if (view.Title == title) return view;
+            if (view.GetComponent<View>().Title == title) return view.GetComponent<View>();
         }
 
         throw new ViewNotFoundException();
