@@ -20,42 +20,44 @@ public class ViewHandler : MonoBehaviour
         views = new Dictionary<String, GameObject>();
 
         // Add all views to the dictionary
-        views.Add("LanguageOption", GameObject.Find("/Ui/LanguageCanvas"));
-        views.Add("ListView", GameObject.Find("/Ui/ListViewCanvas"));
-        views.Add("DictrionaryOption", GameObject.Find("/Ui/DictionaryOptionCanvas"));
-        views.Add("DictionaryLanguage", GameObject.Find("/Ui/DictionaryLanguageCanvas"));
-        views.Add("Category", GameObject.Find("/Ui/CategoryCanvas"));
+        views.Add("LanguageCanvas", GameObject.Find("/Ui/LanguageCanvas"));
+        views.Add("ListViewCanvas", GameObject.Find("/Ui/ListViewCanvas"));
+        views.Add("DictionaryOptionCanvas", GameObject.Find("/Ui/DictionaryOptionCanvas"));
+        views.Add("DictionaryLanguageCanvas", GameObject.Find("/Ui/DictionaryLanguageCanvas"));
+        views.Add("CategoryCanvas", GameObject.Find("/Ui/CategoryCanvas"));
 
         // Hiding all view
         foreach (GameObject view in views.Values)
         {
-            view.active = false;
+            //view.active = false;
         }
     }
+
+
     private void Start()
     {
 
-        views["LanguageOption"].active = true;
+        views["LanguageCanvas"].active = true;
 
 
-        //a.active = false;
 
         Debug.Log("Text: " + "test");
         SwitchToView(initialView);
     }
 
   
-
-    private void SwitchToView(View targetView)
+    
+    public void SwitchToView(string targetView)
     {
-        if (currentView == targetView) return;
+        
+        if (currentView == views[targetView]) return;
         
         foreach (var view in views.Values)
         {
-            if (view == targetView)
+            if (view == views[targetView])
             {
                 view.gameObject.SetActive(true);
-                Header.title.text = targetView.Title;
+                Header.title.text = views[targetView].GetComponent<View>().Title;
             }
             else
             {
