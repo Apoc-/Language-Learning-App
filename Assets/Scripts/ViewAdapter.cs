@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ViewAdapter : MonoBehaviour
 {
-    public GameObject Row_Prefab;//表头预设
+    public GameObject Row_Prefab;
     public List<Vocabulary> CellData = new List<Vocabulary>();
     void Start()
     {
@@ -32,8 +32,8 @@ public class ViewAdapter : MonoBehaviour
             GameObject row = GameObject.Instantiate(Row_Prefab, table.transform.position, table.transform.rotation) as GameObject;
             row.name = cell.Chinese;
             row.transform.SetParent(table.transform);
-            row.transform.FindChild("Chinese").GetComponent<Text>().text = cell.Chinese;
-            row.transform.FindChild("German").GetComponent<Text>().text = cell.German;
+            row.transform.Find("Chinese").GetComponent<Text>().text = cell.Chinese;
+            row.transform.Find("German").GetComponent<Text>().text = cell.German;
 
 
         }

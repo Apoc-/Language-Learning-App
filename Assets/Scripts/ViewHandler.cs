@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.EventSystems;
 public class ViewHandler : MonoBehaviour
 {
     public Header Header;
@@ -12,58 +12,41 @@ public class ViewHandler : MonoBehaviour
 
     private View currentView;
     public View initialView;
-    public Dictionary<String,GameObject> views;
-
+    
+    public View[] views;
     #endregion
-    private void Awake()
-    {
-        views = new Dictionary<String, GameObject>();
-
-        // Add all views to the dictionary
-        views.Add("LanguageCanvas", GameObject.Find("/Ui/LanguageCanvas"));
-        views.Add("ListViewCanvas", GameObject.Find("/Ui/ListViewCanvas"));
-        views.Add("DictionaryOptionCanvas", GameObject.Find("/Ui/DictionaryOptionCanvas"));
-        views.Add("DictionaryLanguageCanvas", GameObject.Find("/Ui/DictionaryLanguageCanvas"));
-        views.Add("CategoryCanvas", GameObject.Find("/Ui/CategoryCanvas"));
-
-        // Hiding all view
-        foreach (GameObject view in views.Values)
-        {
-            //view.active = false;
-        }
-    }
-
 
     private void Start()
     {
 
-        views["LanguageCanvas"].active = true;
-
-
-
-        Debug.Log("Text: " + "test");
+        views = GetComponentsInChildren<View>();
+        currentView = GetViewByTitle("Category");
+        foreach (var view in views)
+        {
+            Debug.Log("Fic " + view.name);
+        }
         SwitchToView(initialView);
     }
 
-  
-    
-    public void SwitchToView(string targetView)
+    private void SwitchToView(View targetView)
     {
+
+        Debug.Log("Ficssss " + currentView.name);
+        if (currentView == targetView) return;
         
-        if (currentView == views[targetView]) return;
-        
-        foreach (var view in views.Values)
+        foreach (var view in views)
         {
-            if (view == views[targetView])
+            if (view == targetView)
             {
                 view.gameObject.SetActive(true);
-                Header.title.text = views[targetView].GetComponent<View>().Title;
+                Header.title.text = targetView.Title;
             }
             else
             {
                 view.gameObject.SetActive(false);
             }
         }
+        currentView = targetView;
     }
 
     public void AboutButtonPressed()
@@ -75,13 +58,50 @@ public class ViewHandler : MonoBehaviour
     {
         SwitchToView(GetViewByTitle("Start"));
     }
+    public void LanguageSelect()
+    {
+        if (EventSystem.current.currentSelectedGameObject.name == "German")
+        {
 
+        }
+        else if (EventSystem.current.currentSelectedGameObject.name == "Chinese")
+        {
+
+        }
+        SwitchToView(GetViewByTitle("Class"));
+    }
+
+
+    public void ClassSelect()
+    {
+        var Class = EventSystem.current.currentSelectedGameObject.name;
+        switch (Class)
+        {
+            case "Alphabet/Phonics":
+                SwitchToView(GetViewByTitle("Dictionary or Learning"));
+                break;
+            case "Vocabulary":
+                SwitchToView(GetViewByTitle("Dictionary or Learning"));
+                break;
+            case "Greeting":
+                SwitchToView(GetViewByTitle("Dictionary or Learning"));
+                break;
+            case "Saying":
+                SwitchToView(GetViewByTitle("Dictionary or Learning"));
+                break;
+            default:
+                Debug.Log("Class button select Error");
+                break;
+
+        }
+
+    }
     private View GetViewByTitle(String title)
     {
-        
-        foreach (var view in views.Values)
+
+        foreach (var view in views)
         {
-            if (view.GetComponent<View>().Title == title) return view.GetComponent<View>();
+            if (view.Title == title) return view;
         }
 
         throw new ViewNotFoundException();
