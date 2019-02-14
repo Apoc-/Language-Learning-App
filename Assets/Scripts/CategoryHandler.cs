@@ -27,6 +27,7 @@ public class CategoryHandler : MonoBehaviour
             GameObject row = GameObject.Instantiate(Row_Prefab, table.transform.position, table.transform.rotation) as GameObject;
             row.name = item.Title;
             row.transform.SetParent(table.transform);
+
             row.transform.Find("Image").GetComponent<Image>().sprite = item.ItemImage;
             row.transform.Find("Title").GetComponent<Text>().text = item.Title;
             row.transform.Find("Description").GetComponent<Text>().text = item.Description;
@@ -44,10 +45,12 @@ public class CategoryHandler : MonoBehaviour
         public string Title;
         public string Description;
 
+        private string IMAGE_RESOURCES_PATH = "Image/testing/";
+
         public CategoryItem(string newItemImage, string newTitle, string newDescription)
         {
 
-            ItemImage = Resources.Load<Sprite>(newItemImage);
+            ItemImage = Resources.Load<Sprite>(IMAGE_RESOURCES_PATH + newItemImage);
             Title = newTitle;
             Description = newDescription;
         }
