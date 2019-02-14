@@ -28,7 +28,7 @@ public class ViewAdapter : MonoBehaviour
         {
 
             print(cell.German + " " + cell.Chinese);
-            GameObject table = GameObject.Find("Canvas/List/GridElements");
+            GameObject table = GameObject.Find("ListViewCanvas/List/GridElements");
             GameObject row = GameObject.Instantiate(Row_Prefab, table.transform.position, table.transform.rotation) as GameObject;
             row.name = cell.Chinese;
             row.transform.SetParent(table.transform);
@@ -53,8 +53,5 @@ public class ViewAdapter : MonoBehaviour
             Chinese = newChinese;
         }
     }
-
-
-
 
 }
