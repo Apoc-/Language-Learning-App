@@ -89,7 +89,7 @@ public class ViewHandler : MonoBehaviour
             case "Alphabet/Phonics":
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
-            case "Vocabulary":
+            case "CategoryItem":
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
             case "Greeting":
