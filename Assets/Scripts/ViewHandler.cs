@@ -31,7 +31,7 @@ public class ViewHandler : MonoBehaviour
     private void SwitchToView(View targetView)
     {
 
-        Debug.Log("Ficssss " + currentView.name);
+
         if (currentView == targetView) return;
         
         foreach (var view in views)
@@ -58,17 +58,26 @@ public class ViewHandler : MonoBehaviour
     {
         SwitchToView(GetViewByTitle("Start"));
     }
+
+
+
+
     public void LanguageSelect()
     {
-        if (EventSystem.current.currentSelectedGameObject.name == "German")
+        var language = EventSystem.current.currentSelectedGameObject.name;
+        switch (language)
         {
-
+            case "German":
+                SwitchToView(GetViewByTitle("Class"));
+                break;
+            case "Chinese":
+                SwitchToView(GetViewByTitle("Class"));
+                break;
+            default:
+                Debug.Log("Language button select Error");
+                break;
         }
-        else if (EventSystem.current.currentSelectedGameObject.name == "Chinese")
-        {
 
-        }
-        SwitchToView(GetViewByTitle("Class"));
     }
 
 
@@ -91,6 +100,26 @@ public class ViewHandler : MonoBehaviour
                 break;
             default:
                 Debug.Log("Class button select Error");
+                break;
+
+        }
+
+    }
+
+    public void DictionaryOrLearningOptions()
+    {
+        var selected = EventSystem.current.currentSelectedGameObject.name;
+        switch (selected)
+        {
+            case "Learning":
+                // Into Learning Process
+                break;
+            case "Dictionary":
+                SwitchToView(GetViewByTitle("Category"));
+                break;
+          
+            default:
+                Debug.Log("Dictionary or Learning button select Error");
                 break;
 
         }
