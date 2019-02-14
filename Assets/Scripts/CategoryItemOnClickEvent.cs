@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CategoryItemOnClickEvent : MonoBehaviour
 {
+    public GameObject ListViewPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,6 @@ public class CategoryItemOnClickEvent : MonoBehaviour
     public void OnMouseDown()
     {
         Debug.Log("Button down");
-        Destroy(this.gameObject);
+        Instantiate(ListViewPrefab);
     }
 }

@@ -347,7 +347,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 5228719402287647255}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -376,3 +376,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bce5e0ed24684915b220638dafe1676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ListViewPrefab: {fileID: 8477059534616703988, guid: a95883f68beca4937a2db0f0197da988,
+    type: 3}
