@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class ViewAdapter : MonoBehaviour
+public class ListView : MonoBehaviour
 {
     public GameObject Row_Prefab;
     public List<Vocabulary> CellData = new List<Vocabulary>();
