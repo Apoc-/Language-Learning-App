@@ -10,7 +10,6 @@ public class ListView : MonoBehaviour
     public List<Vocabulary> CellData = new List<Vocabulary>();
     void Start()
     {
-
         CellData.Add(new Vocabulary("a","b"));
         CellData.Add(new Vocabulary("c","d"));
         CellData.Add(new Vocabulary("e","f"));
@@ -41,6 +40,12 @@ public class ListView : MonoBehaviour
     }
 
 
+
+    public void ReturnButton()
+    {
+        Debug.Log("Close ListView");
+        Destroy(transform.parent.gameObject);
+    }
 
     public class Vocabulary
     {
