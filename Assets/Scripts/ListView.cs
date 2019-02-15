@@ -10,6 +10,7 @@ public class ListView : MonoBehaviour
     public List<Vocabulary> CellData = new List<Vocabulary>();
     void Start()
     {
+
         CellData.Add(new Vocabulary("a","b"));
         CellData.Add(new Vocabulary("c","d"));
         CellData.Add(new Vocabulary("e","f"));
@@ -26,7 +27,7 @@ public class ListView : MonoBehaviour
         foreach (Vocabulary cell in CellData)
         {
 
-            print(cell.German + " " + cell.Chinese);
+
             GameObject table = GameObject.Find("List/GridElements");
             GameObject row = GameObject.Instantiate(Row_Prefab, table.transform.position, table.transform.rotation) as GameObject;
             row.name = cell.Chinese;
@@ -37,6 +38,9 @@ public class ListView : MonoBehaviour
 
         }
 
+
+        // Testing Gloable Variable
+        Debug.Log("Class is " + ViewHandler.ViewMap["Category"]);
     }
 
 

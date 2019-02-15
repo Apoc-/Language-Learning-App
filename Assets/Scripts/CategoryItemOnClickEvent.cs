@@ -21,6 +21,8 @@ public class CategoryItemOnClickEvent : MonoBehaviour
     public void OnMouseDown()
     {
         Debug.Log("Button down");
+        ViewHandler.ViewMap["Category"] = this.gameObject.name;
         Instantiate(ListViewPrefab);
+
     }
 }
