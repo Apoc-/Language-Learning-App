@@ -8,9 +8,9 @@ public class CategoryHandler : MonoBehaviour
 {
     public GameObject Row_Prefab;
     public List<CategoryItem> CategoryData = new List<CategoryItem>();
-    void Start()
+   
+    private void OnEnable()
     {
-
         CategoryData.Add(new CategoryItem("icon_testing", "A", "Some Description..."));
         CategoryData.Add(new CategoryItem("icon_testing", "B", "Some Description..."));
         CategoryData.Add(new CategoryItem("icon_testing", "C", "Some Description..."));
@@ -35,8 +35,9 @@ public class CategoryHandler : MonoBehaviour
 
         }
 
+        // Testing ViewMap data * 
+        Debug.Log("Class is " + ViewHandler.ViewMap["Class"]);
     }
-
 
 
     public class CategoryItem

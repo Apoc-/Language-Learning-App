@@ -16,15 +16,18 @@ public class ViewHandler : MonoBehaviour
     public View[] views;
     #endregion
 
+
+    // Gloable variable to store data
+    static public Dictionary<string, string> ViewMap = new Dictionary<string, string> {
+      {"Class",null}, {"LearnOrDic",null}, {"Category",null},{"List",null}
+    };
+      
+
     private void Start()
     {
 
         views = GetComponentsInChildren<View>();
         currentView = GetViewByTitle("Category");
-        foreach (var view in views)
-        {
-            Debug.Log("Fic " + view.name);
-        }
         SwitchToView(initialView);
     }
 
@@ -88,18 +91,23 @@ public class ViewHandler : MonoBehaviour
         switch (Class)
         {
             case "Alphabet/Phonics":
+                ViewMap["Class"] = "Alphabet/Phonics";
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
             case "CategoryItem":
+                ViewMap["Class"] = "CategoryItem";
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
             case "Greeting":
+                ViewMap["Class"] = "Greeting";
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
             case "Saying":
+                ViewMap["Class"] = "Saying";
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
             case "ReturnButton":
+                ViewMap["Class"] = null;
                 SwitchToView(GetViewByTitle("LanguageCanvas"));
                 break;
             default:
@@ -116,12 +124,15 @@ public class ViewHandler : MonoBehaviour
         switch (selected)
         {
             case "Learning":
+                ViewMap["LearnOrDic"] = "Learning";
                 // Into Learning Process
                 break;
             case "Dictionary":
+                ViewMap["LearnOrDic"] = "Dictionary";
                 SwitchToView(GetViewByTitle("Category"));
                 break;
             case "ReturnButton":
+                ViewMap["LearnOrDic"] = null;
                 SwitchToView(GetViewByTitle("Class"));
                 break;
 
@@ -134,12 +145,13 @@ public class ViewHandler : MonoBehaviour
     }
 
     public void CategorySelect()
-    {
+    {         
         var selected = EventSystem.current.currentSelectedGameObject.name;
         switch (selected)
         {
 
             case "ReturnButton":
+                ViewMap["Category"] = null;
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
 
@@ -161,6 +173,7 @@ public class ViewHandler : MonoBehaviour
         throw new ViewNotFoundException();
     }
 }
+
 
 internal class ViewNotFoundException : Exception
 {

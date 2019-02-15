@@ -20,6 +20,7 @@ public class ListCellOnClickEvent : MonoBehaviour
     public void OnMouseDown()
     {
         Debug.Log("Button down");
+        ViewHandler.ViewMap["List"] = this.gameObject.name;
         Instantiate(TestingViewPrefab);
     }
 }
