@@ -73,6 +73,7 @@ public class ViewHandler : MonoBehaviour
             case "Chinese":
                 SwitchToView(GetViewByTitle("Class"));
                 break;
+
             default:
                 Debug.Log("Language button select Error");
                 break;
@@ -98,6 +99,9 @@ public class ViewHandler : MonoBehaviour
             case "Saying":
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
                 break;
+            case "ReturnButton":
+                SwitchToView(GetViewByTitle("LanguageCanvas"));
+                break;
             default:
                 Debug.Log("Class button select Error");
                 break;
@@ -117,7 +121,28 @@ public class ViewHandler : MonoBehaviour
             case "Dictionary":
                 SwitchToView(GetViewByTitle("Category"));
                 break;
-          
+            case "ReturnButton":
+                SwitchToView(GetViewByTitle("Class"));
+                break;
+
+            default:
+                Debug.Log("Dictionary or Learning button select Error");
+                break;
+
+        }
+
+    }
+
+    public void CategorySelect()
+    {
+        var selected = EventSystem.current.currentSelectedGameObject.name;
+        switch (selected)
+        {
+
+            case "ReturnButton":
+                SwitchToView(GetViewByTitle("Dictionary or Learning"));
+                break;
+
             default:
                 Debug.Log("Dictionary or Learning button select Error");
                 break;
