@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using Assets.Scripts.Model;
+using Model;
 
-namespace Assets.Scripts.Model
+namespace LeitnerSystem
 {
     public class LeitnerState
     {

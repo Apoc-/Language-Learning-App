@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using LeitnerSystem;
+using UnityEngine;
 
-namespace Assets.Scripts.Model
+namespace Model
 {
     public class AlphabetEntry : LearnItem
     {

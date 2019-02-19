@@ -1,4 +1,6 @@
-﻿namespace Assets.Scripts.Model
+﻿using LeitnerSystem;
+
+namespace Assets.Scripts.Model
 {
     public class LearnState<T> where T : LearnItem
     {

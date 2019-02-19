@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Assets.Scripts.Model
+namespace Model
 {
     public class Trophy
     {

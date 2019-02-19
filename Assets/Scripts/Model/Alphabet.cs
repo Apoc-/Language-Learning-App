@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Assets.Scripts.Model;
 
-namespace Assets.Scripts.Model
+namespace Model
 {
     public class Alphabet
     {
