@@ -1,6 +1,4 @@
-﻿using Assets.Scripts.Model;
-
-namespace Model
+﻿namespace Model
 {
     public class Category
     {

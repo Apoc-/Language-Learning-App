@@ -14,7 +14,6 @@ namespace Model
 
         public int Level { get; set; }
         public ChosenLanguage ChosenLanguage { get; set; }
-        public LeitnerState LearnState { get; set; }
         public List<Streak> Streaks { get; set; }
         public List<Trophy> Trophies { get; set; }
     }

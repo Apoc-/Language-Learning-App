@@ -17,9 +17,16 @@
           <e p="DIctionaryLearningCanvas.cs" t="Include" />
           <e p="LanguageCanvas.cs" t="Include" />
           <e p="LeitnerSystem" t="Include">
-            <e p="LearnItem.cs" t="Include" />
-            <e p="LearnState.cs" t="Include" />
-            <e p="LeitnerState.cs" t="Include" />
+            <e p="AlphabetCardFactory.cs" t="Include" />
+            <e p="Answer.cs" t="Include" />
+            <e p="AudioAnswer.cs" t="Include" />
+            <e p="Card.cs" t="Include" />
+            <e p="Helpers.cs" t="Include" />
+            <e p="ImageAnswer.cs" t="Include" />
+            <e p="LearnItemHandler.cs" t="Include" />
+            <e p="LeitnerSession.cs" t="Include" />
+            <e p="Question.cs" t="Include" />
+            <e p="TextAnswer.cs" t="Include" />
           </e>
           <e p="ListCellOnClickEvent.cs" t="Include" />
           <e p="ListView.cs" t="Include" />
@@ -31,6 +38,7 @@
             <e p="Dialogue.cs" t="Include" />
             <e p="DialogueEntry.cs" t="Include" />
             <e p="HighscoreEntry.cs" t="Include" />
+            <e p="LearnItem.cs" t="Include" />
             <e p="Saying.cs" t="Include" />
             <e p="Streak.cs" t="Include" />
             <e p="Translation.cs" t="Include" />
