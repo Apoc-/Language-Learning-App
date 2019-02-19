@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Model;
+using UnityEngine;
 
-namespace Assets.Scripts.Model
+namespace Model
 {
     public class DialogueEntry
     {
