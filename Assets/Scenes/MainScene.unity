@@ -534,7 +534,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00003433194, y: 0.0000037753994}
+  m_AnchoredPosition: {x: -0.000041514522, y: -0.000026915199}
   m_SizeDelta: {x: 583.7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219467075
@@ -1514,7 +1514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000000009657946}
+  m_AnchoredPosition: {x: 0, y: 9.478614e-11}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &564808904
@@ -3610,6 +3610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Header Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 437491707211668810, guid: 6e6ef3101975ddf44951411bd590fa88,
+        type: 3}
+      propertyPath: m_Text
+      value: Language Learning
+      objectReference: {fileID: 0}
     - target: {fileID: 437491706700487527, guid: 6e6ef3101975ddf44951411bd590fa88,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3714,11 +3719,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437491707211668810, guid: 6e6ef3101975ddf44951411bd590fa88,
-        type: 3}
-      propertyPath: m_Text
-      value: Language Learning
       objectReference: {fileID: 0}
     - target: {fileID: 437491707639099785, guid: 6e6ef3101975ddf44951411bd590fa88,
         type: 3}
