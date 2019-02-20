@@ -1,8 +1,10 @@
 ﻿using LeitnerSystem;
+using System;
 using UnityEngine;
 
 namespace Model
 {
+    [Serializable]
     public class Saying : LearnItem
     {
         /// <summary>
@@ -27,7 +29,7 @@ namespace Model
 
         public Category Category { get; set; }
 
-        public AudioClip Audio { get; set; }
+        public AudioData Audio { get; set; }
 
         public string Bopomofo { get; set; }
     }

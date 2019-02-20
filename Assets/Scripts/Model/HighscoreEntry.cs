@@ -1,5 +1,9 @@
-﻿namespace Model
+﻿using Newtonsoft.Json;
+using System;
+
+namespace Model
 {
+    [Serializable]
     public class HighscoreEntry
     {
         /// <summary>
@@ -7,7 +11,7 @@
         /// e.g. error rate, word count, ..?
         /// </summary>
         public string Info { get; set; }
+
         public int Score { get; set; }
-        public User User { get; set; }
     }
 }
