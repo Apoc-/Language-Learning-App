@@ -1,20 +1,24 @@
-﻿using System.Collections.Generic;
-using LeitnerSystem;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Model
 {
+    [Serializable]
     public class User
     {
         public string Name { get; set; }
 
         /// <summary>
-        /// XP = Experience Points
+        /// Xp = Experience Points
         /// </summary>
-        public int XP { get; set; }
+        public int Xp { get; set; }
 
         public int Level { get; set; }
+
         public ChosenLanguage ChosenLanguage { get; set; }
+
         public List<Streak> Streaks { get; set; }
+
         public List<Trophy> Trophies { get; set; }
     }
 }

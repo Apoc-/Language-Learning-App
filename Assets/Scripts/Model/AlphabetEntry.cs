@@ -1,13 +1,17 @@
 ﻿using LeitnerSystem;
-using UnityEngine;
+using System;
 
 namespace Model
 {
+    [Serializable]
     public class AlphabetEntry : LearnItem
     {
-        public string character { get; set; }
-        public AudioClip ContextFreeAudio { get; set; }
-        public AudioClip ContextSensitiveAudio { get; set; }
-        public AudioClip ExampleWordAudio { get; set; }
+        public string Character { get; set; }
+
+        public AudioData ContextFreeAudio { get; set; }
+
+        public AudioData ContextSensitiveAudio { get; set; }
+
+        public AudioData ExampleWordAudio { get; set; }
     }
 }

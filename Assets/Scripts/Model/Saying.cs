@@ -1,8 +1,11 @@
 ﻿using LeitnerSystem;
+using Newtonsoft.Json;
+using System;
 using UnityEngine;
 
 namespace Model
 {
+    [Serializable]
     public class Saying : LearnItem
     {
         /// <summary>
@@ -25,9 +28,15 @@ namespace Model
         /// </summary>
         public string SimilarSaying { get; set; }
 
-        public Category Category { get; set; }
+        [JsonProperty]
+        private string CategoryId;
 
-        public AudioClip Audio { get; set; }
+        private Category _category;
+
+        [JsonIgnore]
+        public Category Category { get => _category; set => _category = value; }
+
+        public AudioData Audio { get; set; }
 
         public string Bopomofo { get; set; }
     }
