@@ -7,11 +7,11 @@ namespace Model
         public string ID { get; set; }
         public Translation Name { get; set; }
         public Category Category { get; set; }
-        public List<DialogueEntry> Entries { get; private set; }
+        public Dictionary<ChosenLanguage, List<DialogueEntry>> Entries { get; private set; }
 
         public Dialogue()
         {
-            Entries = new List<DialogueEntry>();
+            Entries = new Dictionary<ChosenLanguage, List<DialogueEntry>>();
         }
     }
 }
