@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-﻿using System.Collections.Generic;
-using LeitnerSystem;
-using UnityEngine;
-=======
 ﻿using LeitnerSystem;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
->>>>>>> b276756425544226ffc45930bf964afcd1b4a29b
 
 namespace Model
 {
