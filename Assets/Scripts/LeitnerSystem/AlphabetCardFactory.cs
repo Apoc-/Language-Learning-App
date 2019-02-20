@@ -28,14 +28,14 @@ namespace LeitnerSystem
         private static Card CreateCardWithTextQuestion(List<AlphabetEntry> entries)
         {
             var askedEntry = entries.First();
-            var questionText = "Was bedeutet dieses Zeichen?\n" + askedEntry.character; //todo localization
+            var questionText = "Was bedeutet dieses Zeichen?\n" + askedEntry.Character; //todo localization
             var question = new Question(questionText);
 
             var answers = new List<Answer>
             {
-                new AudioAnswer(askedEntry.ContextFreeAudio, true),
-                new AudioAnswer(entries[1].ContextFreeAudio, false),
-                new AudioAnswer(entries[2].ContextFreeAudio, false)
+                new AudioAnswer(askedEntry.ContextFreeAudio.Audio, true),
+                new AudioAnswer(entries[1].ContextFreeAudio.Audio, false),
+                new AudioAnswer(entries[2].ContextFreeAudio.Audio, false)
             };
             
             return new Card(askedEntry.Id, question, answers);
@@ -46,13 +46,13 @@ namespace LeitnerSystem
             var askedEntry = entries.First();
             var questionText = "Welches Zeichen hörst du?\n"; //todo localization
             var questionAudio = askedEntry.ContextFreeAudio;
-            var question = new Question(questionText, questionAudio);
+            var question = new Question(questionText, questionAudio.Audio);
             
             var answers = new List<Answer>
             {
-                new TextAnswer(askedEntry.character, true),
-                new TextAnswer(entries[1].character, false),
-                new TextAnswer(entries[2].character, false)
+                new TextAnswer(askedEntry.Character, true),
+                new TextAnswer(entries[1].Character, false),
+                new TextAnswer(entries[2].Character, false)
             };
             
             return new Card(askedEntry.Id, question, answers);

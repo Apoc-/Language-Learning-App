@@ -1,4 +1,5 @@
 ﻿using LeitnerSystem;
+using Newtonsoft.Json;
 using System;
 using UnityEngine;
 
@@ -27,7 +28,13 @@ namespace Model
         /// </summary>
         public string SimilarSaying { get; set; }
 
-        public Category Category { get; set; }
+        [JsonProperty]
+        private string CategoryId;
+
+        private Category _category;
+
+        [JsonIgnore]
+        public Category Category { get => _category; set => _category = value; }
 
         public AudioData Audio { get; set; }
 

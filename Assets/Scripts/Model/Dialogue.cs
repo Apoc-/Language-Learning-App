@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace Model
@@ -10,7 +11,13 @@ namespace Model
 
         public Translation Name { get; set; }
 
-        public Category Category { get; set; }
+        [JsonProperty]
+        private string CategoryId;
+
+        private Category _category;
+
+        [JsonIgnore]
+        public Category Category { get => _category; set => _category = value; }
 
         public Dictionary<ChosenLanguage, List<DialogueEntry>> Entries { get; private set; }
 
