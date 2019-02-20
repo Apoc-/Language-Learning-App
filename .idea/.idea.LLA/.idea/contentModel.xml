@@ -20,13 +20,19 @@
             <e p="AlphabetCardFactory.cs" t="Include" />
             <e p="Answer.cs" t="Include" />
             <e p="AudioAnswer.cs" t="Include" />
+            <e p="AudioQuestion.cs" t="Include" />
             <e p="Card.cs" t="Include" />
+            <e p="CardBuilder.cs" t="Include" />
+            <e p="CardFormat.cs" t="Include" />
             <e p="Helpers.cs" t="Include" />
             <e p="ImageAnswer.cs" t="Include" />
+            <e p="ImageQuestion.cs" t="Include" />
             <e p="LearnItemHandler.cs" t="Include" />
             <e p="LeitnerSession.cs" t="Include" />
             <e p="Question.cs" t="Include" />
             <e p="TextAnswer.cs" t="Include" />
+            <e p="TextQuestion.cs" t="Include" />
+            <e p="VocabCardFactory.cs" t="Include" />
           </e>
           <e p="ListCellOnClickEvent.cs" t="Include" />
           <e p="ListView.cs" t="Include" />

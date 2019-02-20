@@ -5,16 +5,22 @@ namespace LeitnerSystem
 {
     public class Card
     {
-        public Question Question { get; }
+        public Question Question { get; set; }
         private readonly List<Answer> _answers;
         public string LearnItemId { get; }
         public bool AnsweredCorrectly { get; private set; }
+        public CardFormat CardFormat { get; }
 
-        public Card(string learnItemId, Question question, List<Answer> answers)
+        public Card(string learnItemId, CardFormat cardFormat)
         {
             LearnItemId = learnItemId;
-            Question = question;
-            _answers = answers;
+            CardFormat = cardFormat;
+            _answers = new List<Answer>();
+        }
+
+        public void AddAnswer(Answer answer)
+        {
+            _answers.Add(answer);
         }
 
         /// <summary>

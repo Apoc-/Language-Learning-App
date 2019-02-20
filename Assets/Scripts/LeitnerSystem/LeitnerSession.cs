@@ -37,26 +37,43 @@ namespace LeitnerSystem
             var boxOneCards = GetAlphabetCardsFromBoxNr(0, boxOneSize);
             var boxTwoCards = GetAlphabetCardsFromBoxNr(1, boxTwoSize);
             var boxThreeCards = GetAlphabetCardsFromBoxNr(2, boxThreeSize);
-
+            
             _cards = boxOneCards.Union(boxTwoCards).Union(boxThreeCards).ToList();
+
+            if (_cards.Count >= amount) return _cards;
+            
+            var newCards = GetAlphabetCardsFromBoxNr(-1, amount - _cards.Count);
+            newCards.ForEach(card =>
+            {
+                _learnItemHandler.GetLearnItemById(card.LearnItemId).CurrentLeitnerBoxNr = 0;
+            });
+
             return _cards;
         }
 
         private List<Card> GetAlphabetCardsFromBoxNr(int boxNr, int amount)
         {
             var cards = new List<Card>();
-            var boxItems = GetAlphabetLearnStateFromBoxNr(boxNr);
-            
-            Helpers.Repeat(amount, () =>
-            {
-                boxItems.Shuffle();
-                cards.Add(AlphabetCardFactory.CreateCard(boxItems.Take(3).ToList())); //duplicates possible  
-            });
+            var boxItems = GetAlphabetLearnItemFromBoxNr(boxNr);
 
+            var askedItems = boxItems.Shuffle().Take(amount).ToList();
+            var alphabetItems = _learnItemHandler.AlphabetLearnItems;
+            
+            askedItems.ForEach(item =>
+            {
+                var cleanedList = alphabetItems.Values.ToList();
+                cleanedList.Remove(item);
+                
+                var wrongAnswers = cleanedList.Shuffle().Take(2).ToList();
+
+                var card = AlphabetCardFactory.CreateCard(item, wrongAnswers);
+                cards.Add(card);
+            });
+            
             return cards;
         }
         
-        private List<AlphabetEntry> GetAlphabetLearnStateFromBoxNr(int boxNr)
+        private List<AlphabetEntry> GetAlphabetLearnItemFromBoxNr(int boxNr)
         {
             return _learnItemHandler.AlphabetLearnItems.Values
                 .Where(item => item.CurrentLeitnerBoxNr == boxNr)

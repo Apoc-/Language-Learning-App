@@ -1,21 +1,20 @@
-using UnityEngine;
-
 namespace LeitnerSystem
 {
-    public class Question
+    public abstract class Question
     {
-        public string Text { get; }
-        public AudioClip AudioClip { get; }
-
-        public Question(string text, AudioClip audioClip = null)
+        public AudioQuestion AsAudioQuestion()
         {
-            Text = text;
-            AudioClip = audioClip;
+            return (AudioQuestion) this;
         }
 
-        public bool HasAudioClip()
+        public ImageQuestion AsImageQuestion()
         {
-            return AudioClip != null;
+            return (ImageQuestion) this;
+        }
+
+        public TextQuestion AsTextQuestion()
+        {
+            return (TextQuestion) this;
         }
     }
 }

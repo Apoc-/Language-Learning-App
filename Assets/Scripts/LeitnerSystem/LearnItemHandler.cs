@@ -6,7 +6,7 @@ namespace LeitnerSystem
 {
     public class LearnItemHandler
     {
-        public Dictionary<string, AlphabetEntry> AlphabetLearnItems { get; }
+        public Dictionary<string, AlphabetEntry> AlphabetLearnItems { get; private set; }
         public Dictionary<string, Saying> SayingsLearnItems { get; }
         public Dictionary<string, Vocabulary> VocabularyLearnItems { get; }
         
@@ -34,6 +34,11 @@ namespace LeitnerSystem
             where T : LearnItem
         {
             source.ForEach(entry => { target[entry.Id] = entry; });
+        }
+
+        private void LoadAlphabetLearnItems()
+        {
+            AlphabetLearnItems = new Dictionary<string, AlphabetEntry>();
         }
     }
 }
