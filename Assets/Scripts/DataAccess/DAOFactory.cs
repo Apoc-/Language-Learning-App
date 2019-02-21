@@ -22,5 +22,21 @@ namespace DataAccess
         {
             get { return new AlphabetDAO(); }
         }
+
+        public static IVocabularyDAO VocabularyDAO
+        {
+            get { return new VocabularyDAO(); }
+        }
+
+        public static ISayingDAO SayingDAO
+        {
+            get { return new SayingDAO(); }
+        }
+
+        public static IDialogueDAO DialogueDAO
+        {
+            get { return new DialogueDAO(); }
+        }
+
     }
 }

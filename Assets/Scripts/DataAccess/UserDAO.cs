@@ -1,5 +1,4 @@
-﻿
-using Model;
+﻿using Model;
 using Newtonsoft.Json;
 using System.IO;
 using System.Text;
