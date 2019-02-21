@@ -45,6 +45,7 @@
             <e p="LearnItemHandler.cs" t="Include" />
             <e p="LeitnerSession.cs" t="Include" />
             <e p="Question.cs" t="Include" />
+            <e p="SayingCardFactory.cs" t="Include" />
             <e p="TextAnswer.cs" t="Include" />
             <e p="TextQuestion.cs" t="Include" />
             <e p="VocabCardFactory.cs" t="Include" />

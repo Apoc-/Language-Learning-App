@@ -2,13 +2,13 @@ namespace LeitnerSystem
 {
     public enum CardFormat
     {
-        ForeignTextToLocalText, //vocab
+        ForeignTextToLocalText, //vocab, sayings
         ForeignTextToImage, //vocab
-        ForeignTextToForeignAudio, //alphabet
+        ForeignTextToForeignAudio, //alphabet, sayings
         LocalTextToForeignText, //vocab
         LocalTextToForeignAudio, //vocab
         ImageToForeignText, //vocab
-        ForeignAudioToLocalText, //vocab
-        ForeignAudioToForeignText //alphabet
+        ForeignAudioToLocalText, //vocab, sayings
+        ForeignAudioToForeignText //alphabet, sayings
     }
 }
