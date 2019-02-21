@@ -3,6 +3,7 @@ using LeitnerSystem;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
+using System.Linq;
 using UnityEngine;
 
 namespace Model
@@ -56,13 +57,25 @@ namespace Model
         /// </summary>
         public string SimilarSaying { get; set; }
 
-        [JsonProperty]
-        private string CategoryId;
+        [JsonProperty("CategoryId")]
+        private string _categoryId;
 
         private Category _category;
 
         [JsonIgnore]
-        public Category Category { get => _category; set => _category = value; }
+        public Category Category
+        {
+            get
+            {
+                if (_category == null)
+                {
+                    var category = DAOFactory.CategoryDAO.LoadDialogues().FirstOrDefault(c => c.Id == _categoryId);
+                    _category = category ?? throw new Exception("Category with id " + _categoryId + " not found");
+                }
+
+                return _category;
+            }
+        }
 
         public AudioData Audio { get; set; }
 
