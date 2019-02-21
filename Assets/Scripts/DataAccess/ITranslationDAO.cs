@@ -5,6 +5,6 @@ namespace DataAccess
 {
     public interface ITranslationDAO
     {
-        List<Translation> LoadDialogues();
+        List<Translation> LoadTranslations();
     }
 }
