@@ -20,11 +20,17 @@
           <e p="DataAccess" t="Include">
             <e p="AlphabetDAO.cs" t="Include" />
             <e p="DAOFactory.cs" t="Include" />
+            <e p="DialogueDAO.cs" t="Include" />
             <e p="IAlphabetDAO.cs" t="Include" />
+            <e p="IDialogueDAO.cs" t="Include" />
             <e p="ILeitnerBoxDAO.cs" t="Include" />
+            <e p="ISayingDAO.cs" t="Include" />
             <e p="IUserDAO.cs" t="Include" />
+            <e p="IVocabularyDAO.cs" t="Include" />
             <e p="LeitnerBoxDAO.cs" t="Include" />
+            <e p="SayingDAO.cs" t="Include" />
             <e p="UserDAO.cs" t="Include" />
+            <e p="VocabularyDAO.cs" t="Include" />
           </e>
           <e p="DIctionaryLearningCanvas.cs" t="Include" />
           <e p="Gamification" t="Include">
