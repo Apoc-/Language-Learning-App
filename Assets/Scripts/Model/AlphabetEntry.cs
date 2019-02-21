@@ -1,5 +1,4 @@
 ﻿using DataAccess;
-using LeitnerSystem;
 using Newtonsoft.Json;
 using System;
 
@@ -19,8 +18,7 @@ namespace Model
             {
                 if (_currentLeitnerBoxNr == -1)
                 {
-                    int nr = 0;
-                    if (DAOFactory.LeitnerBoxDAO.LoadLeitnerboxData().TryGetValue(this.Id, out nr))
+                    if (DAOFactory.LeitnerBoxDAO.LoadLeitnerboxData().TryGetValue(this.Id, out int nr))
                         _currentLeitnerBoxNr = nr;
                 }
 

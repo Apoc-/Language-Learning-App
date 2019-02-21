@@ -1,14 +1,14 @@
-﻿using Newtonsoft.Json;
+﻿using DataAccess;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
 namespace Model
 {
     [Serializable]
-    public class Dialogue : ILearnItem
+    public class Dialogue
     {
         public string Id { get; set; }
-        public int CurrentLeitnerBoxNr { get; set; }
 
         public Translation Name { get; set; }
 
@@ -24,9 +24,11 @@ namespace Model
 
         public Dialogue()
         {
-            Entries = new Dictionary<ChosenLanguage, List<DialogueEntry>>();
-            Entries.Add(ChosenLanguage.German, new List<DialogueEntry>());
-            Entries.Add(ChosenLanguage.Taiwanese, new List<DialogueEntry>());
+            Entries = new Dictionary<ChosenLanguage, List<DialogueEntry>>
+            {
+                { ChosenLanguage.German, new List<DialogueEntry>() },
+                { ChosenLanguage.Taiwanese, new List<DialogueEntry>() }
+            };
         }
     }
 }
