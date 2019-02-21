@@ -5,9 +5,10 @@ using System.Collections.Generic;
 namespace Model
 {
     [Serializable]
-    public class Dialogue
+    public class Dialogue : ILearnItem
     {
         public string Id { get; set; }
+        public int CurrentLeitnerBoxNr { get; set; }
 
         public Translation Name { get; set; }
 
