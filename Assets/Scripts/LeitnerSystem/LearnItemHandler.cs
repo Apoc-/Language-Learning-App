@@ -32,7 +32,7 @@ namespace LeitnerSystem
             
             var alphabetEntries = DAOFactory.AlphabetDAO
                 .LoadAlphabet()
-                .Find(a => a.Type == GamificationManager.Instance.User.ChosenLanguage)
+                .Find(a => a.Type == GamificationManager.Instance.User.LearningLanguage)
                 .Entries;
             
             alphabetEntries.ForEach(item =>
@@ -61,7 +61,7 @@ namespace LeitnerSystem
 
             var sayingItems = DAOFactory.SayingDAO
                 .LoadSayings()
-                .Where(item => item.Language == GamificationManager.Instance.User.ChosenLanguage)
+                .Where(item => item.Language == GamificationManager.Instance.User.LearningLanguage)
                 .ToList();
             
             sayingItems.ForEach(item =>
