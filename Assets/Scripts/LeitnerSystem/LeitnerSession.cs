@@ -140,6 +140,63 @@ namespace LeitnerSystem
                 .ToList();
         }
         #endregion
+        
+        #region saying cards
+        public List<Card> GetSayingCards(int amount)
+        {
+            var boxSizes = BoxSizes(amount);
+
+            var boxOneCards = GetSayingCardsFromBoxNr(0, boxSizes[0]);
+            var boxTwoCards = GetSayingCardsFromBoxNr(1, boxSizes[1]);
+            var boxThreeCards = GetSayingCardsFromBoxNr(2, boxSizes[2]);
+            
+            _cards = boxOneCards.Union(boxTwoCards).Union(boxThreeCards).ToList();
+
+            if (_cards.Count >= amount) return _cards;
+            
+            var additionalNewCards = GetSayingCardsWithoutBox(amount - _cards.Count);
+            additionalNewCards.ForEach(card =>
+            {
+                _learnItemHandler.GetLearnItemById(card.LearnItemId).CurrentLeitnerBoxNr = 0;
+            });
+
+            return _cards;
+        }
+
+        private List<Card> GetSayingCardsWithoutBox(int amount)
+        {
+            return GetSayingCardsFromBoxNr(-1, amount);
+        }
+        
+        private List<Card> GetSayingCardsFromBoxNr(int boxNr, int amount)
+        {
+            var cards = new List<Card>();
+            var boxItems = GetSayingLearnItemsFromBoxNr(boxNr);
+
+            var askedItems = boxItems.Shuffle().Take(amount).ToList();
+            var sayingItems = _learnItemHandler.SayingLearnItems;
+            
+            askedItems.ForEach(item =>
+            {
+                var cleanedList = sayingItems.Values.ToList();
+                cleanedList.Remove(item);
+                
+                var wrongAnswers = cleanedList.Shuffle().Take(2).ToList();
+
+                var card = SayingCardFactory.CreateCard(item, wrongAnswers);
+                cards.Add(card);
+            });
+            
+            return cards;
+        }
+        
+        private List<Saying> GetSayingLearnItemsFromBoxNr(int boxNr)
+        {
+            return _learnItemHandler.SayingLearnItems.Values
+                .Where(item => item.CurrentLeitnerBoxNr == boxNr)
+                .ToList();
+        }
+        #endregion
 
         #region card helper
 
@@ -191,7 +248,6 @@ namespace LeitnerSystem
         
         private void InitializeLearnItemHandler()
         {
-            //todo populate LearnItemHandler
             _learnItemHandler = new LearnItemHandler();
         }
     }
