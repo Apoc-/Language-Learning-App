@@ -30,20 +30,18 @@ namespace LeitnerSystem
         #region alphabet cards
         public List<Card> GetAlphabetCards(int amount)
         {
-            var boxOneSize = BoxOneSize(amount);
-            var boxTwoSize = BoxTwoSize(amount);
-            var boxThreeSize = BoxThreeSize(amount, boxOneSize, boxTwoSize);
+            var boxSizes = BoxSizes(amount);
 
-            var boxOneCards = GetAlphabetCardsFromBoxNr(0, boxOneSize);
-            var boxTwoCards = GetAlphabetCardsFromBoxNr(1, boxTwoSize);
-            var boxThreeCards = GetAlphabetCardsFromBoxNr(2, boxThreeSize);
+            var boxOneCards = GetAlphabetCardsFromBoxNr(0, boxSizes[0]);
+            var boxTwoCards = GetAlphabetCardsFromBoxNr(1, boxSizes[1]);
+            var boxThreeCards = GetAlphabetCardsFromBoxNr(2, boxSizes[2]);
             
             _cards = boxOneCards.Union(boxTwoCards).Union(boxThreeCards).ToList();
 
             if (_cards.Count >= amount) return _cards;
             
-            var newCards = GetAlphabetCardsFromBoxNr(-1, amount - _cards.Count);
-            newCards.ForEach(card =>
+            var additionalNewCards = GetAlphabetCardsWithoutBox(amount - _cards.Count);
+            additionalNewCards.ForEach(card =>
             {
                 _learnItemHandler.GetLearnItemById(card.LearnItemId).CurrentLeitnerBoxNr = 0;
             });
@@ -51,6 +49,11 @@ namespace LeitnerSystem
             return _cards;
         }
 
+        private List<Card> GetAlphabetCardsWithoutBox(int amount)
+        {
+            return GetAlphabetCardsFromBoxNr(-1, amount);
+        }
+        
         private List<Card> GetAlphabetCardsFromBoxNr(int boxNr, int amount)
         {
             var cards = new List<Card>();
@@ -82,12 +85,72 @@ namespace LeitnerSystem
         #endregion
 
         #region vocab cards
+        public List<Card> GetVocabCards(int amount)
+        {
+            var boxSizes = BoxSizes(amount);
 
+            var boxOneCards = GetVocabCardsFromBoxNr(0, boxSizes[0]);
+            var boxTwoCards = GetVocabCardsFromBoxNr(1, boxSizes[1]);
+            var boxThreeCards = GetVocabCardsFromBoxNr(2, boxSizes[2]);
+            
+            _cards = boxOneCards.Union(boxTwoCards).Union(boxThreeCards).ToList();
+
+            if (_cards.Count >= amount) return _cards;
+            
+            var additionalNewCards = GetVocabCardsWithoutBox(amount - _cards.Count);
+            additionalNewCards.ForEach(card =>
+            {
+                _learnItemHandler.GetLearnItemById(card.LearnItemId).CurrentLeitnerBoxNr = 0;
+            });
+
+            return _cards;
+        }
+
+        private List<Card> GetVocabCardsWithoutBox(int amount)
+        {
+            return GetVocabCardsFromBoxNr(-1, amount);
+        }
         
+        private List<Card> GetVocabCardsFromBoxNr(int boxNr, int amount)
+        {
+            var cards = new List<Card>();
+            var boxItems = GetVocabularyLearnItemsFromBoxNr(boxNr);
 
+            var askedItems = boxItems.Shuffle().Take(amount).ToList();
+            var vocabularyItems = _learnItemHandler.VocabularyLearnItems;
+            
+            askedItems.ForEach(item =>
+            {
+                var cleanedList = vocabularyItems.Values.ToList();
+                cleanedList.Remove(item);
+                
+                var wrongAnswers = cleanedList.Shuffle().Take(2).ToList();
+
+                var card = VocabCardFactory.CreateCard(item, wrongAnswers);
+                cards.Add(card);
+            });
+            
+            return cards;
+        }
+        
+        private List<Vocabulary> GetVocabularyLearnItemsFromBoxNr(int boxNr)
+        {
+            return _learnItemHandler.VocabularyLearnItems.Values
+                .Where(item => item.CurrentLeitnerBoxNr == boxNr)
+                .ToList();
+        }
         #endregion
 
         #region card helper
+
+        private int[] BoxSizes(int amount)
+        {
+            var boxOneSize = BoxOneSize(amount);
+            var boxTwoSize = BoxTwoSize(amount);
+            var boxThreeSize = BoxThreeSize(amount, boxOneSize, boxTwoSize);
+
+            return new[] {boxOneSize, boxTwoSize, boxThreeSize};
+        }
         
         private int BoxOneSize(int amount)
         {

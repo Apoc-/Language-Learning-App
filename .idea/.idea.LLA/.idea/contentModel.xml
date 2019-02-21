@@ -18,6 +18,9 @@
           <e p="CategoryHandler.cs" t="Include" />
           <e p="CategoryItemOnClickEvent.cs" t="Include" />
           <e p="DataAccess" t="Include">
+            <e p="DAOFactory.cs" t="Include" />
+            <e p="ILeitnerBoxDAO.cs" t="Include" />
+            <e p="LeitnerBoxDAO.cs" t="Include" />
             <e p="UserDAO.cs" t="Include" />
           </e>
           <e p="DIctionaryLearningCanvas.cs" t="Include" />
@@ -51,6 +54,7 @@
             <e p="Dialogue.cs" t="Include" />
             <e p="DialogueEntry.cs" t="Include" />
             <e p="HighscoreEntry.cs" t="Include" />
+            <e p="ILearnItem.cs" t="Include" />
             <e p="ImageData.cs" t="Include" />
             <e p="LearnItem.cs" t="Include" />
             <e p="MeshData.cs" t="Include" />

@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using Model;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,8 +8,8 @@ namespace LeitnerSystem
 {
     public class CardBuilder
     {
-        private Card card; 
-        
+        private Card card;
+
         private CardBuilder(string learnItemId)
         {
             card = new Card(learnItemId);
@@ -22,7 +25,7 @@ namespace LeitnerSystem
             card.CardFormat = format;
             return this;
         }
-        
+
         public CardBuilder WithTextQuestion(string text)
         {
             card.Question = new TextQuestion(text);
@@ -46,18 +49,46 @@ namespace LeitnerSystem
             card.AddAnswer(new TextAnswer(text, correctAnswer));
             return this;
         }
-        
+
         public CardBuilder AddImageAnswer(Texture2D image, bool correctAnswer)
         {
             card.AddAnswer(new ImageAnswer(image, correctAnswer));
             return this;
         }
-        
+
         public CardBuilder AddAudioAnswer(AudioClip audio, bool correctAnswer)
         {
             card.AddAnswer(new AudioAnswer(audio, correctAnswer));
             return this;
         }
+
+        public CardBuilder AddImageAnswers(Texture2D askedImage, List<Texture2D> wrongImages)
+        {
+            AddImageAnswer(askedImage, true);
+            AddImageAnswer(wrongImages[0], false);
+            AddImageAnswer(wrongImages[1], false);
+            
+            return this;
+        }
+
+        public CardBuilder AddTextAnswers(string askedAnswer, List<string> wrongAnswers)
+        {
+            AddTextAnswer(askedAnswer, true);
+            AddTextAnswer(wrongAnswers[0], false);
+            AddTextAnswer(wrongAnswers[1], false);
+            
+            return this;
+        }
+
+        public CardBuilder AddAudioAnswers(AudioClip askedAudio, List<AudioClip> wrongAudio)
+        {
+            AddAudioAnswer(askedAudio, true);
+            AddAudioAnswer(wrongAudio[0], false);
+            AddAudioAnswer(wrongAudio[0], false);
+
+            return this;
+        }
+
 
         public Card End()
         {
