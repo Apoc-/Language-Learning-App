@@ -10,7 +10,7 @@ namespace LeitnerSystem
         public Dictionary<string, Saying> SayingsLearnItems { get; }
         public Dictionary<string, Vocabulary> VocabularyLearnItems { get; }
         
-        private Dictionary<string, LearnItem> learnItems = new Dictionary<string, LearnItem>();
+        private Dictionary<string, ILearnItem> learnItems = new Dictionary<string, ILearnItem>();
 
         public LearnItemHandler()
         {
@@ -18,7 +18,7 @@ namespace LeitnerSystem
             PopulateLearnItemDictionary();
         }
 
-        public LearnItem GetLearnItemById(string id)
+        public ILearnItem GetLearnItemById(string id)
         {
             return learnItems[id];
         }
@@ -30,8 +30,8 @@ namespace LeitnerSystem
             AddLearnItemsToDictionary(VocabularyLearnItems.Values.ToList(), learnItems);
         }
 
-        private void AddLearnItemsToDictionary<T>(List<T> source, Dictionary<string, LearnItem> target) 
-            where T : LearnItem
+        private void AddLearnItemsToDictionary<T>(List<T> source, Dictionary<string, ILearnItem> target) 
+            where T : ILearnItem
         {
             source.ForEach(entry => { target[entry.Id] = entry; });
         }

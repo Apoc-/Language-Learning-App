@@ -1,11 +1,38 @@
-﻿using LeitnerSystem;
+﻿using DataAccess;
+using LeitnerSystem;
+using Newtonsoft.Json;
 using System;
 
 namespace Model
 {
     [Serializable]
-    public class AlphabetEntry : LearnItem
+    public class AlphabetEntry : ILearnItem
     {
+        public string Id { get; set; }
+
+        private int _currentLeitnerBoxNr = -1;
+
+        [JsonIgnore]
+        public int CurrentLeitnerBoxNr
+        {
+            get
+            {
+                if (_currentLeitnerBoxNr == -1)
+                {
+                    int nr = 0;
+                    if (DAOFactory.LeitnerBoxDAO.LoadLeitnerboxData().TryGetValue(this.Id, out nr))
+                        _currentLeitnerBoxNr = nr;
+                }
+
+                return _currentLeitnerBoxNr;
+            }
+            set
+            {
+                _currentLeitnerBoxNr = value;
+                DAOFactory.LeitnerBoxDAO.WriteLeitnerboxData(Id, _currentLeitnerBoxNr);
+            }
+        }
+
         public string Character { get; set; }
 
         public AudioData ContextFreeAudio { get; set; }
