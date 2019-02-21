@@ -24,6 +24,8 @@ namespace Model
         public Dialogue()
         {
             Entries = new Dictionary<ChosenLanguage, List<DialogueEntry>>();
+            Entries.Add(ChosenLanguage.German, new List<DialogueEntry>());
+            Entries.Add(ChosenLanguage.Taiwanese, new List<DialogueEntry>());
         }
     }
 }

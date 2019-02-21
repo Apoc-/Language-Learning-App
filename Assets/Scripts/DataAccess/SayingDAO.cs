@@ -7,7 +7,7 @@ namespace DataAccess
 {
     public class SayingDAO : ISayingDAO
     {
-        private readonly string path = "Dictionary/Saying";
+        private readonly string path = "Dictionary/Sayings";
 
         public List<Saying> LoadSayings()
         {
