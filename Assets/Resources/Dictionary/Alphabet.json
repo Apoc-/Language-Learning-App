@@ -1,0 +1,58 @@
+﻿{
+  "Id": "bopomofo",
+  "Type": "Taiwanese",
+  "Entries": [
+    {
+      "Id": "a",
+      "Character": "Aa",
+      "ContextFreeAudio": {
+        "Path": "a"
+      },
+      "ContextSensitiveAudio": {
+        "Path": "a"
+      },
+      "ExampleWordAudio": {
+        "Path": "a"
+      }
+    },
+    {
+      "Id": "b",
+      "Character": "Bb",
+      "ContextFreeAudio": {
+        "Path": "b"
+      },
+      "ContextSensitiveAudio": {
+        "Path": "b"
+      },
+      "ExampleWordAudio": {
+        "Path": "b"
+      }
+    },
+    {
+      "Id": "ㄅ",
+      "Character": "ㄅ",
+      "ContextFreeAudio": {
+        "Path": "ㄅ"
+      },
+      "ContextSensitiveAudio": {
+        "Path": "ㄅ"
+      },
+      "ExampleWordAudio": {
+        "Path": "ㄅ"
+      }
+    },
+    {
+      "Id": "ㄆ",
+      "Character": "ㄆ",
+      "ContextFreeAudio": {
+        "Path": "ㄆ"
+      },
+      "ContextSensitiveAudio": {
+        "Path": "ㄆ"
+      },
+      "ExampleWordAudio": {
+        "Path": "ㄆ"
+      }
+    }
+  ]
+}

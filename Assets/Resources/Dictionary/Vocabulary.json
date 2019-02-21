@@ -1,0 +1,22 @@
+﻿[
+  {
+    "CategoryId": null,
+    "Id": "Tree",
+    "Translation": {
+      "German": "Baum",
+      "Taiwanese": "木"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/Baum"
+      },
+      "Taiwanese": {
+        "Path": "Audio/Baum"
+      }
+    },
+    "Image": {
+      "Path": "Img/Tree"
+    },
+    "Bopomofo": "ㄅㄆㄇㄈ"
+  }
+]

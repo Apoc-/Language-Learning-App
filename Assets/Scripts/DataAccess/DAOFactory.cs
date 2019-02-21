@@ -17,5 +17,10 @@ namespace DataAccess
         {
             get { return new UserDAO(); }
         }
+
+        public static IAlphabetDAO AlphabetDAO
+        {
+            get { return new AlphabetDAO(); }
+        }
     }
 }

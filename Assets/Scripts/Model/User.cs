@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 
 namespace Model
@@ -15,6 +17,7 @@ namespace Model
 
         public int Level { get; set; }
 
+        [JsonConverter(typeof(StringEnumConverter))]
         public ChosenLanguage ChosenLanguage { get; set; }
 
         public List<Streak> Streaks { get; set; }
