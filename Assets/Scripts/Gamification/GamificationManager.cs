@@ -5,6 +5,14 @@ namespace Gamification
 {
     public class GamificationManager
     {
+        public User User { get; private set; }
+
+        private GamificationManager()
+        {
+            User = DAOFactory.UserDAO.LoadUser();
+        }
+        
+        #region singleton
         private static GamificationManager _instance;
         public static GamificationManager Instance
         {
@@ -15,12 +23,6 @@ namespace Gamification
                 return _instance;
             }
         }
-
-        public User User { get; private set; }
-
-        private GamificationManager()
-        {
-            User = DAOFactory.UserDAO.LoadUser();
-        }
+        #endregion
     }
 }
