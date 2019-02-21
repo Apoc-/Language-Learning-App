@@ -9,7 +9,7 @@ namespace DataAccess
     {
         private readonly string path = "Dictionary/Translation";
 
-        public List<Translation> LoadDialogues()
+        public List<Translation> LoadTranslations()
         {
             var asset = Resources.Load<TextAsset>(path);
             if (asset == null) throw new System.Exception("Asset Resources/" + path + " not found");
