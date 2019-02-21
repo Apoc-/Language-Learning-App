@@ -23,5 +23,11 @@ namespace Model
         public List<Streak> Streaks { get; set; }
 
         public List<Trophy> Trophies { get; set; }
+
+        public User()
+        {
+            Streaks = new List<Streak>();
+            Trophies = new List<Trophy>();
+        }
     }
 }
