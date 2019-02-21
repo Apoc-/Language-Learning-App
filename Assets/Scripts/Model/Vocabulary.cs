@@ -8,10 +8,12 @@ namespace Model
     [Serializable]
     public class Vocabulary : LearnItem
     {
-        public Translation Translation { get; set; }
+        public Dictionary<ChosenLanguage, string> Translation { get; set; }
 
-        [JsonProperty]
-        private string CategoryId;
+        public Dictionary<ChosenLanguage, AudioData> Audio { get; private set; }
+
+        [JsonProperty("CategoryId")]
+        private string _categoryId;
 
         private Category _category;
 
@@ -19,14 +21,13 @@ namespace Model
         public Category Category { get => _category; set => _category = value; }
 
         public ImageData Image { get; set; }
-
-        public Dictionary<ChosenLanguage, List<AudioData>> Audio { get; private set; }
-
+        
         public string Bopomofo { get; set; }
 
         public Vocabulary()
         {
-            Audio = new Dictionary<ChosenLanguage, List<AudioData>>();
+            Audio = new Dictionary<ChosenLanguage, AudioData>();
+            Translation = new Dictionary<ChosenLanguage, string>();
         }
     }
 }

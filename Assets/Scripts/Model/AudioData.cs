@@ -7,8 +7,6 @@ namespace Model
     [Serializable]
     public class AudioData
     {
-        public string Id { get; set; }
-
         public string Path { get; set; }
 
         [JsonIgnore]
