@@ -1,0 +1,49 @@
+﻿[
+  {
+    "CategoryId": null,
+    "Id": "Greeting",
+    "Name": {
+      "Key": null,
+      "German": "Begrüßung",
+      "Taiwanese": "?"
+    },
+    "Entries": {
+      "German": [
+        {
+          "Id": "Greeting1DE",
+          "Text": "Guten Tag! Wie geht es Ihnen?",
+          "Audio": {
+            "Path": "Greeting1DE"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "Greeting2DE",
+          "Text": "Mir geht es gut! Und selbst?",
+          "Audio": {
+            "Path": "Greeting2DE"
+          },
+          "Bopomofo": ""
+        }
+      ],
+      "Taiwanese": [
+        {
+          "Id": "Greeting1TW",
+          "Text": "nihao ma",
+          "Audio": {
+            "Path": "Greeting1TW"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "Greeting2TW",
+          "Text": "xiexie??",
+          "Audio": {
+            "Path": "Greeting2TW"
+          },
+          "Bopomofo": ""
+        }
+      ]
+    }
+  }
+]
