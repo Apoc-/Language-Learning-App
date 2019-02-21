@@ -45,25 +45,30 @@ namespace LeitnerSystem
         private void LoadVocabularyLearnItems()
         {
             VocabularyLearnItems = new Dictionary<string, Vocabulary>();
+
+            var vocabItems = DAOFactory.VocabularyDAO.LoadVocabulary();
             
-            //todo load from dao
-            /*var vocabEntries = DAOFactory.
-                .LoadAlphabet()
-                .Find(a => a.Type == GamificationManager.Instance.User.ChosenLanguage)
-                .Entries;
-            
-            vocabEntries.ForEach(item =>
+            vocabItems.ForEach(item =>
             {
-                AlphabetLearnItems[item.Id] = item;
+                VocabularyLearnItems[item.Id] = item;
                 _learnItems[item.Id] = item;
-            });*/
+            });
         }
         
         private void LoadSayingLearnItems()
         {
             SayingLearnItems = new Dictionary<string, Saying>();
+
+            var sayingItems = DAOFactory.SayingDAO
+                .LoadSayings()
+                .Where(item => item.Language == GamificationManager.Instance.User.ChosenLanguage)
+                .ToList();
             
-            //todo load from dao
+            sayingItems.ForEach(item =>
+            {
+                SayingLearnItems[item.Id] = item;
+                _learnItems[item.Id] = item;
+            });
         }
     }
 }
