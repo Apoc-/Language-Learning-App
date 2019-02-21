@@ -9,12 +9,11 @@ namespace LeitnerSystem
         private readonly List<Answer> _answers;
         public string LearnItemId { get; }
         public bool AnsweredCorrectly { get; private set; }
-        public CardFormat CardFormat { get; }
+        public CardFormat CardFormat { get; set; }
 
-        public Card(string learnItemId, CardFormat cardFormat)
+        public Card(string learnItemId)
         {
             LearnItemId = learnItemId;
-            CardFormat = cardFormat;
             _answers = new List<Answer>();
         }
 

@@ -26,7 +26,8 @@ namespace LeitnerSystem
         private static Card CreateCardWithTextQuestion(AlphabetEntry questionEntry, List<AlphabetEntry> wrongAnswerEntries)
         {
             return CardBuilder
-                .Create(questionEntry.Id, CardFormat.ForeignTextToForeignAudio)
+                .Create(questionEntry.Id)
+                .WithCardFormat(CardFormat.ForeignTextToForeignAudio)
                 .WithTextQuestion(questionEntry.Character)
                 .AddAudioAnswer(questionEntry.ContextFreeAudio.Audio, true)
                 .AddAudioAnswer(wrongAnswerEntries[1].ContextFreeAudio.Audio, false)
@@ -37,7 +38,8 @@ namespace LeitnerSystem
         private static Card CreateCardWithAudioQuestion(AlphabetEntry questionEntry, List<AlphabetEntry> wrongAnswerEntries)
         {
             return CardBuilder
-                .Create(questionEntry.Id, CardFormat.ForeignAudioToForeignText)
+                .Create(questionEntry.Id)
+                .WithCardFormat(CardFormat.ForeignAudioToForeignText)
                 .WithAudioQuestion(questionEntry.ContextFreeAudio.Audio)
                 .AddTextAnswer(questionEntry.Character, true)
                 .AddTextAnswer(wrongAnswerEntries[1].Character, true)
