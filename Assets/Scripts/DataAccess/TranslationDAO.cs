@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DataAccess
 {
-    public class TranslationDAO
+    public class TranslationDAO : ITranslationDAO
     {
         private readonly string path = "Dictionary/Translation";
 

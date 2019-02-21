@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DataAccess
 {
-    public class HighscoreDAO
+    public class HighscoreDAO : IHighscoreDAO
     {
         private readonly string path = "Dictionary/Highscore";
 

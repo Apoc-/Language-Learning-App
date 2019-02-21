@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DataAccess
 {
-    public class CategoryDAO
+    public class CategoryDAO : ICategoryDAO
     {
         private readonly string path = "Dictionary/Category";
 
