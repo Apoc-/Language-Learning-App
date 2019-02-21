@@ -7,16 +7,22 @@ namespace LeitnerSystem
     {
         private Card card; 
         
-        private CardBuilder(string learnItemId, CardFormat cardFormat)
+        private CardBuilder(string learnItemId)
         {
-            card = new Card(learnItemId, cardFormat);
+            card = new Card(learnItemId);
         }
 
-        public static CardBuilder Create(string learnItemId, CardFormat cardFormat)
+        public static CardBuilder Create(string learnItemId)
         {
-            return new CardBuilder(learnItemId, cardFormat);
+            return new CardBuilder(learnItemId);
         }
 
+        public CardBuilder WithCardFormat(CardFormat format)
+        {
+            card.CardFormat = format;
+            return this;
+        }
+        
         public CardBuilder WithTextQuestion(string text)
         {
             card.Question = new TextQuestion(text);
