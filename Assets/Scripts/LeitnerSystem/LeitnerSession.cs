@@ -191,7 +191,6 @@ namespace LeitnerSystem
         
         private void InitializeLearnItemHandler()
         {
-            //todo populate LearnItemHandler
             _learnItemHandler = new LearnItemHandler();
         }
     }
