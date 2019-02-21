@@ -60,11 +60,10 @@ namespace LeitnerSystem
             var boxItems = GetAlphabetLearnItemFromBoxNr(boxNr);
 
             var askedItems = boxItems.Shuffle().Take(amount).ToList();
-            var alphabetItems = _learnItemHandler.AlphabetLearnItems;
             
             askedItems.ForEach(item =>
             {
-                var cleanedList = alphabetItems.Values.ToList();
+                var cleanedList = _learnItemHandler.AlphabetLearnItems.Values.ToList();
                 cleanedList.Remove(item);
                 
                 var wrongAnswers = cleanedList.Shuffle().Take(2).ToList();
@@ -117,11 +116,10 @@ namespace LeitnerSystem
             var boxItems = GetVocabularyLearnItemsFromBoxNr(boxNr);
 
             var askedItems = boxItems.Shuffle().Take(amount).ToList();
-            var vocabularyItems = _learnItemHandler.VocabularyLearnItems;
             
             askedItems.ForEach(item =>
             {
-                var cleanedList = vocabularyItems.Values.ToList();
+                var cleanedList = _learnItemHandler.VocabularyLearnItems.Values.ToList();
                 cleanedList.Remove(item);
                 
                 var wrongAnswers = cleanedList.Shuffle().Take(2).ToList();
@@ -174,11 +172,10 @@ namespace LeitnerSystem
             var boxItems = GetSayingLearnItemsFromBoxNr(boxNr);
 
             var askedItems = boxItems.Shuffle().Take(amount).ToList();
-            var sayingItems = _learnItemHandler.SayingLearnItems;
             
             askedItems.ForEach(item =>
             {
-                var cleanedList = sayingItems.Values.ToList();
+                var cleanedList = _learnItemHandler.SayingLearnItems.Values.ToList();
                 cleanedList.Remove(item);
                 
                 var wrongAnswers = cleanedList.Shuffle().Take(2).ToList();
@@ -225,7 +222,6 @@ namespace LeitnerSystem
         }
 
         #endregion
-        
         
         public void FinishSession()
         {
