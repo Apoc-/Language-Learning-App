@@ -10,7 +10,7 @@ namespace DataAccess
 {
     public class LeitnerBoxDAO : ILeitnerBoxDAO
     {
-        private readonly string path = UnityEngine.Application.persistentDataPath + "leitnerData.json";
+        private readonly string path = Path.Combine(UnityEngine.Application.persistentDataPath, "leitnerData.json");
 
         public Dictionary<string, int> LoadLeitnerboxData()
         {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 
 namespace Model
 {
@@ -7,6 +9,7 @@ namespace Model
     {
         public string Id { get; set; }
 
+        [JsonConverter(typeof(StringEnumConverter))]
         public StreakType Type { get; set; }
 
         public int Duration { get; set; }

@@ -1,6 +1,7 @@
 ﻿using DataAccess;
 using LeitnerSystem;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using UnityEngine;
 
@@ -37,6 +38,7 @@ namespace Model
         /// <summary>
         /// The language the saying is from
         /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
         public ChosenLanguage Language { get; set; }
 
         /// <summary>

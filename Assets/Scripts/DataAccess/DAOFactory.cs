@@ -10,10 +10,17 @@ namespace DataAccess
     {
         public static ILeitnerBoxDAO LeitnerBoxDAO
         {
-            get
-            {
-                return new LeitnerBoxDAO();
-            }
+            get { return new LeitnerBoxDAO(); }
+        }
+
+        public static IUserDAO UserDAO
+        {
+            get { return new UserDAO(); }
+        }
+
+        public static IAlphabetDAO AlphabetDAO
+        {
+            get { return new AlphabetDAO(); }
         }
     }
 }
