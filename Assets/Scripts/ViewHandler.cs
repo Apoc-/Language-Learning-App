@@ -33,8 +33,6 @@ public class ViewHandler : MonoBehaviour
 
     private void SwitchToView(View targetView)
     {
-
-
         if (currentView == targetView) return;
         
         foreach (var view in views)
@@ -170,11 +168,6 @@ public class ViewHandler : MonoBehaviour
             if (view.Title == title) return view;
         }
 
-        throw new ViewNotFoundException();
+        throw new Exception("View " + title + " was not found");
     }
-}
-
-
-internal class ViewNotFoundException : Exception
-{
 }
