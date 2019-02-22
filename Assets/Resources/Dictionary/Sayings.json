@@ -1,0 +1,26 @@
+﻿[
+  {
+    "CategoryId": null,
+    "Id": "grube",
+    "Language": "German",
+    "Text": "Wer anderen eine Grube gräbt, fällt selbst hinein.",
+    "Meaning": "知",
+    "SimilarSaying": "idk",
+    "Audio": {
+      "Path": "grube"
+    },
+    "Bopomofo": "ㄅㄆㄇㄈ"
+  },
+  {
+    "CategoryId": null,
+    "Id": "grube",
+    "Language": "Taiwanese",
+    "Text": "Wer anderen eine Grube gräbt, fällt selbst hinein.",
+    "Meaning": "知",
+    "SimilarSaying": "idk",
+    "Audio": {
+      "Path": "grube"
+    },
+    "Bopomofo": "ㄅㄆㄇㄈ"
+  }
+]

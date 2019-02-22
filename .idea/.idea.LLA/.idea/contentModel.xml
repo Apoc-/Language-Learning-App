@@ -5,11 +5,89 @@
     <e p="C:\Users\ziegl\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_LLA.1922894631.00" t="ExcludeRecursive" />
     <e p="E:\Projects\Taiwan\LLA" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
+        <e p="JsonDotNet" t="Include">
+          <e p="link.xml" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
           <e p="Header.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="CategoryHandler.cs" t="Include" />
+          <e p="CategoryItemOnClickEvent.cs" t="Include" />
+          <e p="DataAccess" t="Include">
+            <e p="AlphabetDAO.cs" t="Include" />
+            <e p="CategoryDAO.cs" t="Include" />
+            <e p="DAOFactory.cs" t="Include" />
+            <e p="DialogueDAO.cs" t="Include" />
+            <e p="HighscoreDAO.cs" t="Include" />
+            <e p="IAlphabetDAO.cs" t="Include" />
+            <e p="ICategoryDAO.cs" t="Include" />
+            <e p="IDialogueDAO.cs" t="Include" />
+            <e p="IHighscoreDAO.cs" t="Include" />
+            <e p="ILeitnerBoxDAO.cs" t="Include" />
+            <e p="ISayingDAO.cs" t="Include" />
+            <e p="ITranslationDAO.cs" t="Include" />
+            <e p="IUserDAO.cs" t="Include" />
+            <e p="IVocabularyDAO.cs" t="Include" />
+            <e p="LeitnerBoxDAO.cs" t="Include" />
+            <e p="SayingDAO.cs" t="Include" />
+            <e p="TranslationDAO.cs" t="Include" />
+            <e p="UserDAO.cs" t="Include" />
+            <e p="VocabularyDAO.cs" t="Include" />
+          </e>
+          <e p="DataProvider" t="Include">
+            <e p="LanguageManager.cs" t="Include" />
+          </e>
+          <e p="DIctionaryLearningCanvas.cs" t="Include" />
+          <e p="Gamification" t="Include">
+            <e p="GamificationManager.cs" t="Include" />
+          </e>
+          <e p="LanguageCanvas.cs" t="Include" />
+          <e p="LeitnerSystem" t="Include">
+            <e p="AlphabetCardFactory.cs" t="Include" />
+            <e p="Answer.cs" t="Include" />
+            <e p="AudioAnswer.cs" t="Include" />
+            <e p="AudioQuestion.cs" t="Include" />
+            <e p="Card.cs" t="Include" />
+            <e p="CardBuilder.cs" t="Include" />
+            <e p="CardFormat.cs" t="Include" />
+            <e p="Helpers.cs" t="Include" />
+            <e p="ImageAnswer.cs" t="Include" />
+            <e p="ImageQuestion.cs" t="Include" />
+            <e p="LearnItemHandler.cs" t="Include" />
+            <e p="LeitnerSession.cs" t="Include" />
+            <e p="Question.cs" t="Include" />
+            <e p="SayingCardFactory.cs" t="Include" />
+            <e p="TextAnswer.cs" t="Include" />
+            <e p="TextQuestion.cs" t="Include" />
+            <e p="VocabCardFactory.cs" t="Include" />
+          </e>
+          <e p="ListCellOnClickEvent.cs" t="Include" />
+          <e p="ListView.cs" t="Include" />
+          <e p="Model" t="Include">
+            <e p="Alphabet.cs" t="Include" />
+            <e p="AlphabetEntry.cs" t="Include" />
+            <e p="AudioData.cs" t="Include" />
+            <e p="Category.cs" t="Include" />
+            <e p="ChosenLanguage.cs" t="Include" />
+            <e p="Dialogue.cs" t="Include" />
+            <e p="DialogueEntry.cs" t="Include" />
+            <e p="HighscoreEntry.cs" t="Include" />
+            <e p="ILearnItem.cs" t="Include" />
+            <e p="ImageData.cs" t="Include" />
+            <e p="MeshData.cs" t="Include" />
+            <e p="Saying.cs" t="Include" />
+            <e p="Streak.cs" t="Include" />
+            <e p="Translation.cs" t="Include" />
+            <e p="Trophy.cs" t="Include" />
+            <e p="User.cs" t="Include" />
+            <e p="Vocabulary.cs" t="Include" />
+          </e>
           <e p="NavigationDrawer.cs" t="Include" />
+          <e p="TestingView.cs" t="Include" />
           <e p="View.cs" t="Include" />
           <e p="ViewHandler.cs" t="Include" />
         </e>
@@ -71,7 +149,9 @@
             </e>
           </e>
           <e p="Scripts" t="Include">
+            <e p="BoundingBoxRenderer.cs" t="Include" />
             <e p="DefaultInitializationErrorHandler.cs" t="Include" />
+            <e p="DefaultModelRecoEventHandler.cs" t="Include" />
             <e p="DefaultTrackableEventHandler.cs" t="Include" />
             <e p="VuforiaScripts.asmdef" t="Include" />
           </e>
