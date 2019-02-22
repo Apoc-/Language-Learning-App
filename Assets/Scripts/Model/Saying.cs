@@ -40,7 +40,7 @@ namespace Model
         /// The language the saying is from
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
-        public ChosenLanguage Language { get; set; }
+        public Language Language { get; set; }
 
         /// <summary>
         /// Saying in the other language

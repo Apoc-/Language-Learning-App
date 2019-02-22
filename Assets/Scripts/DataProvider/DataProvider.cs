@@ -23,13 +23,21 @@ namespace Language
             translationList.ForEach(translation => { _translations[translation.Key] = translation; });
         }
 
-        private string GetTranslationByKey(string key)
+        public Alphabet GetAlphabet()
+        {
+            var lang = GamificationManager.Instance.User.LearningLanguage;
+            return DAOFactory.AlphabetDAO
+                .LoadAlphabet()
+                .Find(alphabet => alphabet.Type == lang);
+        }
+        
+        public string GetTranslationByKey(string key)
         {
             switch (GamificationManager.Instance.User.UiLanguage)
             {
-                case ChosenLanguage.Taiwanese:
+                case Model.Language.Taiwanese:
                     return _translations[key].Taiwanese;
-                case ChosenLanguage.German:
+                case Model.Language.German:
                     return _translations[key].German;
                 default:
                     throw new ArgumentOutOfRangeException();

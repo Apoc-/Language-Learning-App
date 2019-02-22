@@ -39,7 +39,7 @@
             <e p="VocabularyDAO.cs" t="Include" />
           </e>
           <e p="DataProvider" t="Include">
-            <e p="LanguageManager.cs" t="Include" />
+            <e p="DataProvider.cs" t="Include" />
           </e>
           <e p="DIctionaryLearningCanvas.cs" t="Include" />
           <e p="Gamification" t="Include">
@@ -72,12 +72,12 @@
             <e p="AlphabetEntry.cs" t="Include" />
             <e p="AudioData.cs" t="Include" />
             <e p="Category.cs" t="Include" />
-            <e p="ChosenLanguage.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
             <e p="DialogueEntry.cs" t="Include" />
             <e p="HighscoreEntry.cs" t="Include" />
             <e p="ILearnItem.cs" t="Include" />
             <e p="ImageData.cs" t="Include" />
+            <e p="Language.cs" t="Include" />
             <e p="MeshData.cs" t="Include" />
             <e p="Saying.cs" t="Include" />
             <e p="Streak.cs" t="Include" />
