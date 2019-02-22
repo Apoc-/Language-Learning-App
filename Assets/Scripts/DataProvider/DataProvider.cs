@@ -6,11 +6,11 @@ using Model;
 
 namespace Language
 {
-    public class LanguageManager
+    public class DataProvider
     {
         private Dictionary<string, Translation> _translations;
         
-        private LanguageManager()
+        private DataProvider()
         {
             LoadLocalizationData();
         }
@@ -37,13 +37,13 @@ namespace Language
         }
         
         #region Singleton
-        private static LanguageManager _instance;
-        public static LanguageManager Instance
+        private static DataProvider _instance;
+        public static DataProvider Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new LanguageManager();
+                    _instance = new DataProvider();
                 return _instance;
             }
         }
