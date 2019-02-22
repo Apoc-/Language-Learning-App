@@ -12,7 +12,7 @@ namespace Model
         private AudioClip _audio = null;
 
         [JsonIgnore]
-        public AudioClip Image
+        public AudioClip Audio
         {
             get
             {

@@ -33,14 +33,14 @@ namespace Model
             }
         }
 
-        public Dictionary<ChosenLanguage, List<DialogueEntry>> Entries { get; private set; }
+        public Dictionary<Language, List<DialogueEntry>> Entries { get; private set; }
 
         public Dialogue()
         {
-            Entries = new Dictionary<ChosenLanguage, List<DialogueEntry>>
+            Entries = new Dictionary<Language, List<DialogueEntry>>
             {
-                { ChosenLanguage.German, new List<DialogueEntry>() },
-                { ChosenLanguage.Taiwanese, new List<DialogueEntry>() }
+                { Language.German, new List<DialogueEntry>() },
+                { Language.Taiwanese, new List<DialogueEntry>() }
             };
         }
     }

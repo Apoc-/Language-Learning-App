@@ -33,9 +33,9 @@ namespace Model
             }
         }
 
-        public Dictionary<ChosenLanguage, string> Translation { get; set; }
+        public Dictionary<Language, string> Translation { get; set; }
 
-        public Dictionary<ChosenLanguage, AudioData> Audio { get; private set; }
+        public Dictionary<Language, AudioData> Audio { get; private set; }
 
         [JsonProperty("CategoryId")]
         private string _categoryId;
@@ -63,8 +63,8 @@ namespace Model
 
         public Vocabulary()
         {
-            Audio = new Dictionary<ChosenLanguage, AudioData>();
-            Translation = new Dictionary<ChosenLanguage, string>();
+            Audio = new Dictionary<Language, AudioData>();
+            Translation = new Dictionary<Language, string>();
         }
     }
 }

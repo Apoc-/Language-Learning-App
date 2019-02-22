@@ -3,7 +3,7 @@
 namespace Model
 {
     [Serializable]
-    public enum ChosenLanguage
+    public enum Language
     {
         None,
         German,
