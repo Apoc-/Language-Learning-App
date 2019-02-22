@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DataAccess;
 using Gamification;
 using Model;
 
-namespace Language
+namespace DataProvider
 {
     public class DataProvider
     {
@@ -25,10 +26,33 @@ namespace Language
 
         public Alphabet GetAlphabet()
         {
-            var lang = GamificationManager.Instance.User.LearningLanguage;
             return DAOFactory.AlphabetDAO
                 .LoadAlphabet()
-                .Find(alphabet => alphabet.Type == lang);
+                .Find(alphabet => alphabet.Type == GamificationManager.Instance.User.LearningLanguage);
+        }
+
+        public List<Vocabulary> GetVocabularyByCategory(string categoryId)
+        {
+            return DAOFactory.VocabularyDAO
+                .LoadVocabulary()
+                .Where(vocab => vocab.Category.Id == categoryId)
+                .ToList();
+        }
+
+        public List<Saying> GetSayingsByCategory(string categoryId)
+        {
+            return DAOFactory.SayingDAO
+                .LoadSayings()
+                .Where(say => say.Category.Id == categoryId)
+                .ToList();
+        }
+
+        public List<Dialogue> GetDialoguesByCategory(string categoryId)
+        {
+            return DAOFactory.DialogueDAO
+                .LoadDialogues()
+                .Where(dia => dia.Category.Id == categoryId)
+                .ToList();
         }
         
         public string GetTranslationByKey(string key)
