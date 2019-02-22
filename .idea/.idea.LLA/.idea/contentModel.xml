@@ -38,12 +38,12 @@
             <e p="UserDAO.cs" t="Include" />
             <e p="VocabularyDAO.cs" t="Include" />
           </e>
+          <e p="DataProvider" t="Include">
+            <e p="LanguageManager.cs" t="Include" />
+          </e>
           <e p="DIctionaryLearningCanvas.cs" t="Include" />
           <e p="Gamification" t="Include">
             <e p="GamificationManager.cs" t="Include" />
-          </e>
-          <e p="Language" t="Include">
-            <e p="LanguageManager.cs" t="Include" />
           </e>
           <e p="LanguageCanvas.cs" t="Include" />
           <e p="LeitnerSystem" t="Include">
