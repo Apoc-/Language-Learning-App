@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using DataAccess.DataHelpers;
+using Model;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.EventSystems;
+
 public class ViewHandler : MonoBehaviour
 {
     public Header Header;
@@ -12,20 +17,20 @@ public class ViewHandler : MonoBehaviour
 
     private View currentView;
     public View initialView;
-    
+
     public View[] views;
+
     #endregion
 
 
     // Gloable variable to store data
-    static public Dictionary<string, string> ViewMap = new Dictionary<string, string> {
-      {"Class",null}, {"LearnOrDic",null}, {"Category",null},{"List",null}
+    static public Dictionary<string, string> ViewMap = new Dictionary<string, string>
+    {
+        {"Class", null}, {"LearnOrDic", null}, {"Category", null}, {"List", null}
     };
-      
-
+    
     private void Start()
     {
-
         views = GetComponentsInChildren<View>();
         currentView = GetViewByTitle("Category");
         SwitchToView(initialView);
@@ -33,10 +38,8 @@ public class ViewHandler : MonoBehaviour
 
     private void SwitchToView(View targetView)
     {
-
-
         if (currentView == targetView) return;
-        
+
         foreach (var view in views)
         {
             if (view == targetView)
@@ -49,6 +52,7 @@ public class ViewHandler : MonoBehaviour
                 view.gameObject.SetActive(false);
             }
         }
+
         currentView = targetView;
     }
 
@@ -56,13 +60,11 @@ public class ViewHandler : MonoBehaviour
     {
         SwitchToView(GetViewByTitle("About"));
     }
-    
+
     public void StartButtonPressed()
     {
         SwitchToView(GetViewByTitle("Start"));
     }
-
-
 
 
     public void LanguageSelect()
@@ -81,7 +83,6 @@ public class ViewHandler : MonoBehaviour
                 Debug.Log("Language button select Error");
                 break;
         }
-
     }
 
 
@@ -113,9 +114,7 @@ public class ViewHandler : MonoBehaviour
             default:
                 Debug.Log("Class button select Error");
                 break;
-
         }
-
     }
 
     public void DictionaryOrLearningOptions()
@@ -139,17 +138,14 @@ public class ViewHandler : MonoBehaviour
             default:
                 Debug.Log("Dictionary or Learning button select Error");
                 break;
-
         }
-
     }
 
     public void CategorySelect()
-    {         
+    {
         var selected = EventSystem.current.currentSelectedGameObject.name;
         switch (selected)
         {
-
             case "ReturnButton":
                 ViewMap["Category"] = null;
                 SwitchToView(GetViewByTitle("Dictionary or Learning"));
@@ -158,13 +154,11 @@ public class ViewHandler : MonoBehaviour
             default:
                 Debug.Log("Dictionary or Learning button select Error");
                 break;
-
         }
-
     }
+
     private View GetViewByTitle(String title)
     {
-
         foreach (var view in views)
         {
             if (view.Title == title) return view;

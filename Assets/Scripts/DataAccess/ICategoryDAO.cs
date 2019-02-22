@@ -5,6 +5,6 @@ namespace DataAccess
 {
     public interface ICategoryDAO
     {
-        List<Category> LoadDialogues();
+        List<Category> LoadCategories();
     }
 }

@@ -1,22 +1,2000 @@
 ﻿[
+    {
+      "CategoryId": "animals",
+      "Id": "mouse",
+      "Translation": {
+        "German": "Maus",
+        "Taiwanese": "老鼠"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/mouse_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/mouse_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/mouse"
+      },
+      "Bopomofo": "ㄌㄠˇ ㄕㄨˇ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "cow",
+      "Translation": {
+        "German": "Kuh",
+        "Taiwanese": "牛"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/cow_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/cow_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/cow"
+      },
+      "Bopomofo": "ㄋㄧㄡˊ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "pig",
+      "Translation": {
+        "German": "Schwein",
+        "Taiwanese": "豬"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/pig_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/pig_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/pig"
+      },
+      "Bopomofo": "ㄓㄨ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "rooster",
+      "Translation": {
+        "German": "Hahn",
+        "Taiwanese": "公雞"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/rooster_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/rooster_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/rooster"
+      },
+      "Bopomofo": "ㄍㄨㄥ ㄐㄧ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "monkey",
+      "Translation": {
+        "German": "Affe",
+        "Taiwanese": "猴"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/monkey_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/monkey_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/monkey"
+      },
+      "Bopomofo": "子ㄏㄡˊㄗ˙"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "dog",
+      "Translation": {
+        "German": "Hund",
+        "Taiwanese": "狗"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/dog_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/dog_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/dog"
+      },
+      "Bopomofo": "ㄍㄡˇ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "rabbit",
+      "Translation": {
+        "German": "Hase",
+        "Taiwanese": "兔"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/rabbit_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/rabbit_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/rabbit"
+      },
+      "Bopomofo": "子ㄊㄨˋ ㄗ˙"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "snake",
+      "Translation": {
+        "German": "Schlange",
+        "Taiwanese": "蛇"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/snake_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/snake_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/snake"
+      },
+      "Bopomofo": "ㄕㄜˊ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "tiger",
+      "Translation": {
+        "German": "Tiger",
+        "Taiwanese": "虎"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/tiger_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/tiger_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/tiger"
+      },
+      "Bopomofo": "ㄏㄨˇ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "horse",
+      "Translation": {
+        "German": "Pferd",
+        "Taiwanese": "馬"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/horse_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/horse_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/horse"
+      },
+      "Bopomofo": "ㄇㄚˇ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "sheep",
+      "Translation": {
+        "German": "Schaf",
+        "Taiwanese": "羊"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/sheep_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/sheep_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/sheep"
+      },
+      "Bopomofo": "ㄧㄤˊ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "bull",
+      "Translation": {
+        "German": "Stier",
+        "Taiwanese": "公牛"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/bull_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/bull_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/bull"
+      },
+      "Bopomofo": "ㄍㄨㄥ ㄋㄧㄡˊ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "zebra",
+      "Translation": {
+        "German": "Zebra",
+        "Taiwanese": "斑馬"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/zebra_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/zebra_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/zebra"
+      },
+      "Bopomofo": "ㄅㄢ ㄇㄚˇ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "rhino",
+      "Translation": {
+        "German": "Nashorn",
+        "Taiwanese": "犀牛"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/rhino_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/rhino_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/rhino"
+      },
+      "Bopomofo": "ㄒㄧ ㄋㄧㄡˊ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "kangoroo",
+      "Translation": {
+        "German": "Känguru",
+        "Taiwanese": "袋鼠"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/kangoroo_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/kangoroo_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/kangoroo"
+      },
+      "Bopomofo": "ㄉㄞˋㄕㄨˇ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "aligator",
+      "Translation": {
+        "German": "Aligator",
+        "Taiwanese": "鱷魚"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/aligator_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/aligator_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/aligator"
+      },
+      "Bopomofo": "ㄜˋ ㄩˊ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "dolpin",
+      "Translation": {
+        "German": "Delphin",
+        "Taiwanese": "海豚"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/dolpin_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/dolpin_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/dolpin"
+      },
+      "Bopomofo": "ㄏㄞˇ ㄊㄨㄣˊ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "giraffe",
+      "Translation": {
+        "German": "Giraffe",
+        "Taiwanese": "長頸鹿"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/giraffe_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/giraffe_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/giraffe"
+      },
+      "Bopomofo": "ㄔㄤˊ ㄐㄧㄥˇ ㄌㄨˋ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "elephant",
+      "Translation": {
+        "German": "Elefant",
+        "Taiwanese": "大象"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/elephant_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/elephant_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/elephant"
+      },
+      "Bopomofo": "ㄉㄚˋ ㄒㄧㄤˋ"
+    },
+    {
+      "CategoryId": "animals",
+      "Id": "bird",
+      "Translation": {
+        "German": "Vogel",
+        "Taiwanese": "鳥"
+      },
+      "Audio": {
+        "German": {
+          "Path": "Audio/bird_de"
+        },
+        "Taiwanese": {
+          "Path": "Audio/bird_tw"
+        }
+      },
+      "Image": {
+        "Path": "Images/bird"
+      },
+      "Bopomofo": "ㄋㄧㄠˇ"
+  },
   {
-    "CategoryId": null,
-    "Id": "Tree",
+    "CategoryId": "traffic",
+    "Id": "bus",
     "Translation": {
-      "German": "Baum",
-      "Taiwanese": "木"
+      "German": "Bus",
+      "Taiwanese": "巴士"
     },
     "Audio": {
       "German": {
-        "Path": "Audio/Baum"
+        "Path": "Audio/bus_de"
       },
       "Taiwanese": {
-        "Path": "Audio/Baum"
+        "Path": "Audio/bus_tw"
       }
     },
     "Image": {
-      "Path": "Img/Tree"
+      "Path": "Images/bus"
     },
-    "Bopomofo": "ㄅㄆㄇㄈ"
-  }
+    "Bopomofo": "ㄅㄚ ㄕˋ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "train",
+    "Translation": {
+      "German": "Zug",
+      "Taiwanese": "火車"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/train_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/train_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/train"
+    },
+    "Bopomofo": "ㄏㄨㄛˇ ㄔㄜ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "metro",
+    "Translation": {
+      "German": "Metro",
+      "Taiwanese": "地鐵"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/metro_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/metro_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/metro"
+    },
+    "Bopomofo": "ㄉㄧˋ ㄊㄧㄝˇ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "car",
+    "Translation": {
+      "German": "Auto",
+      "Taiwanese": "汽車"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/car_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/car_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/car"
+    },
+    "Bopomofo": "ㄑㄧˋ ㄔㄜ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "scooter",
+    "Translation": {
+      "German": "Roller",
+      "Taiwanese": "摩托車"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/scooter_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/scooter_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/scooter"
+    },
+    "Bopomofo": "ㄇㄛˊ ㄊㄨㄛ ㄔㄜ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "motorcycle",
+    "Translation": {
+      "German": "Motorrad",
+      "Taiwanese": "重型機車"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/motorcycle_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/motorcycle_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/motorcycle"
+    },
+    "Bopomofo": "ㄓㄨㄥˋ ㄒㄧㄥˊ ㄐㄧ ㄔㄜ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "bike",
+    "Translation": {
+      "German": "Fahrrad",
+      "Taiwanese": "腳踏車"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/bike_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/bike_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/bike"
+    },
+    "Bopomofo": "ㄐㄧㄠˇ ㄊㄚˋ ㄔㄜ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "ship",
+    "Translation": {
+      "German": "Schiff",
+      "Taiwanese": "船"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/ship_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/ship_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/ship"
+    },
+    "Bopomofo": "ㄔㄨㄢˊ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "ambulance",
+    "Translation": {
+      "German": "Krankenwagen",
+      "Taiwanese": "救護車"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/ambulance_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/ambulance_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/ambulance"
+    },
+    "Bopomofo": "ㄐㄧㄡˋ ㄏㄨˋ ㄔㄜ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "airplane",
+    "Translation": {
+      "German": "Flugzeug",
+      "Taiwanese": "飛機"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/airplane_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/airplane_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/airplane"
+    },
+    "Bopomofo": "ㄈㄟ ㄐㄧ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "street",
+    "Translation": {
+      "German": "Strasse",
+      "Taiwanese": "街道"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/street_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/street_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/street"
+    },
+    "Bopomofo": "ㄧㄝ ㄉㄠˋ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "highway",
+    "Translation": {
+      "German": "Autobahn",
+      "Taiwanese": "高速公路"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/highway_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/highway_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/highway"
+    },
+    "Bopomofo": "ㄍㄠ  ㄙㄨˋ ㄍㄨㄥ ㄌㄨˋ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "traffic sign",
+    "Translation": {
+      "German": "Verkehrsschild",
+      "Taiwanese": "交通號誌"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/traffic sign_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/traffic sign_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/traffic sign"
+    },
+    "Bopomofo": "ㄐㄧㄠ ㄊㄨㄥ ㄏㄠˋ ㄓˋ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "traffic light",
+    "Translation": {
+      "German": "Ampel",
+      "Taiwanese": "紅綠燈"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/traffic light_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/traffic light_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/traffic light"
+    },
+    "Bopomofo": "ㄏㄨㄥˊ ㄌㄩˋ  ㄉㄥ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "hot air balloon",
+    "Translation": {
+      "German": "Heißluftballon",
+      "Taiwanese": "熱氣球"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/hot air balloon_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/hot air balloon_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/hot air balloon"
+    },
+    "Bopomofo": "ㄖㄜˋ ㄑㄧˋ ㄑㄧㄡˊ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "street sign",
+    "Translation": {
+      "German": "Straßenschild",
+      "Taiwanese": "路標"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/street sign_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/street sign_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/street sign"
+    },
+    "Bopomofo": "ㄌㄨˋ ㄅㄧㄠ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "truck",
+    "Translation": {
+      "German": "Lastkraftwagen",
+      "Taiwanese": "卡車"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/truck_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/truck_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/truck"
+    },
+    "Bopomofo": "ㄎㄚˇ ㄔㄜ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "helmet",
+    "Translation": {
+      "German": "Helm",
+      "Taiwanese": "安全帽"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/helmet_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/helmet_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/helmet"
+    },
+    "Bopomofo": "ㄢ ㄑㄩㄢˊ ㄇㄠˋ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "seatbelt",
+    "Translation": {
+      "German": "Gurt",
+      "Taiwanese": "安全帶"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/seatbelt_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/seatbelt_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/seatbelt"
+    },
+    "Bopomofo": "ㄢㄑㄩㄢˊ ㄉㄞˋ"
+  },
+  {
+    "CategoryId": "traffic",
+    "Id": "horn",
+    "Translation": {
+      "German": "Hupe",
+      "Taiwanese": "喇叭"
+    },
+    "Audio": {
+      "German": {
+        "Path": "Audio/horn_de"
+      },
+      "Taiwanese": {
+        "Path": "Audio/horn_tw"
+      }
+    },
+    "Image": {
+      "Path": "Images/horn"
+    },
+    "Bopomofo": "ㄌㄚˇ ㄅㄚ"
+},{
+  "CategoryId": "traffic",
+  "Id": "bus",
+  "Translation": {
+    "German": "Bus",
+    "Taiwanese": "巴士"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/bus_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/bus_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/bus"
+  },
+  "Bopomofo": "ㄅㄚ ㄕˋ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "train",
+  "Translation": {
+    "German": "Zug",
+    "Taiwanese": "火車"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/train_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/train_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/train"
+  },
+  "Bopomofo": "ㄏㄨㄛˇ ㄔㄜ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "metro",
+  "Translation": {
+    "German": "Metro",
+    "Taiwanese": "地鐵"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/metro_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/metro_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/metro"
+  },
+  "Bopomofo": "ㄉㄧˋ ㄊㄧㄝˇ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "car",
+  "Translation": {
+    "German": "Auto",
+    "Taiwanese": "汽車"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/car_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/car_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/car"
+  },
+  "Bopomofo": "ㄑㄧˋ ㄔㄜ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "scooter",
+  "Translation": {
+    "German": "Roller",
+    "Taiwanese": "摩托車"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/scooter_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/scooter_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/scooter"
+  },
+  "Bopomofo": "ㄇㄛˊ ㄊㄨㄛ ㄔㄜ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "motorcycle",
+  "Translation": {
+    "German": "Motorrad",
+    "Taiwanese": "重型機車"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/motorcycle_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/motorcycle_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/motorcycle"
+  },
+  "Bopomofo": "ㄓㄨㄥˋ ㄒㄧㄥˊ ㄐㄧ ㄔㄜ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "bike",
+  "Translation": {
+    "German": "Fahrrad",
+    "Taiwanese": "腳踏車"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/bike_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/bike_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/bike"
+  },
+  "Bopomofo": "ㄐㄧㄠˇ ㄊㄚˋ ㄔㄜ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "ship",
+  "Translation": {
+    "German": "Schiff",
+    "Taiwanese": "船"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/ship_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/ship_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/ship"
+  },
+  "Bopomofo": "ㄔㄨㄢˊ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "ambulance",
+  "Translation": {
+    "German": "Krankenwagen",
+    "Taiwanese": "救護車"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/ambulance_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/ambulance_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/ambulance"
+  },
+  "Bopomofo": "ㄐㄧㄡˋ ㄏㄨˋ ㄔㄜ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "airplane",
+  "Translation": {
+    "German": "Flugzeug",
+    "Taiwanese": "飛機"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/airplane_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/airplane_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/airplane"
+  },
+  "Bopomofo": "ㄈㄟ ㄐㄧ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "street",
+  "Translation": {
+    "German": "Strasse",
+    "Taiwanese": "街道"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/street_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/street_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/street"
+  },
+  "Bopomofo": "ㄧㄝ ㄉㄠˋ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "highway",
+  "Translation": {
+    "German": "Autobahn",
+    "Taiwanese": "高速公路"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/highway_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/highway_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/highway"
+  },
+  "Bopomofo": "ㄍㄠ  ㄙㄨˋ ㄍㄨㄥ ㄌㄨˋ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "traffic sign",
+  "Translation": {
+    "German": "Verkehrsschild",
+    "Taiwanese": "交通號誌"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/traffic sign_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/traffic sign_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/traffic sign"
+  },
+  "Bopomofo": "ㄐㄧㄠ ㄊㄨㄥ ㄏㄠˋ ㄓˋ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "traffic light",
+  "Translation": {
+    "German": "Ampel",
+    "Taiwanese": "紅綠燈"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/traffic light_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/traffic light_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/traffic light"
+  },
+  "Bopomofo": "ㄏㄨㄥˊ ㄌㄩˋ  ㄉㄥ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "hot air balloon",
+  "Translation": {
+    "German": "Heißluftballon",
+    "Taiwanese": "熱氣球"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/hot air balloon_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/hot air balloon_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/hot air balloon"
+  },
+  "Bopomofo": "ㄖㄜˋ ㄑㄧˋ ㄑㄧㄡˊ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "street sign",
+  "Translation": {
+    "German": "Straßenschild",
+    "Taiwanese": "路標"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/street sign_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/street sign_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/street sign"
+  },
+  "Bopomofo": "ㄌㄨˋ ㄅㄧㄠ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "truck",
+  "Translation": {
+    "German": "Lastkraftwagen",
+    "Taiwanese": "卡車"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/truck_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/truck_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/truck"
+  },
+  "Bopomofo": "ㄎㄚˇ ㄔㄜ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "helmet",
+  "Translation": {
+    "German": "Helm",
+    "Taiwanese": "安全帽"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/helmet_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/helmet_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/helmet"
+  },
+  "Bopomofo": "ㄢ ㄑㄩㄢˊ ㄇㄠˋ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "seatbelt",
+  "Translation": {
+    "German": "Gurt",
+    "Taiwanese": "安全帶"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/seatbelt_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/seatbelt_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/seatbelt"
+  },
+  "Bopomofo": "ㄢㄑㄩㄢˊ ㄉㄞˋ"
+},
+{
+  "CategoryId": "traffic",
+  "Id": "horn",
+  "Translation": {
+    "German": "Hupe",
+    "Taiwanese": "喇叭"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/horn_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/horn_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/horn"
+  },
+  "Bopomofo": "ㄌㄚˇ ㄅㄚ"
+},
+{
+  "CategoryId": "food",
+  "Id": "rice",
+  "Translation": {
+    "German": "Reis",
+    "Taiwanese": "米"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/rice_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/rice_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/rice"
+  },
+  "Bopomofo": "ㄇㄧˇ"
+},
+{
+  "CategoryId": "food",
+  "Id": "noodles",
+  "Translation": {
+    "German": "Nudeln",
+    "Taiwanese": "面"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/noodles_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/noodles_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/noodles"
+  },
+  "Bopomofo": "ㄇㄧㄢˋ"
+},
+{
+  "CategoryId": "food",
+  "Id": "steak",
+  "Translation": {
+    "German": "Steak",
+    "Taiwanese": "牛排"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/steak_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/steak_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/steak"
+  },
+  "Bopomofo": "ㄋㄧㄡˊ ㄆㄞˊ"
+},
+{
+  "CategoryId": "food",
+  "Id": "meat",
+  "Translation": {
+    "German": "Fleisch",
+    "Taiwanese": "肉"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/meat_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/meat_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/meat"
+  },
+  "Bopomofo": "ㄖㄡˋ"
+},
+{
+  "CategoryId": "food",
+  "Id": "chicken",
+  "Translation": {
+    "German": "Hühnchen",
+    "Taiwanese": "雞肉"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/chicken_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/chicken_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/chicken"
+  },
+  "Bopomofo": "ㄐㄧ ㄖㄡˋ"
+},
+{
+  "CategoryId": "food",
+  "Id": "vegetables",
+  "Translation": {
+    "German": "Gemüse",
+    "Taiwanese": "蔬菜"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/vegetables_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/vegetables_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/vegetables"
+  },
+  "Bopomofo": "ㄕㄨ ㄘㄞˋ"
+},
+{
+  "CategoryId": "food",
+  "Id": "pork",
+  "Translation": {
+    "German": "Schweinefleisch",
+    "Taiwanese": "豬肉"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/pork_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/pork_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/pork"
+  },
+  "Bopomofo": "ㄓㄨ  ㄖㄡˋ"
+},
+{
+  "CategoryId": "food",
+  "Id": "dessert",
+  "Translation": {
+    "German": "Nachtisch",
+    "Taiwanese": "甜點"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/dessert_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/dessert_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/dessert"
+  },
+  "Bopomofo": "ㄊㄧㄢˊ ㄉㄧㄢˇ"
+},
+{
+  "CategoryId": "food",
+  "Id": "tea",
+  "Translation": {
+    "German": "Tee",
+    "Taiwanese": "茶"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/tea_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/tea_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/tea"
+  },
+  "Bopomofo": "ㄔㄚˊ"
+},
+{
+  "CategoryId": "food",
+  "Id": "coffee",
+  "Translation": {
+    "German": "Kaffee",
+    "Taiwanese": "咖啡"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/coffee_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/coffee_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/coffee"
+  },
+  "Bopomofo": "ㄎㄚ ㄈㄟ"
+},
+{
+  "CategoryId": "food",
+  "Id": "apple",
+  "Translation": {
+    "German": "Apfel",
+    "Taiwanese": "蘋果"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/apple_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/apple_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/apple"
+  },
+  "Bopomofo": "ㄆㄧㄥˊ ㄍㄨㄛˇ"
+},
+{
+  "CategoryId": "food",
+  "Id": "banana",
+  "Translation": {
+    "German": "Banane",
+    "Taiwanese": "香蕉"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/banana_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/banana_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/banana"
+  },
+  "Bopomofo": "ㄒㄧㄤ ㄐㄧㄠ"
+},
+{
+  "CategoryId": "food",
+  "Id": "fruit",
+  "Translation": {
+    "German": "Früchte",
+    "Taiwanese": "水果"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/fruit_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/fruit_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/fruit"
+  },
+  "Bopomofo": "ㄕㄨㄟˊ ㄍㄨㄛˇ"
+},
+{
+  "CategoryId": "food",
+  "Id": "cheese",
+  "Translation": {
+    "German": "Käse",
+    "Taiwanese": "起司"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/cheese_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/cheese_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/cheese"
+  },
+  "Bopomofo": "ㄑㄧˇ ㄙ"
+},
+{
+  "CategoryId": "food",
+  "Id": "bread",
+  "Translation": {
+    "German": "Brot",
+    "Taiwanese": "麵包"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/bread_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/bread_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/bread"
+  },
+  "Bopomofo": "ㄇㄧㄢˋ ㄅㄠ"
+},
+{
+  "CategoryId": "food",
+  "Id": "milk",
+  "Translation": {
+    "German": "Milch",
+    "Taiwanese": "牛奶"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/milk_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/milk_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/milk"
+  },
+  "Bopomofo": "ㄋㄧㄡˊ ㄋㄞˇ"
+},
+{
+  "CategoryId": "food",
+  "Id": "cake",
+  "Translation": {
+    "German": "Kuchen",
+    "Taiwanese": "蛋糕"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/cake_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/cake_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/cake"
+  },
+  "Bopomofo": "ㄉㄢˋ ㄍㄠ"
+},
+{
+  "CategoryId": "food",
+  "Id": "beer",
+  "Translation": {
+    "German": "Bier",
+    "Taiwanese": "啤酒"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/beer_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/beer_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/beer"
+  },
+  "Bopomofo": "ㄆㄧˊ ㄐㄧㄡˇ"
+},
+{
+  "CategoryId": "food",
+  "Id": "fried rice",
+  "Translation": {
+    "German": "gebratener Reis",
+    "Taiwanese": "炒飯"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/fried rice_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/fried rice_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/fried rice"
+  },
+  "Bopomofo": "ㄔㄠˇ ㄈㄢˋ"
+},
+{
+  "CategoryId": "food",
+  "Id": "hotpot",
+  "Translation": {
+    "German": "Eintopf",
+    "Taiwanese": "火鍋"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/hotpot_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/hotpot_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/hotpot"
+  },
+  "Bopomofo": "ㄏㄨㄛˇ ㄍㄨㄛ"
+},{
+  "CategoryId": "locations",
+  "Id": "hospital",
+  "Translation": {
+    "German": "Krankenhaus",
+    "Taiwanese": "醫院"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/hospital_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/hospital_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/hospital"
+  },
+  "Bopomofo": "ㄧ  ㄩㄢˋ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "school",
+  "Translation": {
+    "German": "Schule",
+    "Taiwanese": "學校"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/school_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/school_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/school"
+  },
+  "Bopomofo": "ㄒㄩㄝˊ ㄒㄧㄠˋ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "university",
+  "Translation": {
+    "German": "Universiät",
+    "Taiwanese": "大學"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/university_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/university_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/university"
+  },
+  "Bopomofo": "ㄉㄚˋ ㄒㄩㄝˊ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "train station",
+  "Translation": {
+    "German": "Bahnhof",
+    "Taiwanese": "火車站"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/train station_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/train station_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/train station"
+  },
+  "Bopomofo": "ㄏㄨㄛˇ ㄔㄜ ㄓㄢˋ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "police station",
+  "Translation": {
+    "German": "Polizeistation",
+    "Taiwanese": "警察局"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/police station_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/police station_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/police station"
+  },
+  "Bopomofo": "ㄐㄧㄥˇ ㄔㄚˊ ㄐㄩˊ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "airport",
+  "Translation": {
+    "German": "Flughafen",
+    "Taiwanese": "機場"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/airport_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/airport_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/airport"
+  },
+  "Bopomofo": "ㄐㄧ ㄔㄤˇ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "harbor",
+  "Translation": {
+    "German": "Hafen",
+    "Taiwanese": "港口"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/harbor_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/harbor_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/harbor"
+  },
+  "Bopomofo": "ㄍㄤˇ  ㄎㄡˇ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "park",
+  "Translation": {
+    "German": "Park",
+    "Taiwanese": "公園"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/park_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/park_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/park"
+  },
+  "Bopomofo": "ㄍㄨㄥ  ㄩㄢˊ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "library",
+  "Translation": {
+    "German": "Bücherei",
+    "Taiwanese": "圖書館"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/library_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/library_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/library"
+  },
+  "Bopomofo": "ㄊㄨˊ ㄕㄨ ㄍㄨㄢˇ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "restaurant",
+  "Translation": {
+    "German": "Restaurant",
+    "Taiwanese": "餐廳"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/restaurant_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/restaurant_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/restaurant"
+  },
+  "Bopomofo": "ㄘㄢ ㄊㄧㄥ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "hotel",
+  "Translation": {
+    "German": "Hotel",
+    "Taiwanese": "飯店"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/hotel_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/hotel_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/hotel"
+  },
+  "Bopomofo": "ㄈㄢˋ ㄉㄧㄢˋ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "cinema",
+  "Translation": {
+    "German": "Kino",
+    "Taiwanese": "電影院"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/cinema_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/cinema_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/cinema"
+  },
+  "Bopomofo": "ㄉㄧㄢˋ ㄧㄥˇ   ㄩㄢˋ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "house",
+  "Translation": {
+    "German": "Haus",
+    "Taiwanese": "家"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/house_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/house_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/house"
+  },
+  "Bopomofo": "ㄐㄧㄚ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "zoo",
+  "Translation": {
+    "German": "Zoo",
+    "Taiwanese": "動物園"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/zoo_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/zoo_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/zoo"
+  },
+  "Bopomofo": "ㄉㄨㄥˋ ㄨˋ ㄩㄢˊ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "theater",
+  "Translation": {
+    "German": "Theater",
+    "Taiwanese": "劇院"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/theater_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/theater_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/theater"
+  },
+  "Bopomofo": "ㄐㄧˋ  ㄩㄢˋ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "museum",
+  "Translation": {
+    "German": "Museum",
+    "Taiwanese": "博物館"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/museum_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/museum_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/museum"
+  },
+  "Bopomofo": "ㄅㄛˊ ㄨ ˋ ㄍㄨㄢˇ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "amusement park",
+  "Translation": {
+    "German": "Vergnügungspark",
+    "Taiwanese": "遊樂園"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/amusement park_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/amusement park_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/amusement park"
+  },
+  "Bopomofo": "ㄧㄡˊ ㄌㄜˋ ㄩㄢˊ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "department store",
+  "Translation": {
+    "German": "Kaufhaus",
+    "Taiwanese": "百貨公司"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/department store_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/department store_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/department store"
+  },
+  "Bopomofo": "ㄅㄞˇ ㄏㄨㄛˋ ㄍㄨㄥ  ㄙ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "swimming pool",
+  "Translation": {
+    "German": "Schwimmbad",
+    "Taiwanese": "游泳池"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/swimming pool_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/swimming pool_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/swimming pool"
+  },
+  "Bopomofo": "ㄧㄡˊ ㄩㄥˇ ㄔˊ"
+},
+{
+  "CategoryId": "locations",
+  "Id": "skyscraper",
+  "Translation": {
+    "German": "Wolkenkratzer",
+    "Taiwanese": "摩天大樓"
+  },
+  "Audio": {
+    "German": {
+      "Path": "Audio/skyscraper_de"
+    },
+    "Taiwanese": {
+      "Path": "Audio/skyscraper_tw"
+    }
+  },
+  "Image": {
+    "Path": "Images/skyscraper"
+  },
+  "Bopomofo": "ㄇㄛˊ ㄊㄧㄢ  ㄉㄚˋ ㄌㄡˊ"
+}
 ]

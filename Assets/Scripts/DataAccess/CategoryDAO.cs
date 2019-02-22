@@ -9,7 +9,7 @@ namespace DataAccess
     {
         private readonly string path = "Dictionary/Category";
 
-        public List<Category> LoadDialogues()
+        public List<Category> LoadCategories()
         {
             var asset = Resources.Load<TextAsset>(path);
             if (asset == null) throw new System.Exception("Asset Resources/" + path + " not found");
