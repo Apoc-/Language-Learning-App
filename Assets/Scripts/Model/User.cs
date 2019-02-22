@@ -18,7 +18,10 @@ namespace Model
         public int Level { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public ChosenLanguage ChosenLanguage { get; set; }
+        public ChosenLanguage LearningLanguage { get; set; }
+        
+        [JsonConverter(typeof(StringEnumConverter))]
+        public ChosenLanguage UiLanguage { get; set; }
 
         public List<Streak> Streaks { get; set; }
 

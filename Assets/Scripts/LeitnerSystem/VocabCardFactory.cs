@@ -55,35 +55,35 @@ namespace LeitnerSystem
 
         private static AudioClip GetForeignAudio(Vocabulary vocab)
         {
-            var lang = GamificationManager.Instance.User.ChosenLanguage;
+            var lang = GamificationManager.Instance.User.LearningLanguage;
 
             return vocab.Audio[lang].Audio;
         }
 
         private static string GetForeignTranslation(Vocabulary vocab)
         {
-            var lang = GamificationManager.Instance.User.ChosenLanguage;
+            var lang = GamificationManager.Instance.User.LearningLanguage;
 
             return vocab.Translation[lang];
         }
 
         private static string GetLocalTranslation(Vocabulary vocab)
         {
-            var lang = GamificationManager.Instance.User.ChosenLanguage;
+            var lang = GamificationManager.Instance.User.LearningLanguage;
 
             return vocab.Translation[vocab.Translation.Keys.ToList().First(k => k != lang)];
         }
 
         private static List<string> GetLocalTranslations(List<Vocabulary> vocabs)
         {
-            var lang = GamificationManager.Instance.User.ChosenLanguage;
+            var lang = GamificationManager.Instance.User.LearningLanguage;
 
             return vocabs.Select(item => item.Translation[lang]).ToList();
         }
 
         private static List<string> GetForeignTranslations(List<Vocabulary> vocabs)
         {
-            var lang = GamificationManager.Instance.User.ChosenLanguage;
+            var lang = GamificationManager.Instance.User.LearningLanguage;
 
             return vocabs.Select(item => item.Translation[lang]).ToList();
         }
@@ -100,14 +100,14 @@ namespace LeitnerSystem
 
         private static List<AudioClip> GetForeignAudios(List<Vocabulary> vocabs)
         {
-            var lang = GamificationManager.Instance.User.ChosenLanguage;
+            var lang = GamificationManager.Instance.User.LearningLanguage;
 
             return vocabs.Select(item => item.Audio[lang].Audio).ToList();
         }
         
         private static List<AudioClip> GetLocalAudios(List<Vocabulary> vocabs)
         {
-            var lang = GamificationManager.Instance.User.ChosenLanguage;
+            var lang = GamificationManager.Instance.User.LearningLanguage;
 
             return vocabs.Select(item => item.Audio[lang].Audio).ToList();
         }
