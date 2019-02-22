@@ -11,7 +11,7 @@ namespace Model
         public string Id { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public ChosenLanguage Type { get; set; }
+        public Language Type { get; set; }
 
         public List<AlphabetEntry> Entries { get; set; }
 
