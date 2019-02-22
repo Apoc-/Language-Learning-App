@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CategoryHandler : MonoBehaviour
 {
-    public GameObject Row_Prefab;
+    public GameObject CategoryItemPrefab;
     public List<CategoryItem> CategoryData = new List<CategoryItem>();
    
     private void OnEnable()
@@ -24,7 +24,7 @@ public class CategoryHandler : MonoBehaviour
 
 
             GameObject table = GameObject.Find("CategoryCanvas/Category/GridElements");
-            GameObject row = GameObject.Instantiate(Row_Prefab, table.transform.position, table.transform.rotation) as GameObject;
+            GameObject row = GameObject.Instantiate(CategoryItemPrefab, table.transform.position, table.transform.rotation) as GameObject;
             row.name = item.Title;
             row.transform.SetParent(table.transform);
 
