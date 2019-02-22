@@ -32,9 +32,22 @@ namespace LeitnerSystem
         {
             var boxSizes = BoxSizes(amount);
 
-            var boxOneCards = GetAlphabetCardsFromBoxNr(0, boxSizes[0]);
-            var boxTwoCards = GetAlphabetCardsFromBoxNr(1, boxSizes[1]);
+            //this algorithm tries to take as many cards as possible from box 3
+            //if box 3 doesnt have enough cards it takes the difference from box 2
+            //if box 2 doesnt have enouhg cards it takes the difference from box 1
+            //all then missing cards are filled by cards which are not yet in a box
+            //if there are not enough cards not yet in a box, the algorith draws new amount from box 2 and 3
             var boxThreeCards = GetAlphabetCardsFromBoxNr(2, boxSizes[2]);
+            int boxThreeDiff = boxSizes[2] - boxThreeCards.Count;
+
+            boxSizes[1] += boxThreeDiff;
+            
+            var boxTwoCards = GetAlphabetCardsFromBoxNr(1, boxSizes[1]);
+            int boxTwoDiff = boxSizes[1] - boxTwoCards.Count;
+
+            boxSizes[0] += boxTwoDiff;
+
+            var boxOneCards = GetAlphabetCardsFromBoxNr(0, boxSizes[0]);
             
             _cards = boxOneCards.Union(boxTwoCards).Union(boxThreeCards).ToList();
 
@@ -46,7 +59,12 @@ namespace LeitnerSystem
                 _learnItemHandler.GetLearnItemById(card.LearnItemId).CurrentLeitnerBoxNr = 0;
             });
 
-            return _cards;
+            if (_cards.Count >= amount) return _cards;
+
+            var newBoxTwoCards = GetAlphabetCardsFromBoxNr(1, amount);
+            var newBoxThreeCards = GetAlphabetCardsFromBoxNr(2, amount - newBoxTwoCards.Count);
+
+            return newBoxThreeCards.Union(newBoxTwoCards).ToList();
         }
 
         private List<Card> GetAlphabetCardsWithoutBox(int amount)
@@ -88,9 +106,17 @@ namespace LeitnerSystem
         {
             var boxSizes = BoxSizes(amount);
 
-            var boxOneCards = GetVocabCardsFromBoxNr(0, boxSizes[0]);
-            var boxTwoCards = GetVocabCardsFromBoxNr(1, boxSizes[1]);
             var boxThreeCards = GetVocabCardsFromBoxNr(2, boxSizes[2]);
+            int boxThreeDiff = boxSizes[2] - boxThreeCards.Count;
+
+            boxSizes[1] += boxThreeDiff;
+            
+            var boxTwoCards = GetVocabCardsFromBoxNr(1, boxSizes[1]);
+            int boxTwoDiff = boxSizes[1] - boxTwoCards.Count;
+
+            boxSizes[0] += boxTwoDiff;
+
+            var boxOneCards = GetVocabCardsFromBoxNr(0, boxSizes[0]);
             
             _cards = boxOneCards.Union(boxTwoCards).Union(boxThreeCards).ToList();
 
@@ -102,7 +128,12 @@ namespace LeitnerSystem
                 _learnItemHandler.GetLearnItemById(card.LearnItemId).CurrentLeitnerBoxNr = 0;
             });
 
-            return _cards;
+            if (_cards.Count >= amount) return _cards;
+
+            var newBoxTwoCards = GetVocabCardsFromBoxNr(1, amount);
+            var newBoxThreeCards = GetVocabCardsFromBoxNr(2, amount - newBoxTwoCards.Count);
+
+            return newBoxThreeCards.Union(newBoxTwoCards).ToList();
         }
 
         private List<Card> GetVocabCardsWithoutBox(int amount)
@@ -140,13 +171,22 @@ namespace LeitnerSystem
         #endregion
         
         #region saying cards
+
         public List<Card> GetSayingCards(int amount)
         {
             var boxSizes = BoxSizes(amount);
 
-            var boxOneCards = GetSayingCardsFromBoxNr(0, boxSizes[0]);
-            var boxTwoCards = GetSayingCardsFromBoxNr(1, boxSizes[1]);
             var boxThreeCards = GetSayingCardsFromBoxNr(2, boxSizes[2]);
+            int boxThreeDiff = boxSizes[2] - boxThreeCards.Count;
+
+            boxSizes[1] += boxThreeDiff;
+            
+            var boxTwoCards = GetSayingCardsFromBoxNr(1, boxSizes[1]);
+            int boxTwoDiff = boxSizes[1] - boxTwoCards.Count;
+
+            boxSizes[0] += boxTwoDiff;
+
+            var boxOneCards = GetSayingCardsFromBoxNr(0, boxSizes[0]);
             
             _cards = boxOneCards.Union(boxTwoCards).Union(boxThreeCards).ToList();
 
@@ -158,7 +198,12 @@ namespace LeitnerSystem
                 _learnItemHandler.GetLearnItemById(card.LearnItemId).CurrentLeitnerBoxNr = 0;
             });
 
-            return _cards;
+            if (_cards.Count >= amount) return _cards;
+
+            var newBoxTwoCards = GetSayingCardsFromBoxNr(1, amount);
+            var newBoxThreeCards = GetSayingCardsFromBoxNr(2, amount - newBoxTwoCards.Count);
+
+            return newBoxThreeCards.Union(newBoxTwoCards).ToList();
         }
 
         private List<Card> GetSayingCardsWithoutBox(int amount)
