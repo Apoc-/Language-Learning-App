@@ -35,7 +35,7 @@ namespace Model
 
         public Dictionary<Language, string> Translation { get; set; }
 
-        public Dictionary<Language, AudioData> Audio { get; private set; }
+        public Dictionary<Language, AudioData> Audio { get; set; }
 
         [JsonProperty("CategoryId")]
         private string _categoryId;
@@ -49,11 +49,20 @@ namespace Model
             {
                 if (_category == null)
                 {
-                    var category = DAOFactory.CategoryDAO.LoadDialogues().FirstOrDefault(c => c.Id == _categoryId);
+                    var category = DAOFactory.CategoryDAO.LoadCategories().FirstOrDefault(c => c.Id == _categoryId);
                     _category = category ?? throw new Exception("Category with id " + _categoryId + " not found");
                 }
 
                 return _category;
+            }
+
+            set
+            {
+                if (_categoryId == null)
+                {
+                    _categoryId = value.Id;
+                    _category = value;
+                }
             }
         }
 

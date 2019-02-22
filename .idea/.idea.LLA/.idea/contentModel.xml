@@ -14,6 +14,11 @@
         <e p="Plugins" t="Include">
           <e p="Header.cs" t="Include" />
         </e>
+        <e p="Resources" t="Include">
+          <e p="Dictionary" t="Include">
+            <e p="source.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CategoryHandler.cs" t="Include" />
           <e p="CategoryItemOnClickEvent.cs" t="Include" />
@@ -21,6 +26,9 @@
             <e p="AlphabetDAO.cs" t="Include" />
             <e p="CategoryDAO.cs" t="Include" />
             <e p="DAOFactory.cs" t="Include" />
+            <e p="DataHelpers" t="Include">
+              <e p="JsonGenerator.cs" t="Include" />
+            </e>
             <e p="DialogueDAO.cs" t="Include" />
             <e p="HighscoreDAO.cs" t="Include" />
             <e p="IAlphabetDAO.cs" t="Include" />

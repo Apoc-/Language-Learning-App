@@ -1,0 +1,34 @@
+﻿[
+    {
+      "Id": "animals",
+        "Name": {
+          "Key": "",
+          "German": "Tiere",
+          "Taiwanese": "動物"
+        }
+    },
+    {
+      "Id": "traffic",
+        "Name": {
+          "Key": "",
+          "German": "Verkehr",
+          "Taiwanese": "交通"
+        }
+    },
+    {
+      "Id": "food",
+        "Name": {
+          "Key": "",
+          "German": "Essen",
+          "Taiwanese": "食物"
+        }
+    },
+    {
+      "Id": "locations",
+        "Name": {
+          "Key": "",
+          "German": "Orte",
+          "Taiwanese": "地點"
+        }
+    },
+]

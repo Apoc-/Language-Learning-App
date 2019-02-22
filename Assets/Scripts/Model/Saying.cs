@@ -69,7 +69,7 @@ namespace Model
             {
                 if (_category == null)
                 {
-                    var category = DAOFactory.CategoryDAO.LoadDialogues().FirstOrDefault(c => c.Id == _categoryId);
+                    var category = DAOFactory.CategoryDAO.LoadCategories().FirstOrDefault(c => c.Id == _categoryId);
                     _category = category ?? throw new Exception("Category with id " + _categoryId + " not found");
                 }
 

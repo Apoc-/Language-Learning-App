@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 public class ViewHandler : MonoBehaviour
@@ -12,7 +13,7 @@ public class ViewHandler : MonoBehaviour
 
     private View currentView;
     public View initialView;
-    
+
     public View[] views;
     #endregion
 
@@ -21,7 +22,7 @@ public class ViewHandler : MonoBehaviour
     static public Dictionary<string, string> ViewMap = new Dictionary<string, string> {
       {"Class",null}, {"LearnOrDic",null}, {"Category",null},{"List",null}
     };
-      
+
 
     private void Start()
     {
@@ -34,7 +35,6 @@ public class ViewHandler : MonoBehaviour
     private void SwitchToView(View targetView)
     {
         if (currentView == targetView) return;
-        
         foreach (var view in views)
         {
             if (view == targetView)
@@ -54,14 +54,11 @@ public class ViewHandler : MonoBehaviour
     {
         SwitchToView(GetViewByTitle("About"));
     }
-    
+
     public void StartButtonPressed()
     {
         SwitchToView(GetViewByTitle("Start"));
     }
-
-
-
 
     public void LanguageSelect()
     {
@@ -79,9 +76,7 @@ public class ViewHandler : MonoBehaviour
                 Debug.Log("Language button select Error");
                 break;
         }
-
     }
-
 
     public void ClassSelect()
     {
@@ -111,9 +106,7 @@ public class ViewHandler : MonoBehaviour
             default:
                 Debug.Log("Class button select Error");
                 break;
-
         }
-
     }
 
     public void DictionaryOrLearningOptions()
@@ -137,13 +130,11 @@ public class ViewHandler : MonoBehaviour
             default:
                 Debug.Log("Dictionary or Learning button select Error");
                 break;
-
         }
-
     }
 
     public void CategorySelect()
-    {         
+    {
         var selected = EventSystem.current.currentSelectedGameObject.name;
         switch (selected)
         {
@@ -158,16 +149,11 @@ public class ViewHandler : MonoBehaviour
                 break;
 
         }
-
     }
+
     private View GetViewByTitle(String title)
     {
-
-        foreach (var view in views)
-        {
-            if (view.Title == title) return view;
-        }
-
-        throw new Exception("View " + title + " was not found");
+        return views.ToList().FirstOrDefault(v => v.Title == title)
+            ?? throw new Exception("View " + title + " was not found");
     }
 }
