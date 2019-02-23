@@ -8,9 +8,9 @@ public class ListView : MonoBehaviour
 {
     public GameObject Row_Prefab;
     public List<Vocabulary> CellData = new List<Vocabulary>();
+
     void Start()
     {
-
         CellData.Add(new Vocabulary("a","b"));
         CellData.Add(new Vocabulary("c","d"));
         CellData.Add(new Vocabulary("e","f"));
@@ -26,24 +26,17 @@ public class ListView : MonoBehaviour
 
         foreach (Vocabulary cell in CellData)
         {
-
-
             GameObject table = GameObject.Find("List/GridElements");
             GameObject row = GameObject.Instantiate(Row_Prefab, table.transform.position, table.transform.rotation) as GameObject;
             row.name = cell.Chinese;
             row.transform.SetParent(table.transform);
             row.transform.Find("Chinese").GetComponent<Text>().text = cell.Chinese;
             row.transform.Find("German").GetComponent<Text>().text = cell.German;
-
-
         }
 
-
         // Testing Gloable Variable
-        Debug.Log("Class is " + ViewHandler.ViewMap["Category"]);
+        Debug.Log("Class is " + ViewHandler.Instance.ViewMap["Category"]);
     }
-
-
 
     public void ReturnButton()
     {
@@ -62,5 +55,4 @@ public class ListView : MonoBehaviour
             Chinese = newChinese;
         }
     }
-
 }

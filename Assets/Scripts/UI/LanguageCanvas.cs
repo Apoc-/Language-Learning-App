@@ -1,25 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class LanguageCanvas : MonoBehaviour
 {
-
-
-    private Canvas canvas; 
-
-    private void Awake()
+    public void LanguageSelect()
     {
+        var language = EventSystem.current.currentSelectedGameObject.name;
+        switch (language)
+        {
+            case "German":
+                ViewHandler.Instance.SwitchToView("Class");
+                break;
+            case "Chinese":
+                ViewHandler.Instance.SwitchToView("Class");
+                break;
 
-        canvas = GetComponent<Canvas>();
-
-        Debug.Log("Test " + canvas.name);
-
-
-
-    }
-    private void Update()
-    {
-
+            default:
+                Debug.Log("Language button select Error");
+                break;
+        }
     }
 }
