@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6764708958252637078}
   - component: {fileID: 7313714687361128298}
   m_Layer: 5
-  m_Name: ListCell
+  m_Name: VocabularyListRow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6764708958252637078}
-        m_MethodName: OnMouseDown
+        m_MethodName: OnRowClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -223,8 +223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4918ea7d5de02412cbfcc60686feabb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestingViewPrefab: {fileID: 2101554988372536326, guid: bf9a2262889cb4acd965f0980525d1aa,
-    type: 3}
 --- !u!114 &7313714687361128298
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,7 +17,16 @@ public class DictonaryLearningCanvas : MonoBehaviour
 
             case "Dictionary":
                 ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.Dictionary;
-                ViewHandler.Instance.SwitchToView("Category");
+                if (ViewHandler.Instance.CurrentClass == ViewHandler.ClassType.Alphabet)
+                {
+                    var view = ViewHandler.Instance.SwitchToView("ListView");
+                    view.GetComponent<ListView>().ViewToReturnTo = "Dictionary or Learning";
+                }
+                else
+                {
+                    ViewHandler.Instance.SwitchToView("Category");
+                }
+                
                 break;
 
             case "ReturnButton":

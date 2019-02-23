@@ -9,6 +9,8 @@ public class CategoryItem : MonoBehaviour
     {
         Debug.Log("Button down");
         ViewHandler.Instance.CurrentCategory = this.gameObject.name;
-        ViewHandler.Instance.SwitchToView("ListView");
+        var view = ViewHandler.Instance.SwitchToView("ListView");
+        view.GetComponent<ListView>().ViewToReturnTo = "Category";
+
     }
 }

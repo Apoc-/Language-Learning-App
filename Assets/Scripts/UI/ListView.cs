@@ -15,7 +15,7 @@ public class ListView : MonoBehaviour
 
     public GameObject ListContainer;
 
-    public List<Vocabulary> CellData = new List<Vocabulary>();
+    public string ViewToReturnTo;
 
     private readonly Dictionary<Type, string> typePrefabs = new Dictionary<Type, string>
     {
@@ -65,8 +65,14 @@ public class ListView : MonoBehaviour
 
     private void LoadAlphabetData()
     {
-        throw new NotImplementedException();
         var data = DataProvider.DataProvider.Instance.GetAlphabet();
+
+        foreach (var entry in data.Entries)
+        {
+            GameObject row = GameObject.Instantiate(AlphabetRowPrefab, ListContainer.transform);
+            var row2 = row.GetComponent<AlphabetListRow>();
+            row2.PopulateUI(entry);
+        }
     }
 
     private void LoadVocabularyData(string currentCategoryId)
@@ -75,12 +81,9 @@ public class ListView : MonoBehaviour
 
         foreach (var entry in data)
         {
-            GameObject row = GameObject.Instantiate(VocabularyRowPrefab, ListContainer.transform.position, ListContainer.transform.rotation);
-
-            row.name = entry.Id;
-            row.transform.SetParent(ListContainer.transform);
-            row.transform.Find("Chinese").GetComponent<Text>().text = entry.Translation[Language.Taiwanese];
-            row.transform.Find("German").GetComponent<Text>().text = entry.Translation[Language.German];
+            GameObject row = GameObject.Instantiate(VocabularyRowPrefab, ListContainer.transform);
+            var row2 = row.GetComponent<VocabularyListRow>();
+            row2.PopulateUI(entry);
         }
     }
 
@@ -98,7 +101,7 @@ public class ListView : MonoBehaviour
 
     public void ReturnButton()
     {
-        ViewHandler.Instance.SwitchToView("Category");
+        ViewHandler.Instance.SwitchToView(ViewToReturnTo);
     }
 
     public class Vocabulary
