@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5505a3dd684d294b86516066590627d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelUpDialogue: {fileID: 1884115510}
+  _levelUpDialogue: {fileID: 1884115510}
 --- !u!1 &4740210393677126477
 GameObject:
   m_ObjectHideFlags: 0

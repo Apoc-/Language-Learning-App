@@ -1,30 +1,51 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Gamification;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ProgressBarBehaviour : MonoBehaviour
+namespace UI
 {
-    public GameObject ProgressObject;
-
-    private float _progress;
-
-    /// <summary>
-    /// Sets the current progress of the bar depending on total.
-    /// For a progress of 5 with a total of 10 it sets the bar to 50%.
-    /// </summary>
-    /// <param name="progress"></param>
-    /// <param name="total"></param>
-    public void SetProgress(int progress, int total)
+    public class ProgressBarBehaviour : MonoBehaviour
     {
-        var barRect = gameObject.GetComponent<RectTransform>().rect;
+        public GameObject ProgressObject;
+
+        private float _progress = 0;
+        private int _size = 10;
+
+        /// <summary>
+        /// Sets the size of the bar to size units
+        /// </summary>
+        /// <param name="size"></param>
+        public void SetProgressBarSize(int size)
+        {
+            _size = size;
+            UpdateProgressBar();
+        }
         
-        var maxWidth = barRect.width;
-        var perc = (float) progress / total;
-        var width = maxWidth * perc;
+        /// <summary>
+        /// Sets the current progress of the bar depending on total.
+        /// For a progress of 5 with a total of 10 it sets the bar to 50%.
+        /// </summary>
+        /// <param name="progress"></param>
+        public void SetProgress(int progress)
+        {
+            _progress = progress;
+            UpdateProgressBar();
+        }
+
+        public void IncrementProgressBar()
+        {
+            _progress += 1;
+            UpdateProgressBar();
+        }
+
+        private void UpdateProgressBar()
+        {
+            var barRect = gameObject.GetComponent<RectTransform>().rect;
         
-        ProgressObject.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
-    }
+            var maxWidth = barRect.width;
+            var perc = _progress / _size;
+            var width = maxWidth * perc;
+        
+            ProgressObject.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
+        }
 /*
     private int c = 0;
     public void Test()
@@ -48,4 +69,5 @@ public class ProgressBarBehaviour : MonoBehaviour
         if (++c > 3) c = 0;
         Debug.Log(c);
     }*/
+    }
 }

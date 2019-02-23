@@ -6,13 +6,14 @@ namespace UI
 {
     public class ModalDialogueCanvasBehaviour : MonoBehaviour
     {
-        public ModalDialogueBehaviour LevelUpDialogue;
+        [SerializeField]
+        private ModalDialogueBehaviour _levelUpDialogue;
 
         private readonly List<ModalDialogueBehaviour> dialogues = new List<ModalDialogueBehaviour>();
 
         private void Start()
         {
-            dialogues.Add(LevelUpDialogue);
+            dialogues.Add(_levelUpDialogue);
         }
 
         public void EnableLevelUpDialogue()
@@ -20,7 +21,7 @@ namespace UI
             gameObject.SetActive(true);
             DisableAllDialogues();
 
-            LevelUpDialogue.gameObject.SetActive(true);
+            _levelUpDialogue.gameObject.SetActive(true);
         }
 
         public void DismissDialogue()

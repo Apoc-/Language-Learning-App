@@ -283,7 +283,6 @@ namespace LeitnerSystem
                 {
                     learnItem.CurrentLeitnerBoxNr -= 1;
                 }
-                
             });
         }
         

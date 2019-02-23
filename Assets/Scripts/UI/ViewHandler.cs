@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Gamification;
+using UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 public class ViewHandler : Singleton<ViewHandler>
 {
     public Header Header;
     public NavigationDrawer NavigationDrawer;
+    public ModalDialogueCanvasBehaviour ModalDialogueCanvas;
 
     #region VIEWS
 

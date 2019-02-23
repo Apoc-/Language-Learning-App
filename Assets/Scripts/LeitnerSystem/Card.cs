@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Gamification;
 using UnityEngine;
 
 namespace LeitnerSystem
@@ -30,6 +31,7 @@ namespace LeitnerSystem
         public bool AnswerWith(Answer answer)
         {
             AnsweredCorrectly = _answers.Contains(answer) && answer.IsCorrectAnswer();
+            GamificationManager.Instance.HandleAnsweredQuestion(AnsweredCorrectly);
 
             return AnsweredCorrectly;
         }
