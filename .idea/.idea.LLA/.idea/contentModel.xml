@@ -96,6 +96,8 @@
             <e p="LanguageCanvas.cs" t="Include" />
             <e p="ListCellOnClickEvent.cs" t="Include" />
             <e p="ListView.cs" t="Include" />
+            <e p="ModalDialogueBehaviour.cs" t="Include" />
+            <e p="ModalDialogueCanvasBehaviour.cs" t="Include" />
             <e p="NavigationDrawer.cs" t="Include" />
             <e p="TestingView.cs" t="Include" />
             <e p="View.cs" t="Include" />
