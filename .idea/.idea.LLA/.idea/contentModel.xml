@@ -99,6 +99,7 @@
             <e p="ModalDialogueBehaviour.cs" t="Include" />
             <e p="ModalDialogueCanvasBehaviour.cs" t="Include" />
             <e p="NavigationDrawer.cs" t="Include" />
+            <e p="ProgressBarBehaviour.cs" t="Include" />
             <e p="TestingView.cs" t="Include" />
             <e p="View.cs" t="Include" />
             <e p="ViewHandler.cs" t="Include" />

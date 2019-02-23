@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5c149f5-b63c-45a9-821c-e5bf2a5948e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ModalDialogueBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ModalDialogueBehaviour.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LLA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LLA/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LLA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LLA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,25 +27,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="273" />
+          <entry key="cs" value="274" />
           <entry key="json" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="273" />
+          <entry key="C#" value="274" />
           <entry key="JSON" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="22558" />
+          <entry key="cs" value="23608" />
           <entry key="json" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="22558" />
+          <entry key="C#" value="23608" />
           <entry key="JSON" value="38" />
         </counts>
       </usages-collector>
@@ -197,11 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ModalDialogueCanvasBehaviour.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <marker date="1550920509926" expanded="true" signature="6:71" ph="..." />
                 <marker date="1550920509926" expanded="true" signature="85:896" ph="{...}" />
@@ -211,6 +207,21 @@
                 <marker date="1550920509926" expanded="true" signature="643:704" ph="{...}" />
                 <marker date="1550920509926" expanded="true" signature="748:888" ph="{...}" />
                 <marker date="1550920509926" expanded="true" signature="801:878" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ProgressBarBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <folding>
+                <marker date="1550937208725" expanded="false" signature="6:98" ph="..." />
+                <marker date="1550937208725" expanded="true" signature="149:862" ph="{...}" />
+                <marker date="1550937208725" expanded="true" signature="225:470" ph="/// Sets the current progress of the bar depending on total. ... " />
+                <marker date="1550937208725" expanded="true" signature="523:860" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -275,15 +286,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Resources/Dictionary/Vocabulary.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44965">
-              <caret line="1955" column="37" selection-start-line="1955" selection-start-column="37" selection-end-line="1955" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -329,6 +331,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DataAccess/ILeitnerBoxDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DataAccess/ICategoryDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DataAccess/LeitnerBoxDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ProgressBarBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DataAccess/DAOFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeitnerSystem/Question.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DataProvider/DataProvider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -349,7 +352,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeitnerSystem/CardFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeitnerSystem/AudioAnswer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeitnerSystem/RandomizedCardFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeitnerSystem/RandomizedAlphabetCardFactory.cs" />
@@ -400,12 +402,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DataAccess/DataHelpers/JsonGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ModalDialogueBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ModalDialogueCanvasBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ProgressBarBehaviour.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="299" />
-    <option name="y" value="-8" />
+    <option name="x" value="135" />
+    <option name="y" value="138" />
     <option name="width" value="1440" />
     <option name="height" value="780" />
   </component>
@@ -505,12 +508,12 @@
       <updated>1545395544500</updated>
       <workItem from="1545395550009" duration="1887000" />
       <workItem from="1550585884663" duration="62950000" />
-      <workItem from="1550764319594" duration="34671000" />
+      <workItem from="1550764319594" duration="38433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99508000" />
+    <option name="totallyTimeSpent" value="103270000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,18 +598,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DataAccess/IDialogueDAO.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <marker date="1550867497242" expanded="false" signature="6:46" ph="..." />
-            <marker date="1550867497242" expanded="true" signature="68:158" ph="{...}" />
-            <marker date="1550867497242" expanded="true" signature="104:156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LeitnerSystem/CardStack.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1272,7 +1263,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ModalDialogueCanvasBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <marker date="1550920509926" expanded="true" signature="6:71" ph="..." />
             <marker date="1550920509926" expanded="true" signature="85:896" ph="{...}" />
@@ -1282,6 +1273,19 @@
             <marker date="1550920509926" expanded="true" signature="643:704" ph="{...}" />
             <marker date="1550920509926" expanded="true" signature="748:888" ph="{...}" />
             <marker date="1550920509926" expanded="true" signature="801:878" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/ProgressBarBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <marker date="1550937208725" expanded="false" signature="6:98" ph="..." />
+            <marker date="1550937208725" expanded="true" signature="149:862" ph="{...}" />
+            <marker date="1550937208725" expanded="true" signature="225:470" ph="/// Sets the current progress of the bar depending on total. ... " />
+            <marker date="1550937208725" expanded="true" signature="523:860" ph="{...}" />
           </folding>
         </state>
       </provider>
