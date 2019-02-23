@@ -33,7 +33,7 @@ namespace DataAccess.DataHelpers
             alphabets.Add(new Alphabet
             {
                 Id = "BoPoMoFo", 
-                Type = Language.Taiwanese, 
+                Type = Language.Chinese, 
                 Entries = tw.Select(GetAlphabetEntryFromLine).ToList()
             });
             
@@ -89,7 +89,7 @@ namespace DataAccess.DataHelpers
 
                 voc.Translation = new Dictionary<Language, string>();
                 voc.Translation[Language.German] = de[i];
-                voc.Translation[Language.Taiwanese] = twHan[i];
+                voc.Translation[Language.Chinese] = twHan[i];
                 voc.Bopomofo = twBopo[i];
 
                 voc.Image = new ImageData();
@@ -98,8 +98,8 @@ namespace DataAccess.DataHelpers
                 voc.Audio = new Dictionary<Language, AudioData>();
                 voc.Audio[Language.German] = new AudioData();
                 voc.Audio[Language.German].Path = "Audio/" + voc.Id + "_de";
-                voc.Audio[Language.Taiwanese] = new AudioData();
-                voc.Audio[Language.Taiwanese].Path = "Audio/" + voc.Id + "_tw";
+                voc.Audio[Language.Chinese] = new AudioData();
+                voc.Audio[Language.Chinese].Path = "Audio/" + voc.Id + "_tw";
             }
 
             var json = JsonConvert.SerializeObject(dataList, Formatting.Indented);

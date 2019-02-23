@@ -1,12 +1,12 @@
 [
-	{ 
-		"Key":"1",
-		"German":"1",
-		"Taiwanese":"1"
+	{
+		"Key" : "Vocabulary",
+		"German": "Vokabeln",
+		"Taiwanese": "生词"
 	},
-	{ 
-		"Key":"2",
-		"German":"2",
-		"Taiwanese":"2"
-	},
+	{
+		"Key" : "Alphabet",
+		"German": "Lautschrift",
+		"Taiwanese": "拉丁​字母"
+	}
 ]

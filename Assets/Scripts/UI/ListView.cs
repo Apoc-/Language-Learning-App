@@ -67,7 +67,7 @@ public class ListView : MonoBehaviour
 
             row.name = entry.Id;
             row.transform.SetParent(table.transform);
-            row.transform.Find("Chinese").GetComponent<Text>().text = entry.Translation[Language.Taiwanese];
+            row.transform.Find("Chinese").GetComponent<Text>().text = entry.Translation[Language.Chinese];
             row.transform.Find("German").GetComponent<Text>().text = entry.Translation[Language.German];
         }
     }

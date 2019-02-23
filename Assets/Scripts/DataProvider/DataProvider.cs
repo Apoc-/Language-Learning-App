@@ -55,13 +55,13 @@ namespace DataProvider
                 .ToList();
         }
         
-        public string GetTranslationByKey(string key)
+        public string GetUiTranslationByKey(string key)
         {
             switch (GamificationManager.Instance.User.UiLanguage)
             {
-                case Model.Language.Taiwanese:
+                case Language.Chinese:
                     return _translations[key].Taiwanese;
-                case Model.Language.German:
+                case Language.German:
                     return _translations[key].German;
                 default:
                     throw new ArgumentOutOfRangeException();

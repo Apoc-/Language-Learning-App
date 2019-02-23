@@ -40,7 +40,7 @@ namespace Model
             Entries = new Dictionary<Language, List<DialogueEntry>>
             {
                 { Language.German, new List<DialogueEntry>() },
-                { Language.Taiwanese, new List<DialogueEntry>() }
+                { Language.Chinese, new List<DialogueEntry>() }
             };
         }
     }
