@@ -4,36 +4,35 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Model;
 
 public class CategoryCanvas : MonoBehaviour
 {
     public GameObject CategoryItemPrefab;
-    public List<CategoryItem> CategoryData = new List<CategoryItem>();
+    public List<Category> CategoryData = new List<Category>();
    
-    private void OnEnable()
+    private void Start()
     {
-        CategoryData.Add(new CategoryItem("icon_testing", "A", "Some Description..."));
-        CategoryData.Add(new CategoryItem("icon_testing", "B", "Some Description..."));
-        CategoryData.Add(new CategoryItem("icon_testing", "C", "Some Description..."));
-        CategoryData.Add(new CategoryItem("icon_testing", "D", "Some Description..."));
-        CategoryData.Add(new CategoryItem("icon_testing", "E", "Some Description..."));
-        CategoryData.Add(new CategoryItem("icon_testing", "F", "Some Description..."));
+        //CategoryData.Add(new CategoryItem("icon_testing", "A", "Some Description..."));
+        //CategoryData.Add(new CategoryItem("icon_testing", "B", "Some Description..."));
+        //CategoryData.Add(new CategoryItem("icon_testing", "C", "Some Description..."));
+        //CategoryData.Add(new CategoryItem("icon_testing", "D", "Some Description..."));
+        //CategoryData.Add(new CategoryItem("icon_testing", "E", "Some Description..."));
+        //CategoryData.Add(new CategoryItem("icon_testing", "F", "Some Description..."));
 
+        //TODO Use DataProvider instead
+        //DataProvider.DataProvider.Instance.
+        CategoryData = DataAccess.DAOFactory.CategoryDAO.LoadCategories();
 
-        foreach (CategoryItem item in CategoryData)
+        foreach (var item in CategoryData)
         {
-
-
             GameObject table = GameObject.Find("CategoryCanvas/Category/GridElements");
-            GameObject row = GameObject.Instantiate(CategoryItemPrefab, table.transform.position, table.transform.rotation) as GameObject;
-            row.name = item.Title;
-            row.transform.SetParent(table.transform);
+            GameObject row = GameObject.Instantiate(CategoryItemPrefab, table.transform) as GameObject;
+            row.name = item.Id;
 
-            row.transform.Find("Image").GetComponent<Image>().sprite = item.ItemImage;
-            row.transform.Find("Title").GetComponent<Text>().text = item.Title;
-            row.transform.Find("Description").GetComponent<Text>().text = item.Description;
-
-
+            //row.transform.Find("Image").GetComponent<Image>().sprite = item.ItemImage;
+            row.transform.Find("Title").GetComponent<Text>().text = item.Id;
+            row.transform.Find("Description").GetComponent<Text>().text = item.Name.German;
         }
 
         // Testing ViewMap data * 
@@ -56,25 +55,5 @@ public class CategoryCanvas : MonoBehaviour
 
         }
     }
-
-    public class CategoryItem
-    {
-        public Sprite ItemImage;
-        public string Title;
-        public string Description;
-
-        private string IMAGE_RESOURCES_PATH = "Image/testing/";
-
-        public CategoryItem(string newItemImage, string newTitle, string newDescription)
-        {
-
-            ItemImage = Resources.Load<Sprite>(IMAGE_RESOURCES_PATH + newItemImage);
-            Title = newTitle;
-            Description = newDescription;
-        }
-    }
-
-
-
 
 }

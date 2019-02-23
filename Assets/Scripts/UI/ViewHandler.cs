@@ -14,7 +14,7 @@ public class ViewHandler : Singleton<ViewHandler>
     private View currentView;
     public View initialView;
 
-    public View[] views;
+    public List<View> views = new List<View>();
     #endregion
 
 
@@ -26,8 +26,7 @@ public class ViewHandler : Singleton<ViewHandler>
 
     private void Start()
     {
-
-        views = GetComponentsInChildren<View>();
+        views = GetComponentsInChildren<View>(true).ToList();
         currentView = GetViewByTitle("Category");
         SwitchToView(initialView);
     }
