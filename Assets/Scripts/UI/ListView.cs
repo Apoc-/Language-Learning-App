@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using Model;
+using System.Linq;
 
 public class ListView : MonoBehaviour
 {
@@ -56,9 +57,9 @@ public class ListView : MonoBehaviour
 
     private void ResetList()
     {
-        while (ListContainer.transform.childCount > 0)
+        foreach (Transform child in ListContainer.transform)
         {
-            Destroy(ListContainer.transform.GetChild(0));
+            GameObject.Destroy(child.gameObject);
         }
     }
 
@@ -94,7 +95,7 @@ public class ListView : MonoBehaviour
         throw new NotImplementedException();
         var data = DataProvider.DataProvider.Instance.GetSayingsByCategory(currentCategoryId);
     }
-    
+
     public void ReturnButton()
     {
         ViewHandler.Instance.SwitchToView("Category");
