@@ -16,12 +16,11 @@
         </e>
         <e p="Resources" t="Include">
           <e p="Dictionary" t="Include">
+            <e p="alphabet_source.txt" t="Include" />
             <e p="source.txt" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CategoryHandler.cs" t="Include" />
-          <e p="CategoryItemOnClickEvent.cs" t="Include" />
           <e p="DataAccess" t="Include">
             <e p="AlphabetDAO.cs" t="Include" />
             <e p="CategoryDAO.cs" t="Include" />
@@ -49,11 +48,9 @@
           <e p="DataProvider" t="Include">
             <e p="DataProvider.cs" t="Include" />
           </e>
-          <e p="DIctionaryLearningCanvas.cs" t="Include" />
           <e p="Gamification" t="Include">
             <e p="GamificationManager.cs" t="Include" />
           </e>
-          <e p="LanguageCanvas.cs" t="Include" />
           <e p="LeitnerSystem" t="Include">
             <e p="AlphabetCardFactory.cs" t="Include" />
             <e p="Answer.cs" t="Include" />
@@ -73,8 +70,6 @@
             <e p="TextQuestion.cs" t="Include" />
             <e p="VocabCardFactory.cs" t="Include" />
           </e>
-          <e p="ListCellOnClickEvent.cs" t="Include" />
-          <e p="ListView.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="Alphabet.cs" t="Include" />
             <e p="AlphabetEntry.cs" t="Include" />
@@ -94,10 +89,18 @@
             <e p="User.cs" t="Include" />
             <e p="Vocabulary.cs" t="Include" />
           </e>
-          <e p="NavigationDrawer.cs" t="Include" />
-          <e p="TestingView.cs" t="Include" />
-          <e p="View.cs" t="Include" />
-          <e p="ViewHandler.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="CategoryHandler.cs" t="Include" />
+            <e p="CategoryItemOnClickEvent.cs" t="Include" />
+            <e p="DIctionaryLearningCanvas.cs" t="Include" />
+            <e p="LanguageCanvas.cs" t="Include" />
+            <e p="ListCellOnClickEvent.cs" t="Include" />
+            <e p="ListView.cs" t="Include" />
+            <e p="NavigationDrawer.cs" t="Include" />
+            <e p="TestingView.cs" t="Include" />
+            <e p="View.cs" t="Include" />
+            <e p="ViewHandler.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Resources" t="Include">
