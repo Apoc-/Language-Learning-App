@@ -3,8 +3,9 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class CategoryHandler : MonoBehaviour
+public class CategoryCanvas : MonoBehaviour
 {
     public GameObject CategoryItemPrefab;
     public List<CategoryItem> CategoryData = new List<CategoryItem>();
@@ -36,9 +37,25 @@ public class CategoryHandler : MonoBehaviour
         }
 
         // Testing ViewMap data * 
-        Debug.Log("Class is " + ViewHandler.ViewMap["Class"]);
+        Debug.Log("Class is " + ViewHandler.Instance.ViewMap["Class"]);
     }
 
+    public void CategorySelect()
+    {
+        var selected = EventSystem.current.currentSelectedGameObject.name;
+        switch (selected)
+        {
+            case "ReturnButton":
+                ViewHandler.Instance.ViewMap["Category"] = null;
+                ViewHandler.Instance.SwitchToView("Dictionary or Learning");
+                break;
+
+            default:
+                Debug.Log("Dictionary or Learning button select Error");
+                break;
+
+        }
+    }
 
     public class CategoryItem
     {
