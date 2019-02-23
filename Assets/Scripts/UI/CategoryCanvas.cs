@@ -36,7 +36,7 @@ public class CategoryCanvas : MonoBehaviour
         }
 
         // Testing ViewMap data * 
-        Debug.Log("Class is " + ViewHandler.Instance.ViewMap["Class"]);
+        Debug.Log("Class is " + ViewHandler.Instance.CurrentClass);
     }
 
     public void CategorySelect()
@@ -45,7 +45,7 @@ public class CategoryCanvas : MonoBehaviour
         switch (selected)
         {
             case "ReturnButton":
-                ViewHandler.Instance.ViewMap["Category"] = null;
+                ViewHandler.Instance.CurrentCategory = null;
                 ViewHandler.Instance.SwitchToView("Dictionary or Learning");
                 break;
 
@@ -54,6 +54,8 @@ public class CategoryCanvas : MonoBehaviour
                 break;
 
         }
+
+
     }
 
 }

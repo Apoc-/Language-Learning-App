@@ -585,7 +585,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 170464, guid: c30bf848394926f458d1fac63a64fade, type: 3}
       propertyPath: m_Name
-      value: Greeting
+      value: Dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 22470464, guid: c30bf848394926f458d1fac63a64fade, type: 3}
       propertyPath: m_LocalPosition.x

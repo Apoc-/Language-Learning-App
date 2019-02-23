@@ -7,7 +7,7 @@ public class TestingView : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("List data is => " + ViewHandler.Instance.ViewMap["List"]);
+        Debug.Log("List data is => " + ViewHandler.Instance.CurrentListItem);
     }
 
     // Update is called once per frame

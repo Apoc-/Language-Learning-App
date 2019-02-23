@@ -17,12 +17,27 @@ public class ViewHandler : Singleton<ViewHandler>
     public List<View> views = new List<View>();
     #endregion
 
+    // Global variables to store data
+    public ClassType CurrentClass;
+    public LearnOrDic LearnOrDictionary;
+    public string CurrentCategory;
+    public string CurrentListItem;
 
-    // Gloable variable to store data
-    public Dictionary<string, string> ViewMap = new Dictionary<string, string> {
-      {"Class",null}, {"LearnOrDic",null}, {"Category",null},{"List",null}
-    };
+    public enum ClassType
+    {
+        None,
+        Alphabet,
+        Vocabulary,
+        Dialogue,
+        Saying
+    }
 
+    public enum LearnOrDic
+    {
+        None,
+        Learn,
+        Dictionary
+    }
 
     private void Start()
     {
@@ -56,12 +71,12 @@ public class ViewHandler : Singleton<ViewHandler>
 
     public void AboutButtonPressed()
     {
-        SwitchToView(GetViewByTitle("About"));
+        SwitchToView("About");
     }
 
     public void StartButtonPressed()
     {
-        SwitchToView(GetViewByTitle("Start"));
+        SwitchToView("Start");
     }
 
     private View GetViewByTitle(String title)

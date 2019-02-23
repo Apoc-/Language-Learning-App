@@ -11,17 +11,17 @@ public class DictonaryLearningCanvas : MonoBehaviour
         switch (selected)
         {
             case "Learning":
-                ViewHandler.Instance.ViewMap["LearnOrDic"] = "Learning";
+                ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.Learn;
                 //TODO: Switch to Learning Views
                 break;
 
             case "Dictionary":
-                ViewHandler.Instance.ViewMap["LearnOrDic"] = "Dictionary";
+                ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.Dictionary;
                 ViewHandler.Instance.SwitchToView("Category");
                 break;
 
             case "ReturnButton":
-                ViewHandler.Instance.ViewMap["LearnOrDic"] = null;
+                ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.None;
                 ViewHandler.Instance.SwitchToView("Class");
                 break;
 
