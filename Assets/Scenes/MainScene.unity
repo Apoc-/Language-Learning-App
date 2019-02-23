@@ -127,7 +127,7 @@ PrefabInstance:
     - target: {fileID: 8477059534616703988, guid: a95883f68beca4937a2db0f0197da988,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8477059534616703995, guid: a95883f68beca4937a2db0f0197da988,
         type: 3}
@@ -242,12 +242,12 @@ PrefabInstance:
     - target: {fileID: 8477059534407084360, guid: a95883f68beca4937a2db0f0197da988,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0000044073736
+      value: -0.0000013608114
       objectReference: {fileID: 0}
     - target: {fileID: 8477059534407084360, guid: a95883f68beca4937a2db0f0197da988,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -522.3305
+      value: -498.29236
       objectReference: {fileID: 0}
     - target: {fileID: 8477059534407084360, guid: a95883f68beca4937a2db0f0197da988,
         type: 3}
@@ -268,6 +268,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477059534407084360, guid: a95883f68beca4937a2db0f0197da988,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a95883f68beca4937a2db0f0197da988, type: 3}
@@ -701,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f065245e6f6deac47b9c3f6d91194b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Header: {fileID: 0}
+  Header: {fileID: 2042178385}
   NavigationDrawer: {fileID: 1830888189}
   ModalDialogueCanvas: {fileID: 1522243387}
   initialView: {fileID: 294757780}
