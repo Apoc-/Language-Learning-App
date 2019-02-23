@@ -46,14 +46,14 @@ public class ViewHandler : Singleton<ViewHandler>
         SwitchToView(initialView);
     }
 
-    public void SwitchToView(string targetViewTitle)
+    public View SwitchToView(string targetViewTitle)
     {
-        SwitchToView(GetViewByTitle(targetViewTitle));
+        return SwitchToView(GetViewByTitle(targetViewTitle));
     }
 
-    public void SwitchToView(View targetView)
+    public View SwitchToView(View targetView)
     {
-        if (currentView == targetView) return;
+        if (currentView == targetView) return currentView;
         foreach (var view in views)
         {
             if (view == targetView)
@@ -66,7 +66,9 @@ public class ViewHandler : Singleton<ViewHandler>
                 view.gameObject.SetActive(false);
             }
         }
+
         currentView = targetView;
+        return currentView;
     }
 
     public void AboutButtonPressed()

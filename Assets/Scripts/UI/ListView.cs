@@ -12,6 +12,8 @@ public class ListView : MonoBehaviour
     public GameObject SayingRowPrefab;
     public GameObject DialogueRowPrefab;
 
+    public GameObject ListContainer;
+
     public List<Vocabulary> CellData = new List<Vocabulary>();
 
     private readonly Dictionary<Type, string> typePrefabs = new Dictionary<Type, string>
@@ -22,8 +24,10 @@ public class ListView : MonoBehaviour
         { typeof(Dialogue), "ListRowDialogue" }
     };
 
-    void Start()
+    void OnEnable()
     {
+        ResetList();
+
         var currentClass = ViewHandler.Instance.CurrentClass;
         var currentCategoryId = ViewHandler.Instance.CurrentCategory;
 
@@ -50,6 +54,14 @@ public class ListView : MonoBehaviour
         }
     }
 
+    private void ResetList()
+    {
+        while (ListContainer.transform.childCount > 0)
+        {
+            Destroy(ListContainer.transform.GetChild(0));
+        }
+    }
+
     private void LoadAlphabetData()
     {
         throw new NotImplementedException();
@@ -62,11 +74,10 @@ public class ListView : MonoBehaviour
 
         foreach (var entry in data)
         {
-            GameObject table = GameObject.Find("List/GridElements");
-            GameObject row = GameObject.Instantiate(VocabularyRowPrefab, table.transform.position, table.transform.rotation) as GameObject;
+            GameObject row = GameObject.Instantiate(VocabularyRowPrefab, ListContainer.transform.position, ListContainer.transform.rotation);
 
             row.name = entry.Id;
-            row.transform.SetParent(table.transform);
+            row.transform.SetParent(ListContainer.transform);
             row.transform.Find("Chinese").GetComponent<Text>().text = entry.Translation[Language.Taiwanese];
             row.transform.Find("German").GetComponent<Text>().text = entry.Translation[Language.German];
         }
@@ -86,9 +97,7 @@ public class ListView : MonoBehaviour
     
     public void ReturnButton()
     {
-        Debug.Log("Close ListView");
         ViewHandler.Instance.SwitchToView("Category");
-        Destroy(transform.parent.gameObject);
     }
 
     public class Vocabulary
