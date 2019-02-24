@@ -19,10 +19,9 @@ public class VocabularyDetailCanvas : MonoBehaviour
         this.data = data;
         this.user = Gamification.GamificationManager.Instance.User;
 
-        name = data.Id;
-        Image.sprite = data.Image.Sprite;
         ForeignText.text = data.Translation[user.LearningLanguage];
         LocalText.text = data.Translation[user.UiLanguage];
+        Image.sprite = data.Image.Sprite;
     }
 
     public void PlayForeignAudio()
