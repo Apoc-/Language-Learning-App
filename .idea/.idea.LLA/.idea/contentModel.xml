@@ -15,6 +15,9 @@
             <e p="alphabet_source.txt" t="Include" />
             <e p="source.txt" t="Include" />
           </e>
+          <e p="Icons" t="Include">
+            <e p="sources.txt" t="Include" />
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="DataAccess" t="Include">
@@ -97,6 +100,7 @@
               <e p="ClassCanvas.cs" t="Include" />
               <e p="DictonaryLearningCanvas.cs" t="Include" />
               <e p="LanguageCanvas.cs" t="Include" />
+              <e p="ProfileCanvas.cs" t="Include" />
               <e p="VocabularyDetailCanvas.cs" t="Include" />
             </e>
             <e p="CategoryItem.cs" t="Include" />
@@ -107,6 +111,7 @@
             <e p="NavigationDrawer.cs" t="Include" />
             <e p="ProgressBarBehaviour.cs" t="Include" />
             <e p="TestingView.cs" t="Include" />
+            <e p="TrophyButton.cs" t="Include" />
             <e p="View.cs" t="Include" />
             <e p="ViewHandler.cs" t="Include" />
             <e p="VocabularyListRow.cs" t="Include" />

@@ -8,5 +8,15 @@
 		"Key" : "Alphabet",
 		"German": "Lautschrift",
 		"Taiwanese": "拉丁​字母"
+	},
+	{
+		"Key" : "profile",
+		"German": "Profil",
+		"Taiwanese": "{profile}"
+	},
+	{
+		"Key" : "trophies",
+		"German": "Trophäen",
+		"Taiwanese": "{trophies}"
 	}
 ]

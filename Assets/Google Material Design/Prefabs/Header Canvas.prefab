@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 437491706700487527}
   - component: {fileID: 437491706700487524}
   - component: {fileID: 437491706700487525}
+  - component: {fileID: 2042178385}
   m_Layer: 5
   m_Name: Header Canvas
   m_TagString: Untagged
@@ -82,6 +83,20 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &2042178385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437491706700487521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38784a808219464ab48457be009142f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: {fileID: 437491707211668810}
+  ProgressBar: {fileID: 4185241253455613538}
 --- !u!1 &437491707211668808
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,9 +175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Google Material Design
-
-    Unity Components'
+  m_Text: Language Learning
 --- !u!1 &437491707639099785
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +188,7 @@ GameObject:
   - component: {fileID: 437491707639099786}
   - component: {fileID: 437491707639099787}
   m_Layer: 5
-  m_Name: Header
+  m_Name: title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,8 +211,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -89}
-  m_SizeDelta: {x: 0, y: 178}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &437491707639099786
 CanvasRenderer:
@@ -245,11 +258,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 437491706700487527}
     m_Modifications:
-    - target: {fileID: 7906426157076143720, guid: 220dd3777eff8364fa391b0b497eb730,
-        type: 3}
-      propertyPath: m_Name
-      value: ProgressBar
-      objectReference: {fileID: 0}
     - target: {fileID: 7906426157076143719, guid: 220dd3777eff8364fa391b0b497eb730,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -355,11 +363,44 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7906426157076143720, guid: 220dd3777eff8364fa391b0b497eb730,
+        type: 3}
+      propertyPath: m_Name
+      value: ProgressBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906426157076143720, guid: 220dd3777eff8364fa391b0b497eb730,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906426157076143718, guid: 220dd3777eff8364fa391b0b497eb730,
+        type: 3}
+      propertyPath: ProgressObject
+      value: 
+      objectReference: {fileID: 4185241253165287810}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 220dd3777eff8364fa391b0b497eb730, type: 3}
 --- !u!224 &4185241253455613539 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7906426157076143719, guid: 220dd3777eff8364fa391b0b497eb730,
+    type: 3}
+  m_PrefabInstance: {fileID: 6317901624478601220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4185241253455613538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7906426157076143718, guid: 220dd3777eff8364fa391b0b497eb730,
+    type: 3}
+  m_PrefabInstance: {fileID: 6317901624478601220}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e201669c2f20e4e94e5e5b55d63ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4185241253165287810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7906426156798400902, guid: 220dd3777eff8364fa391b0b497eb730,
     type: 3}
   m_PrefabInstance: {fileID: 6317901624478601220}
   m_PrefabAsset: {fileID: 0}
