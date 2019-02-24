@@ -65,7 +65,7 @@ public class ListView : MonoBehaviour
 
     private void LoadAlphabetData()
     {
-        var data = DataProvider.DataProvider.Instance.GetAlphabet();
+        var data = DataProvider.DataCache.Instance.GetAlphabet();
 
         foreach (var entry in data.Entries)
         {
@@ -77,7 +77,7 @@ public class ListView : MonoBehaviour
 
     private void LoadVocabularyData(string currentCategoryId)
     {
-        var data = DataProvider.DataProvider.Instance.GetVocabularyByCategory(currentCategoryId);
+        var data = DataProvider.DataCache.Instance.GetVocabularyByCategory(currentCategoryId);
 
         foreach (var entry in data)
         {
@@ -90,13 +90,13 @@ public class ListView : MonoBehaviour
     private void LoadDialogueData(string currentCategoryId)
     {
         throw new NotImplementedException();
-        var data = DataProvider.DataProvider.Instance.GetDialoguesByCategory(currentCategoryId);
+        var data = DataProvider.DataCache.Instance.GetDialoguesByCategory(currentCategoryId);
     }
 
     private void LoadSayingData(string currentCategoryId)
     {
         throw new NotImplementedException();
-        var data = DataProvider.DataProvider.Instance.GetSayingsByCategory(currentCategoryId);
+        var data = DataProvider.DataCache.Instance.GetSayingsByCategory(currentCategoryId);
     }
 
     public void ReturnButton()

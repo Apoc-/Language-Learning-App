@@ -42,11 +42,14 @@
             <e p="VocabularyDAO.cs" t="Include" />
           </e>
           <e p="DataProvider" t="Include">
-            <e p="DataProvider.cs" t="Include" />
+            <e p="DataCache.cs" t="Include" />
             <e p="TranslatorComponent.cs" t="Include" />
           </e>
           <e p="Gamification" t="Include">
             <e p="GamificationManager.cs" t="Include" />
+            <e p="Trophy.cs" t="Include" />
+            <e p="TrophyHandler.cs" t="Include" />
+            <e p="TrophyType.cs" t="Include" />
           </e>
           <e p="LeitnerSystem" t="Include">
             <e p="AlphabetCardFactory.cs" t="Include" />
@@ -82,19 +85,18 @@
             <e p="Saying.cs" t="Include" />
             <e p="Streak.cs" t="Include" />
             <e p="Translation.cs" t="Include" />
-            <e p="Trophy.cs" t="Include" />
             <e p="User.cs" t="Include" />
             <e p="Vocabulary.cs" t="Include" />
           </e>
           <e p="Singleton.cs" t="Include" />
           <e p="UI" t="Include">
+            <e p="AlphabetListRow.cs" t="Include" />
             <e p="CategoryCanvas.cs" t="Include" />
             <e p="CategoryItem.cs" t="Include" />
             <e p="ClassCanvas.cs" t="Include" />
             <e p="DictonaryLearningCanvas.cs" t="Include" />
             <e p="Header.cs" t="Include" />
             <e p="LanguageCanvas.cs" t="Include" />
-            <e p="ListCellOnClickEvent.cs" t="Include" />
             <e p="ListView.cs" t="Include" />
             <e p="ModalDialogueBehaviour.cs" t="Include" />
             <e p="ModalDialogueCanvasBehaviour.cs" t="Include" />
@@ -103,6 +105,7 @@
             <e p="TestingView.cs" t="Include" />
             <e p="View.cs" t="Include" />
             <e p="ViewHandler.cs" t="Include" />
+            <e p="VocabularyListRow.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
