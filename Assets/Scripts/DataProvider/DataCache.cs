@@ -128,7 +128,7 @@ namespace DataProvider
             return GetCategories()[categoryId];
         }
 
-        public Dictionary<string, Category> GetCategories()
+        private Dictionary<string, Category> GetCategories()
         {
             if (_categories.Count == 0)
             {
