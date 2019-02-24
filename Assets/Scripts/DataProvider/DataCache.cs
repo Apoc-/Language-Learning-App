@@ -1,17 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using DataAccess;
 using Gamification;
 using Model;
 
 namespace DataProvider
 {
-    public class DataProvider
+    public class DataCache
     {
         private Dictionary<string, Translation> _translations;
         
-        private DataProvider()
+        private DataCache()
         {
             LoadLocalizationData();
         }
@@ -31,13 +32,6 @@ namespace DataProvider
                 .Find(alphabet => alphabet.Type == GamificationManager.Instance.User.LearningLanguage);
         }
 
-        public List<Vocabulary> GetVocabularyByCategory(string categoryId)
-        {
-            return DAOFactory.VocabularyDAO
-                .LoadVocabulary()
-                .Where(vocab => vocab.Category.Id == categoryId)
-                .ToList();
-        }
 
         public List<Saying> GetSayingsByCategory(string categoryId)
         {
@@ -67,15 +61,51 @@ namespace DataProvider
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        #region Vocabulary
+        private List<Vocabulary> _vocabulary = new List<Vocabulary>();
+        public List<Vocabulary> GetVocabulary()
+        {
+            if (_vocabulary.Count == 0) _vocabulary = DAOFactory.VocabularyDAO.LoadVocabulary();
+
+            return _vocabulary;
+        }
+        
+        public List<Vocabulary> GetVocabularyByCategory(string categoryId)
+        {
+            return GetVocabulary()
+                .Where(vocab => vocab.Category.Id == categoryId)
+                .ToList();
+        }
+        #endregion
+        
+        #region Categories
+        private Dictionary<string, Category> _categories = new Dictionary<string, Category>();
+        public Category GetCategoryById(string categoryId)
+        {
+            return GetCategories()[categoryId];
+        }
+
+        public Dictionary<string, Category> GetCategories()
+        {
+            if (_categories.Count == 0)
+            {
+                var catList = DAOFactory.CategoryDAO.LoadCategories();
+                catList.ForEach(cat => { _categories[cat.Id] = cat; });
+            }
+
+            return _categories;
+        }
+        #endregion
         
         #region Singleton
-        private static DataProvider _instance;
-        public static DataProvider Instance
+        private static DataCache _instance;
+        public static DataCache Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new DataProvider();
+                    _instance = new DataCache();
                 return _instance;
             }
         }

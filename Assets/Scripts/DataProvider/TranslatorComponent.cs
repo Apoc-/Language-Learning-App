@@ -16,7 +16,7 @@ namespace DataProvider
             var text = textComponent.text;
             try
             {
-                text = DataProvider.Instance.GetUiTranslationByKey(Key);
+                text = DataCache.Instance.GetUiTranslationByKey(Key);
             }
             catch (Exception ex)
             {
