@@ -204,9 +204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56014e6f11eff044ebf3cfef8ec3788e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveObject: {fileID: 0}
-  CanvasMain: {fileID: 0}
-  PoolSize: 0
+  WaveObject: {fileID: 100000, guid: 9b803f85cde2c1c4db04360f0106130a, type: 3}
+  CanvasMain: {fileID: 7069390651722689723}
+  PoolSize: 1
 --- !u!114 &7069390651722689725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,13 +488,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: DictionaryOption
       objectReference: {fileID: 0}
-    - target: {fileID: 11470454, guid: c30bf848394926f458d1fac63a64fade, type: 3}
-      propertyPath: m_Text
-      value: German
-      objectReference: {fileID: 0}
     - target: {fileID: 22270464, guid: c30bf848394926f458d1fac63a64fade, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470454, guid: c30bf848394926f458d1fac63a64fade, type: 3}
+      propertyPath: m_Text
+      value: German
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c30bf848394926f458d1fac63a64fade, type: 3}
@@ -627,13 +627,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: DictionaryOption
       objectReference: {fileID: 0}
-    - target: {fileID: 11470454, guid: c30bf848394926f458d1fac63a64fade, type: 3}
-      propertyPath: m_Text
-      value: Chinese
-      objectReference: {fileID: 0}
     - target: {fileID: 22270464, guid: c30bf848394926f458d1fac63a64fade, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470454, guid: c30bf848394926f458d1fac63a64fade, type: 3}
+      propertyPath: m_Text
+      value: Chinese
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c30bf848394926f458d1fac63a64fade, type: 3}

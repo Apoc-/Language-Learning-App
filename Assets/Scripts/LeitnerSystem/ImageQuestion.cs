@@ -4,9 +4,9 @@ namespace LeitnerSystem
 {
     public class ImageQuestion : Question
     {
-        public Texture2D Image { get; }
+        public Sprite Image { get; }
 
-        public ImageQuestion(Texture2D image)
+        public ImageQuestion(Sprite image)
         {
             Image = image;
         }

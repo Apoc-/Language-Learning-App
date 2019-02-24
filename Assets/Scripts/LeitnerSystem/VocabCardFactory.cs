@@ -88,14 +88,14 @@ namespace LeitnerSystem
             return vocabs.Select(item => item.Translation[lang]).ToList();
         }
 
-        private static Texture2D GetImage(Vocabulary vocab)
+        private static Sprite GetImage(Vocabulary vocab)
         {
-            return vocab.Image.Image;
+            return vocab.Image.Sprite;
         }
 
-        private static List<Texture2D> GetImages(List<Vocabulary> vocabs)
+        private static List<Sprite> GetImages(List<Vocabulary> vocabs)
         {
-            return vocabs.Select(item => item.Image.Image).ToList();
+            return vocabs.Select(item => item.Image.Sprite).ToList();
         }
 
         private static List<AudioClip> GetForeignAudios(List<Vocabulary> vocabs)

@@ -32,7 +32,7 @@ namespace LeitnerSystem
             return this;
         }
 
-        public CardBuilder WithImageQuestion(Texture2D image)
+        public CardBuilder WithImageQuestion(Sprite image)
         {
             card.Question = new ImageQuestion(image);
             return this;
@@ -50,7 +50,7 @@ namespace LeitnerSystem
             return this;
         }
 
-        public CardBuilder AddImageAnswer(Texture2D image, bool correctAnswer)
+        public CardBuilder AddImageAnswer(Sprite image, bool correctAnswer)
         {
             card.AddAnswer(new ImageAnswer(image, correctAnswer));
             return this;
@@ -62,7 +62,7 @@ namespace LeitnerSystem
             return this;
         }
 
-        public CardBuilder AddImageAnswers(Texture2D askedImage, List<Texture2D> wrongImages)
+        public CardBuilder AddImageAnswers(Sprite askedImage, List<Sprite> wrongImages)
         {
             AddImageAnswer(askedImage, true);
             AddImageAnswer(wrongImages[0], false);

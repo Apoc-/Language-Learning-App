@@ -9,16 +9,16 @@ namespace Model
     {
         public string Path { get; set; }
 
-        private Texture2D _image = null;
+        private Sprite _image = null;
 
         [JsonIgnore]
-        public Texture2D Image
+        public Sprite Sprite
         {
             get
             {
                 _image = _image 
-                    ?? Resources.Load<Texture2D>(Path) 
-                    ?? throw new Exception("Resource of Type Texture2D was not found in " + Path);
+                    ?? Resources.Load<Sprite>(Path) 
+                    ?? throw new Exception("Resource of Type Sprite was not found in " + Path);
 
                 return _image;
             }
