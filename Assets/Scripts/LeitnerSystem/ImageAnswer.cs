@@ -4,9 +4,9 @@ namespace LeitnerSystem
 {
     public class ImageAnswer : Answer
     {
-        public Texture2D Image { get; }
+        public Sprite Image { get; }
 
-        public ImageAnswer(Texture2D image, bool isCorrectAnswer)
+        public ImageAnswer(Sprite image, bool isCorrectAnswer)
         {
             Image = image;
             _isCorrectAnswer = isCorrectAnswer;

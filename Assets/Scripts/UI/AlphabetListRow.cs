@@ -17,9 +17,6 @@ public class AlphabetListRow : MonoBehaviour
 
         name = data.Id;
         transform.Find("Character").GetComponent<Text>().text = data.Character;
-        transform.Find("ContextFreeAudio").GetComponent<Text>();
-        transform.Find("ContextSensitiveAudio").GetComponent<Text>();
-        transform.Find("ExampleWordAudio").GetComponent<Text>();
     }
 
     public void PlayContextFreeAudio()

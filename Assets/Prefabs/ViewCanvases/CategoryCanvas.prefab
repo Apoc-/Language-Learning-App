@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56014e6f11eff044ebf3cfef8ec3788e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveObject: {fileID: 0}
-  CanvasMain: {fileID: 0}
-  PoolSize: 0
+  WaveObject: {fileID: 100000, guid: 9b803f85cde2c1c4db04360f0106130a, type: 3}
+  CanvasMain: {fileID: 7154927983314856052}
+  PoolSize: 1
 --- !u!114 &7154927983314856055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CategoryItemPrefab: {fileID: 5228719402287647253, guid: a894e53ee64cb4d46b44b66d971d17a3,
     type: 3}
+  CategoryData: []
 --- !u!1 &7154927983665503966
 GameObject:
   m_ObjectHideFlags: 0
