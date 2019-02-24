@@ -1,5 +1,6 @@
 ﻿[
   {
+    "ClassType": "Vocabulary",
     "Id": "animals",
     "Name": {
       "Key": "",
@@ -8,6 +9,7 @@
     }
   },
   {
+    "ClassType": "Vocabulary",
     "Id": "traffic",
     "Name": {
       "Key": "",
@@ -16,6 +18,7 @@
     }
   },
   {
+    "ClassType": "Vocabulary",
     "Id": "food",
     "Name": {
       "Key": "",
@@ -24,6 +27,7 @@
     }
   },
   {
+    "ClassType": "Vocabulary",
     "Id": "locations",
     "Name": {
       "Key": "",
@@ -32,6 +36,7 @@
     }
   },
   {
+    "ClassType": "Dialogue",
     "Id": "restaurant",
     "Name": {
       "Key": "",
@@ -40,6 +45,7 @@
     }
   },
   {
+    "ClassType": "Dialogue",
     "Id": "formal",
     "Name": {
       "Key": "",
@@ -48,6 +54,7 @@
     }
   },
   {
+    "ClassType": "Dialogue",
     "Id": "smalltalk",
     "Name": {
       "Key": "",
@@ -56,6 +63,7 @@
     }
   },
   {
+    "ClassType": "Dialogue",
     "Id": "shopping",
     "Name": {
       "Key": "",
@@ -64,6 +72,7 @@
     }
   },
   {
+    "ClassType": "Saying",
     "Id": "birthday",
     "Name": {
       "Key": "",
@@ -72,6 +81,7 @@
     }
   },
   {
+    "ClassType": "Saying",
     "Id": "festivals",
     "Name": {
       "Key": "",
@@ -80,6 +90,7 @@
     }
   },
   {
+    "ClassType": "Saying",
     "Id": "weather",
     "Name": {
       "Key": "",
@@ -88,6 +99,7 @@
     }
   },
   {
+    "ClassType": "Saying",
     "Id": "behaviour",
     "Name": {
       "Key": "",

@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7154927983314856053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -180,6 +180,7 @@ MonoBehaviour:
   CategoryItemPrefab: {fileID: 5228719402287647253, guid: a894e53ee64cb4d46b44b66d971d17a3,
     type: 3}
   CategoryData: []
+  Table: {fileID: 7154927984390394961}
 --- !u!1 &7154927983665503966
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0000040058303}
+  m_AnchoredPosition: {x: 0, y: 0.000007596746}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7154927984390394966

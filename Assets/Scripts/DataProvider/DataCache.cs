@@ -5,6 +5,7 @@ using System.Threading;
 using DataAccess;
 using Gamification;
 using Model;
+using UI;
 
 namespace DataProvider
 {
@@ -126,6 +127,11 @@ namespace DataProvider
         public Category GetCategoryById(string categoryId)
         {
             return GetCategories()[categoryId];
+        }
+        
+        public List<Category> GetCategoriesByClassType(ClassType type)
+        {
+            return GetCategories().Values.Where(cat => cat.ClassType == type).ToList();
         }
 
         private Dictionary<string, Category> GetCategories()

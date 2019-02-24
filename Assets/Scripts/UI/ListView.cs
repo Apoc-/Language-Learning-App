@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using Model;
 using System.Linq;
+using UI;
 
 public class ListView : MonoBehaviour
 {
@@ -34,19 +35,19 @@ public class ListView : MonoBehaviour
 
         switch (currentClass)
         {
-            case ViewHandler.ClassType.Alphabet:
+            case ClassType.Alphabet:
                 LoadAlphabetData();
                 break;
 
-            case ViewHandler.ClassType.Vocabulary:
+            case ClassType.Vocabulary:
                 LoadVocabularyData(currentCategoryId);
                 break;
 
-            case ViewHandler.ClassType.Dialogue:
+            case ClassType.Dialogue:
                 LoadDialogueData(currentCategoryId);
                 break;
 
-            case ViewHandler.ClassType.Saying:
+            case ClassType.Saying:
                 LoadSayingData(currentCategoryId);
                 break;
 

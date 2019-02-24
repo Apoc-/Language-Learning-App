@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -17,7 +18,7 @@ public class DictonaryLearningCanvas : MonoBehaviour
 
             case "Dictionary":
                 ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.Dictionary;
-                if (ViewHandler.Instance.CurrentClass == ViewHandler.ClassType.Alphabet)
+                if (ViewHandler.Instance.CurrentClass == ClassType.Alphabet)
                 {
                     var view = ViewHandler.Instance.SwitchToView("ListView");
                     view.GetComponent<ListView>().ViewToReturnTo = "Dictionary or Learning";

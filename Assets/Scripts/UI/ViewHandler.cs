@@ -26,14 +26,6 @@ public class ViewHandler : Singleton<ViewHandler>
     public string CurrentCategory;
     public string CurrentListItem;
 
-    public enum ClassType
-    {
-        None,
-        Alphabet,
-        Vocabulary,
-        Dialogue,
-        Saying
-    }
 
     public enum LearnOrDic
     {

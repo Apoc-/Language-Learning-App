@@ -75,6 +75,7 @@
             <e p="AlphabetEntry.cs" t="Include" />
             <e p="AudioData.cs" t="Include" />
             <e p="Category.cs" t="Include" />
+            <e p="ClassType.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
             <e p="DialogueEntry.cs" t="Include" />
             <e p="HighscoreEntry.cs" t="Include" />
@@ -91,12 +92,15 @@
           <e p="Singleton.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AlphabetListRow.cs" t="Include" />
-            <e p="CategoryCanvas.cs" t="Include" />
+            <e p="Canvas" t="Include">
+              <e p="CategoryCanvas.cs" t="Include" />
+              <e p="ClassCanvas.cs" t="Include" />
+              <e p="DictonaryLearningCanvas.cs" t="Include" />
+              <e p="LanguageCanvas.cs" t="Include" />
+              <e p="VocabularyDetailCanvas.cs" t="Include" />
+            </e>
             <e p="CategoryItem.cs" t="Include" />
-            <e p="ClassCanvas.cs" t="Include" />
-            <e p="DictonaryLearningCanvas.cs" t="Include" />
             <e p="Header.cs" t="Include" />
-            <e p="LanguageCanvas.cs" t="Include" />
             <e p="ListView.cs" t="Include" />
             <e p="ModalDialogueBehaviour.cs" t="Include" />
             <e p="ModalDialogueCanvasBehaviour.cs" t="Include" />
