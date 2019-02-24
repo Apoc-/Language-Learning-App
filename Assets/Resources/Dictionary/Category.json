@@ -1,34 +1,98 @@
 ﻿[
-    {
-      "Id": "animals",
-        "Name": {
-          "Key": "",
-          "German": "Tiere",
-          "Taiwanese": "動物"
-        }
-    },
-    {
-      "Id": "traffic",
-        "Name": {
-          "Key": "",
-          "German": "Verkehr",
-          "Taiwanese": "交通"
-        }
-    },
-    {
-      "Id": "food",
-        "Name": {
-          "Key": "",
-          "German": "Essen",
-          "Taiwanese": "食物"
-        }
-    },
-    {
-      "Id": "locations",
-        "Name": {
-          "Key": "",
-          "German": "Orte",
-          "Taiwanese": "地點"
-        }
+  {
+    "Id": "animals",
+    "Name": {
+      "Key": "",
+      "German": "Tiere",
+      "Taiwanese": "動物"
     }
+  },
+  {
+    "Id": "traffic",
+    "Name": {
+      "Key": "",
+      "German": "Verkehr",
+      "Taiwanese": "交通"
+    }
+  },
+  {
+    "Id": "food",
+    "Name": {
+      "Key": "",
+      "German": "Essen",
+      "Taiwanese": "食物"
+    }
+  },
+  {
+    "Id": "locations",
+    "Name": {
+      "Key": "",
+      "German": "Orte",
+      "Taiwanese": "地點"
+    }
+  },
+  {
+    "Id": "restaurant",
+    "Name": {
+      "Key": "",
+      "German": "Restaurant",
+      "Taiwanese": "restaurant"
+    }
+  },
+  {
+    "Id": "formal",
+    "Name": {
+      "Key": "",
+      "German": "Formell",
+      "Taiwanese": "formal"
+    }
+  },
+  {
+    "Id": "smalltalk",
+    "Name": {
+      "Key": "",
+      "German": "Unterhaltung",
+      "Taiwanese": "smalltalk"
+    }
+  },
+  {
+    "Id": "shopping",
+    "Name": {
+      "Key": "",
+      "German": "Einkaufen",
+      "Taiwanese": "shopping"
+    }
+  },
+  {
+    "Id": "birthday",
+    "Name": {
+      "Key": "",
+      "German": "Geburtstag",
+      "Taiwanese": "birthday"
+    }
+  },
+  {
+    "Id": "festivals",
+    "Name": {
+      "Key": "",
+      "German": "Feste",
+      "Taiwanese": "festivals"
+    }
+  },
+  {
+    "Id": "weather",
+    "Name": {
+      "Key": "",
+      "German": "Wetter",
+      "Taiwanese": "weather"
+    }
+  },
+  {
+    "Id": "behaviour",
+    "Name": {
+      "Key": "",
+      "German": "Verhalten",
+      "Taiwanese": "behaviour"
+    }
+  }
 ]

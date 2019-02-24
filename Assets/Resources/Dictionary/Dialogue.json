@@ -1,45 +1,472 @@
 ﻿[
   {
-    "CategoryId": null,
-    "Id": "Greeting",
+    "CategoryId": "restaurant",
+    "Id": "ordering",
     "Name": {
-      "Key": null,
-      "German": "Begrüßung",
-      "Taiwanese": "?"
+      "Key": "",
+      "German": "Bestellen",
+      "Taiwanese": "點餐"
     },
     "Entries": {
       "German": [
         {
-          "Id": "Greeting1DE",
-          "Text": "Guten Tag! Wie geht es Ihnen?",
+          "Id": "",
+          "Text": "Was möchten Sie bestellen?",
           "Audio": {
-            "Path": "Greeting1DE"
+            "Path": "Audio/Dialogue/ordering1_de"
           },
           "Bopomofo": ""
         },
         {
-          "Id": "Greeting2DE",
-          "Text": "Mir geht es gut! Und selbst?",
+          "Id": "",
+          "Text": "Ich nehme den Salat, bitte.",
           "Audio": {
-            "Path": "Greeting2DE"
+            "Path": "Audio/Dialogue/ordering2_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Möchten Sie dazu etwas trinken?",
+          "Audio": {
+            "Path": "Audio/Dialogue/ordering3_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Ja. Ein Glas Wasser bitte.",
+          "Audio": {
+            "Path": "Audio/Dialogue/ordering4_de"
           },
           "Bopomofo": ""
         }
       ],
       "Taiwanese": [
         {
-          "Id": "Greeting1TW",
-          "Text": "nihao ma",
+          "Id": "",
+          "Text": "請問要點些什麼？",
           "Audio": {
-            "Path": "Greeting1TW"
+            "Path": "Audio/Dialogue/ordering1_tw"
           },
           "Bopomofo": ""
         },
         {
-          "Id": "Greeting2TW",
-          "Text": "xiexie??",
+          "Id": "",
+          "Text": "我要一份沙拉，謝謝",
           "Audio": {
-            "Path": "Greeting2TW"
+            "Path": "Audio/Dialogue/ordering2_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "要來點飲料嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/ordering3_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "一杯水　麻煩謝謝！",
+          "Audio": {
+            "Path": "Audio/Dialogue/ordering4_tw"
+          },
+          "Bopomofo": ""
+        }
+      ]
+    }
+  },
+  {
+    "CategoryId": "restaurant",
+    "Id": "restroom",
+    "Name": {
+      "Key": "",
+      "German": "Nach der Toilette fragen",
+      "Taiwanese": "詢問廁所地點"
+    },
+    "Entries": {
+      "German": [
+        {
+          "Id": "",
+          "Text": "Wie kann ich Ihnen helfen?",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom1_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Wo ist das Badezimmer?",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom2_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Gehen Sie nach rechts und dann den Gang hinunter. Soll ich es Ihnen zeigen?",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom3_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Nein Danke. Ich finde es selbst.",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom4_de"
+          },
+          "Bopomofo": ""
+        }
+      ],
+      "Taiwanese": [
+        {
+          "Id": "",
+          "Text": "需要什麼協助?",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom1_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "廁所在哪裡?",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom2_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "在下樓後的右手邊。需要我帶您過去嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom3_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "不用，謝謝我可以自己找。",
+          "Audio": {
+            "Path": "Audio/Dialogue/restroom4_tw"
+          },
+          "Bopomofo": ""
+        }
+      ]
+    }
+  },
+  {
+    "CategoryId": "restaurant",
+    "Id": "receipt",
+    "Name": {
+      "Key": "",
+      "German": "Um die Rechung bitten",
+      "Taiwanese": "結帳"
+    },
+    "Entries": {
+      "German": [
+        {
+          "Id": "",
+          "Text": "Entschuldigen Sie, wir schließen bald. Möchten Sie noch etwas bestellen?",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt1_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Nein Danke. Die Rechnung bitte.",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt2_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Hier ist die Rechnung. Hat es Ihnen geschmeckt?",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt3_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Es war gut. Ich komme wieder.",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt4_de"
+          },
+          "Bopomofo": ""
+        }
+      ],
+      "Taiwanese": [
+        {
+          "Id": "",
+          "Text": "不好意思我們即將結宿營業，請問還需要加點什麼嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt1_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "不用，謝謝！請結帳。",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt2_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "這裡是消費明細。請問餐點還符合口味嗎",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt3_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "非常好吃。我會再來的。",
+          "Audio": {
+            "Path": "Audio/Dialogue/receipt4_tw"
+          },
+          "Bopomofo": ""
+        }
+      ]
+    }
+  },
+  {
+    "CategoryId": "formal",
+    "Id": "meeting_notes",
+    "Name": {
+      "Key": "",
+      "German": "Nach Gesprächsnotizen Fragen.",
+      "Taiwanese": "詢問筆記"
+    },
+    "Entries": {
+      "German": [
+        {
+          "Id": "",
+          "Text": "Danke für Ihre Aufmerksamkeit. Noch Fragen?",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes1_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Hat jemand Notizen gemacht?",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes2_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Ja, John. Er schickt sie dir, Ok?",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes3_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Perfekt. Ich möchte die Details prüfen.",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes4_de"
+          },
+          "Bopomofo": ""
+        }
+      ],
+      "Taiwanese": [
+        {
+          "Id": "",
+          "Text": "感謝您參加會議。還有任何問題嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes1_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "請問有人做筆記嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes2_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "John  有作筆記，他會再傳給您，可以嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes3_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "太棒了! 我要再確認ㄧ需細節的部份。",
+          "Audio": {
+            "Path": "Audio/Dialogue/meeting_notes4_tw"
+          },
+          "Bopomofo": ""
+        }
+      ]
+    }
+  },
+  {
+    "CategoryId": "smalltalk",
+    "Id": "weather",
+    "Name": {
+      "Key": "",
+      "German": "Über das Wetter sprechen.",
+      "Taiwanese": "對話 - 天氣"
+    },
+    "Entries": {
+      "German": [
+        {
+          "Id": "",
+          "Text": "Gutes Wetter, oder?",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather1_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Ja, aber es wird regnen. Hast du einen Regenschirm?",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather2_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Nein. Ich muss einen kaufen. Kennst du ein Geschäft in der nähe?",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather3_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Ja, es gibt ein Kaufhaus gegenüber.",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather4_de"
+          },
+          "Bopomofo": ""
+        }
+      ],
+      "Taiwanese": [
+        {
+          "Id": "",
+          "Text": "天氣很好對吧？",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather1_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "對啊！但是好像快要下雨了，你有帶傘嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather2_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "沒有！我需要買一把傘，你知道附近有賣傘的店嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather3_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "過馬路後有間百貨公司",
+          "Audio": {
+            "Path": "Audio/Dialogue/weather4_tw"
+          },
+          "Bopomofo": ""
+        }
+      ]
+    }
+  },
+  {
+    "CategoryId": "shopping",
+    "Id": "shop_umbrella",
+    "Name": {
+      "Key": "",
+      "German": "Einen Regenschirm kaufen.",
+      "Taiwanese": "買傘"
+    },
+    "Entries": {
+      "German": [
+        {
+          "Id": "",
+          "Text": "Was kann ich für Sie tun?",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella1_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Ich brauche einen Schirm. Verkaufen Sie Schirme?",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella2_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Ja. Möchten Sie diesen hier?",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella3_de"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "Ja, perfekt. Danke.",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella4_de"
+          },
+          "Bopomofo": ""
+        }
+      ],
+      "Taiwanese": [
+        {
+          "Id": "",
+          "Text": "你好需要什麼嗎",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella1_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "我需一把傘，你這裡有賣嗎？",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella2_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "有的，這把你覺得如何？",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella3_tw"
+          },
+          "Bopomofo": ""
+        },
+        {
+          "Id": "",
+          "Text": "很好，就這把。謝謝",
+          "Audio": {
+            "Path": "Audio/Dialogue/shop_umbrella4_tw"
           },
           "Bopomofo": ""
         }
