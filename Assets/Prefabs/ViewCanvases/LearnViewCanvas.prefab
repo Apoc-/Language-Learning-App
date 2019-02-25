@@ -344,11 +344,15 @@ MonoBehaviour:
   Answer1Container: {fileID: 31685871146684575}
   Answer2Container: {fileID: 5724412627608303454}
   Answer3Container: {fileID: 7935511716313532632}
-  TextQuestionPrefab: {fileID: 0}
-  AudioQuestionPrefab: {fileID: 0}
+  TextQuestionPrefab: {fileID: 1892865560222192439, guid: 9881ba99bdebb7445b59124ca67d4f5e,
+    type: 3}
+  AudioQuestionPrefab: {fileID: 4520797368928452050, guid: 602576d2f8993104aad780c6dbd0758b,
+    type: 3}
   ImageQuestionPrefab: {fileID: 0}
-  TextAnswerPrefab: {fileID: 0}
-  AudioAnswerPrefab: {fileID: 0}
+  TextAnswerPrefab: {fileID: 1315470858500195248, guid: 6f10f413b0a566c48b5bc73f62fa4a14,
+    type: 3}
+  AudioAnswerPrefab: {fileID: 2111459339896237170, guid: ec2e248f6bc64e54c8b11993aaa91bca,
+    type: 3}
   ImageAnswerPrefab: {fileID: 0}
   AudioSource: {fileID: 350651739899882899}
 --- !u!1 &3554984877750074989

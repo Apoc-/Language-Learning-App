@@ -4,18 +4,23 @@ using LeitnerSystem;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextTestQuestion : TestQuestion
+public class AudioTestQuestion : TestQuestion
 {
     public Text Text;
 
     private LearnViewCanvas canvas;
-    private TextQuestion question;
+    private AudioQuestion question;
 
     public override void PopulateUI(LearnViewCanvas c, Question q)
     {
         canvas = c;
-        question = q.AsTextQuestion();
-
-        Text.text = q.AsTextQuestion().Text;
+        question = q.AsAudioQuestion();
+        canvas.PlayAudio(question.AudioClip);
     }
+
+    public void OnClick()
+    {
+        canvas.PlayAudio(question.AudioClip);
+    }
+
 }
