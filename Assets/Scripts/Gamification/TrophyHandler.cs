@@ -5,6 +5,8 @@ using System.Linq;
 using DataAccess;
 using Model;
 using DataProvider;
+using UnityEngine;
+using UnityEngine.Networking;
 
 namespace Gamification
 {
@@ -13,6 +15,7 @@ namespace Gamification
         private readonly Dictionary<TrophyType, Trophy> _trophyDictionary = new Dictionary<TrophyType, Trophy>();
         private List<Trophy> _unearnedTrophies = new List<Trophy>();
         private readonly User _user;
+        private string defaultSpritePath = "Icons/iconfinder_advantage_quality_1034364";
         
         public TrophyHandler()
         {
@@ -22,12 +25,30 @@ namespace Gamification
             //InitializeTrophyConditions();
         }
 
+        public void CheckTrophyConditions()
+        {
+            var awardedTrophies = new List<Trophy>();
+            _unearnedTrophies.ForEach(tr =>
+            {
+                if (tr.UnlockCondition.Invoke())
+                {
+                    _user.Trophies.Add(tr.TrophyType);
+                    awardedTrophies.Add(tr);
+                    
+                    ViewHandler.Instance.ModalDialogueCanvas.EnableTrophyDialogue(tr);
+                }
+            });
+
+            _unearnedTrophies.RemoveAll(tr => awardedTrophies.Contains(tr));
+        }
+
         private void InitializeTrophyDict()
         {
             _trophyDictionary[TrophyType.Level2] = new Trophy
             {
                 TrophyType = TrophyType.Level2,
                 UnlockCondition = LevelDependantCondition(2),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
                     Key = "Level 2 Trophy",
@@ -39,6 +60,7 @@ namespace Gamification
             {
                 TrophyType = TrophyType.Level10,
                 UnlockCondition = LevelDependantCondition(10),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
                     Key = "Level 10 Trophy",
@@ -50,6 +72,7 @@ namespace Gamification
             {
                 TrophyType = TrophyType.Level20,
                 UnlockCondition = LevelDependantCondition(20),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
                     Key = "Level 20 Trophy",
@@ -61,6 +84,7 @@ namespace Gamification
             {
                 TrophyType = TrophyType.AnimalsSeen,
                 UnlockCondition = LevelDependantCondition(20),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
                     Key = "Level 20 Trophy",
@@ -72,6 +96,7 @@ namespace Gamification
             {
                 TrophyType = TrophyType.VocabSeen,
                 UnlockCondition = VocabSeenCondition(),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
                     Key = "Vocab Monger",
@@ -83,6 +108,7 @@ namespace Gamification
             {
                 TrophyType = TrophyType.SayingSeen,
                 UnlockCondition = SayingsSeenCondition(),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
                     Key = "Saying Seen",
@@ -94,6 +120,7 @@ namespace Gamification
             {
                 TrophyType = TrophyType.AlphabetSeen,
                 UnlockCondition = AlphabetSeenCondition(),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
                     Key = "Vocab Monger",
@@ -110,6 +137,11 @@ namespace Gamification
             _unearnedTrophies = trophyKeys.Select(type => _trophyDictionary[type]).ToList();
         }
 
+        public Trophy GetTrophyByType(TrophyType type)
+        {
+            return _trophyDictionary[type];
+        }
+        
         // Deprecated
         private void InitializeTrophyConditions()
         {

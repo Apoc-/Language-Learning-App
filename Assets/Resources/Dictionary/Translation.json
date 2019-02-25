@@ -18,5 +18,10 @@
 		"Key" : "trophies",
 		"German": "Trophäen",
 		"Taiwanese": "{trophies}"
+	},
+	{
+		"Key" : "gratulations",
+		"German": "Gratulation! Du hast eine Trophäe verdient!",
+		"Taiwanese": "{gratulations}"
 	}
 ]

@@ -30,6 +30,7 @@ namespace Model
         public User()
         {
             Trophies = new List<TrophyType>();
+            Level = 1;
         }
     }
 }

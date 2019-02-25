@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Gamification;
 using Model;
 
 namespace LeitnerSystem
@@ -284,6 +285,8 @@ namespace LeitnerSystem
                     learnItem.CurrentLeitnerBoxNr -= 1;
                 }
             });
+            
+            GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
         }
         
         private void InitializeLearnItemHandler()

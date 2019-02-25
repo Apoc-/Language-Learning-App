@@ -13,7 +13,8 @@ namespace Model
         public TrophyType TrophyType { get; set; }
         
         // capsulate for lazy loading
-        public MeshData Mesh { get; set; }
+        //public MeshData Mesh { get; set; }
+        public Sprite Image { get; set; }
 
         public Func<bool> UnlockCondition { get; set; }
     }
