@@ -1,27 +1,87 @@
-[
-	{
-		"Key" : "Vocabulary",
-		"German": "Vokabeln",
-		"Taiwanese": "生词"
-	},
-	{
-		"Key" : "Alphabet",
-		"German": "Lautschrift",
-		"Taiwanese": "拉丁​字母"
-	},
-	{
-		"Key" : "profile",
-		"German": "Profil",
-		"Taiwanese": "{profile}"
-	},
-	{
-		"Key" : "trophies",
-		"German": "Trophäen",
-		"Taiwanese": "{trophies}"
-	},
-	{
-		"Key" : "gratulations",
-		"German": "Gratulation! Du hast eine Trophäe verdient!",
-		"Taiwanese": "{gratulations}"
-	}
+﻿[
+  {
+    "Key": "vocabulary",
+    "German": "Vokabeln",
+    "Taiwanese": "單字"
+  },
+  {
+    "Key": "sayings",
+    "German": "Redewendungen",
+    "Taiwanese": "諺語"
+  },
+  {
+    "Key": "dialogues",
+    "German": "Gespräche",
+    "Taiwanese": "對話"
+  },
+  {
+    "Key": "alphabet",
+    "German": "Alphabet",
+    "Taiwanese": "ABC (字母)"
+  },
+  {
+    "Key": "levelUp",
+    "German": "Gratulation! Du hast ein neues Level erreicht!",
+    "Taiwanese": "恭喜你晉級！"
+  },
+  {
+    "Key": "restaurant",
+    "German": "Restaurant",
+    "Taiwanese": "餐廳"
+  },
+  {
+    "Key": "formal",
+    "German": "Formell",
+    "Taiwanese": "正式"
+  },
+  {
+    "Key": "smalltalk",
+    "German": "Unterhaltung",
+    "Taiwanese": "簡答"
+  },
+  {
+    "Key": "shopping",
+    "German": "Einkaufen",
+    "Taiwanese": "購物"
+  },
+  {
+    "Key": "profile",
+    "German": "Profil",
+    "Taiwanese": "簡介"
+  },
+  {
+    "Key": "dictionary",
+    "German": "Wörterbuch",
+    "Taiwanese": "字典"
+  },
+  {
+    "Key": "alphabet_list",
+    "German": "Zeichenliste",
+    "Taiwanese": "字母清單"
+  },
+  {
+    "Key": "lookup",
+    "German": "Nachschlagen",
+    "Taiwanese": "查"
+  },
+  {
+    "Key": "language",
+    "German": "Ich will Chinesisch lernen",
+    "Taiwanese": "我想要學德文"
+  },
+  {
+    "Key": "trophy",
+    "German": "Trophäe",
+    "Taiwanese": "獎盃"
+  },
+  {
+    "Key": "trophies",
+    "German": "Trophäen",
+    "Taiwanese": "獎盃"
+  },
+  {
+    "Key": "gratulations",
+    "German": "Gratulation! Du hast eine Trophäe verdient!",
+    "Taiwanese": "恭喜你!得到一個獎盃"
+  }
 ]
