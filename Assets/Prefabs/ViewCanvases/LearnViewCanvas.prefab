@@ -350,7 +350,7 @@ MonoBehaviour:
   TextAnswerPrefab: {fileID: 0}
   AudioAnswerPrefab: {fileID: 0}
   ImageAnswerPrefab: {fileID: 0}
-  AudioSource: {fileID: 0}
+  AudioSource: {fileID: 350651739899882899}
 --- !u!1 &3554984877750074989
 GameObject:
   m_ObjectHideFlags: 0

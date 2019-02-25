@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class TestAnswer : MonoBehaviour
 {
-    public abstract void PopulateUI(Answer answer);
+    public abstract void PopulateUI(LearnViewCanvas canvas, Answer answer);
 }

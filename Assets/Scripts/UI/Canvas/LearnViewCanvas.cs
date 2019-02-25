@@ -54,10 +54,10 @@ public class LearnViewCanvas : MonoBehaviour
         var answer2 = answer2Go.GetComponent<TestAnswer>();
         var answer3 = answer3Go.GetComponent<TestAnswer>();
 
-        question.PopulateUI(c.Question);
-        answer1.PopulateUI(c.Answers[0]);
-        answer2.PopulateUI(c.Answers[0]);
-        answer3.PopulateUI(c.Answers[0]);
+        question.PopulateUI(this, c.Question);
+        answer1.PopulateUI(this, c.Answers[0]);
+        answer2.PopulateUI(this, c.Answers[0]);
+        answer3.PopulateUI(this, c.Answers[0]);
     }
 
     private void ResetContainers()
@@ -120,5 +120,12 @@ public class LearnViewCanvas : MonoBehaviour
             ViewHandler.Instance.CurrentCategory = null;
             ViewHandler.Instance.SwitchToView("Category");
         }
+    }
+
+    public void PlayAudio(AudioClip clip)
+    {
+        AudioSource.Stop();
+        AudioSource.clip = clip;
+        AudioSource.Play();
     }
 }
