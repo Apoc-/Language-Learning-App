@@ -8,11 +8,19 @@ public class LearnViewCanvas : MonoBehaviour
 {
     private LeitnerSession session;
     private List<Card> cards;
+    private Card currentCard;
+    private List<TestAnswer> currentAnswers = new List<TestAnswer>();
+
+    public Color SelectedAnswerBackgroundColor;
+    public Color DefaultAnswerBackgroundColor;
+    public Color AnswerCorrectColor;
+    public Color AnswerWrongColor;
 
     public GameObject QuestionContainer;
     public GameObject Answer1Container;
     public GameObject Answer2Container;
     public GameObject Answer3Container;
+    public GameObject ConfirmButton;
 
     public GameObject TextQuestionPrefab;
     public GameObject AudioQuestionPrefab;
@@ -23,6 +31,7 @@ public class LearnViewCanvas : MonoBehaviour
     public GameObject ImageAnswerPrefab;
 
     public AudioSource AudioSource;
+    
 
     public void PopulateUI(LeitnerSession session, List<Card> cards)
     {
@@ -37,7 +46,9 @@ public class LearnViewCanvas : MonoBehaviour
 
     private void GenerateUiCard(Card c)
     {
-        ResetContainers();
+        currentCard = c;
+        currentAnswers = new List<TestAnswer>();
+        ResetUI();
 
         GameObject questionPrefab = GetQuestionPrefab(c);
         GameObject answerPrefab = GetAnswerPrefab(c);
@@ -54,21 +65,27 @@ public class LearnViewCanvas : MonoBehaviour
         var answer2 = answer2Go.GetComponent<TestAnswer>();
         var answer3 = answer3Go.GetComponent<TestAnswer>();
 
+        currentAnswers.Add(answer1);
+        currentAnswers.Add(answer2);
+        currentAnswers.Add(answer3);
+
         question.PopulateUI(this, c.Question);
         answer1.PopulateUI(this, c.Answers[0]);
         answer2.PopulateUI(this, c.Answers[1]);
         answer3.PopulateUI(this, c.Answers[2]);
     }
 
-    private void ResetContainers()
+    private void ResetUI()
     {
-        ResetGameObject(QuestionContainer);
-        ResetGameObject(Answer1Container);
-        ResetGameObject(Answer2Container);
-        ResetGameObject(Answer3Container);
+        ConfirmButton.SetActive(false);
+
+        DestroyAllChildren(QuestionContainer);
+        DestroyAllChildren(Answer1Container);
+        DestroyAllChildren(Answer2Container);
+        DestroyAllChildren(Answer3Container);
     }
 
-    private void ResetGameObject(GameObject o)
+    private void DestroyAllChildren(GameObject o)
     {
         foreach (Transform child in o.transform)
         {
@@ -120,6 +137,69 @@ public class LearnViewCanvas : MonoBehaviour
             ViewHandler.Instance.CurrentCategory = null;
             ViewHandler.Instance.SwitchToView("Category");
         }
+    }
+    
+    public void SelectAnswer(TestAnswer testAnswer)
+    {
+        currentAnswers.ForEach(a =>
+        {
+            if (a == testAnswer)
+            {
+                a.IsSelected = true;
+                a.Background.color = SelectedAnswerBackgroundColor;
+            }
+            else
+            {
+                a.IsSelected = false;
+                a.Background.color = DefaultAnswerBackgroundColor;
+            }
+        });
+
+        ConfirmButton.SetActive(true);
+    }
+
+    public void ConfirmAnswer()
+    {
+        if (currentCard == null)
+        {
+            NextQuestion();
+            return;
+        }
+
+        TestAnswer selectedAnswer = currentAnswers.FirstOrDefault(ta => ta.IsSelected);
+        var correct = currentCard.AnswerWith(selectedAnswer.GetAnswer());
+
+        if (correct)
+        {
+            selectedAnswer.Background.color = AnswerCorrectColor;
+        }
+        else
+        {
+            var correctAnswer = currentAnswers.FirstOrDefault(ta => ta.GetAnswer().IsCorrectAnswer());
+            correctAnswer.Background.color = AnswerCorrectColor;
+            selectedAnswer.Background.color = AnswerWrongColor;
+        }
+
+        cards.Remove(currentCard);
+        currentCard = null;
+    }
+
+    public void NextQuestion()
+    {
+        var nextCard = cards.FirstOrDefault();
+        if (nextCard == null)
+        {
+            EndTest();
+            return;
+        }
+
+        GenerateUiCard(nextCard);
+    }
+
+    private void EndTest()
+    {
+        session.FinishSession();
+        ViewHandler.Instance.SwitchToView("LearnStartView");
     }
 
     public void PlayAudio(AudioClip clip)

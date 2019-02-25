@@ -8,7 +8,7 @@ public class AudioTestAnswer : TestAnswer
 {
     private LearnViewCanvas canvas;
     private AudioAnswer answer;
-    
+
     public override void PopulateUI(LearnViewCanvas c, Answer a)
     {
         canvas = c;
@@ -18,5 +18,11 @@ public class AudioTestAnswer : TestAnswer
     public void OnClick()
     {
         canvas.PlayAudio(answer.AudioClip);
+        canvas.SelectAnswer(this);
+    }
+
+    public override Answer GetAnswer()
+    {
+        return answer;
     }
 }
