@@ -6,12 +6,7 @@ using UnityEngine;
 public class LearnStartViewCanvas : MonoBehaviour
 {
     public string ViewToReturnTo { get; set; }
-
-    private void OnEnable()
-    {
-
-    }
-
+    
     public void StartLearning(int questionAmount)
     {
         var session = LeitnerSession.CreateSession();
@@ -41,8 +36,7 @@ public class LearnStartViewCanvas : MonoBehaviour
 
         var view = ViewHandler.Instance.SwitchToView("LearnView");
         var learnView = view.GetComponent<LearnViewCanvas>();
-        learnView.session = session;
-        learnView.cards = cards;
+        learnView.PopulateUI(session, cards);
     }
 
     public void ReturnButton()

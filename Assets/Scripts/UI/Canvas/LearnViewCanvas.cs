@@ -5,20 +5,25 @@ using UnityEngine;
 
 public class LearnViewCanvas : MonoBehaviour
 {
-    public LeitnerSession session;
-    public List<Card> cards;
+    private LeitnerSession session;
+    private List<Card> cards;
 
-    private void OnEnable()
+    public AudioSource AudioSource;
+
+    public void PopulateUI(LeitnerSession session, List<Card> cards)
     {
-        
+        this.session = session;
+        this.cards = cards;
+
+
     }
 
     public void ReturnButton()
     {
         if (ViewHandler.Instance.CurrentClass == UI.ClassType.Alphabet)
         {
-            ViewHandler.Instance.CurrentClass = UI.ClassType.None;
-            ViewHandler.Instance.SwitchToView("Class");
+            ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.None;
+            ViewHandler.Instance.SwitchToView("Dictionary or Learning");
         }
         else
         {
