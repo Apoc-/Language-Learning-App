@@ -1749,7 +1749,7 @@ PrefabInstance:
     - target: {fileID: 3519441069456748511, guid: d12f414eff8363e49944498dcc60a971,
         type: 3}
       propertyPath: m_Name
-      value: LearntViewCanvas
+      value: LearnViewCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 3217581912168158227, guid: d12f414eff8363e49944498dcc60a971,
         type: 3}

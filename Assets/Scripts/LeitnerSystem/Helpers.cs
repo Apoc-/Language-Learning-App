@@ -28,7 +28,7 @@ namespace LeitnerSystem
 
         public static int NextInt(int min, int max)
         {
-            return rng.Next();
+            return rng.Next(min, max);
         }
     }
     

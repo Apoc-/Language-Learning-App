@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using LeitnerSystem;
 using UnityEngine;
 
 public class LearnViewCanvas : MonoBehaviour
 {
-    public string ViewToReturnTo { get; set; }
+    public LeitnerSession session;
+    public List<Card> cards;
 
     private void OnEnable()
     {

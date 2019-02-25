@@ -41,8 +41,8 @@ namespace LeitnerSystem
                 .WithCardFormat(CardFormat.ForeignAudioToForeignText)
                 .WithAudioQuestion(GetAudio(questionEntry))
                 .AddTextAnswer(questionEntry.Character, true)
+                .AddTextAnswer(wrongAnswerEntries[0].Character, true)
                 .AddTextAnswer(wrongAnswerEntries[1].Character, true)
-                .AddTextAnswer(wrongAnswerEntries[2].Character, true)
                 .End();
         }
         
