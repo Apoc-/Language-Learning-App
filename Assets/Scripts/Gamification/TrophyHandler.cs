@@ -35,6 +35,7 @@ namespace Gamification
                     _user.Trophies.Add(tr.TrophyType);
                     awardedTrophies.Add(tr);
                     
+                    DAOFactory.UserDAO.WriteUser(_user);
                     ViewHandler.Instance.ModalDialogueCanvas.EnableTrophyDialogue(tr);
                 }
             });
@@ -124,7 +125,7 @@ namespace Gamification
                 Name = new Translation
                 {
                     Key = "Vocab Monger",
-                    German = "Level 20 Trophäe",
+                    German = "Alphabet Seen Trophy",
                     Taiwanese = ""
                 }
             };
