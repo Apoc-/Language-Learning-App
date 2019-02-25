@@ -12,6 +12,8 @@ namespace LeitnerSystem
         public bool AnsweredCorrectly { get; private set; }
         public CardFormat CardFormat { get; set; }
 
+        public List<Answer> Answers => _answers;
+
         public Card(string learnItemId)
         {
             LearnItemId = learnItemId;

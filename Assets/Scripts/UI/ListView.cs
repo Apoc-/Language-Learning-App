@@ -102,6 +102,7 @@ public class ListView : MonoBehaviour
 
     public void ReturnButton()
     {
+        ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.None;
         ViewHandler.Instance.SwitchToView(ViewToReturnTo);
     }
 
