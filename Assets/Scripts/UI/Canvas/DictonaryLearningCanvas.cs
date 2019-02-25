@@ -13,7 +13,16 @@ public class DictonaryLearningCanvas : MonoBehaviour
         {
             case "Learning":
                 ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.Learn;
-                //TODO: Switch to Learning Views
+                if (ViewHandler.Instance.CurrentClass == ClassType.Alphabet)
+                {
+                    var view = ViewHandler.Instance.SwitchToView("LearnStartView");
+                    view.GetComponent<LearnStartViewCanvas>().ViewToReturnTo = "Dictionary or Learning";
+                }
+                else
+                {
+                    ViewHandler.Instance.SwitchToView("Category");
+                }
+
                 break;
 
             case "Dictionary":
@@ -31,7 +40,7 @@ public class DictonaryLearningCanvas : MonoBehaviour
                 break;
 
             case "ReturnButton":
-                ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.None;
+                ViewHandler.Instance.CurrentClass = ClassType.None;
                 ViewHandler.Instance.SwitchToView("Class");
                 break;
 

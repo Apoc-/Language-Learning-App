@@ -10,4 +10,18 @@ public class LearnViewCanvas : MonoBehaviour
     {
         
     }
+
+    public void ReturnButton()
+    {
+        if (ViewHandler.Instance.CurrentClass == UI.ClassType.Alphabet)
+        {
+            ViewHandler.Instance.CurrentClass = UI.ClassType.None;
+            ViewHandler.Instance.SwitchToView("Class");
+        }
+        else
+        {
+            ViewHandler.Instance.CurrentCategory = null;
+            ViewHandler.Instance.SwitchToView("Category");
+        }
+    }
 }

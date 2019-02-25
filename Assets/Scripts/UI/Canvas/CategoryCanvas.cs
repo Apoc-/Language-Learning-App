@@ -43,7 +43,7 @@ namespace UI.Canvas
             switch (selected)
             {
                 case "ReturnButton":
-                    ViewHandler.Instance.CurrentCategory = null;
+                    ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.None;
                     ViewHandler.Instance.SwitchToView("Dictionary or Learning");
                     break;
 
