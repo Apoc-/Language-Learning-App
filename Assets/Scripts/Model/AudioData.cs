@@ -18,7 +18,7 @@ namespace Model
             {
                 _audio = _audio
                     ?? Resources.Load<AudioClip>(Path)
-                    ?? throw new Exception("Resource of Type AudioClip was not found in " + Path);
+                    ;//?? throw new Exception("Resource of Type AudioClip was not found in " + Path);
 
                 return _audio;
             }
