@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using DataProvider;
 using Gamification;
+using Model;
 using UnityEngine;
 using UnityEngine.UI;
 

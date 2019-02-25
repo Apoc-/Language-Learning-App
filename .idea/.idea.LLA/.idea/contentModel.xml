@@ -100,6 +100,8 @@
               <e p="ClassCanvas.cs" t="Include" />
               <e p="DictonaryLearningCanvas.cs" t="Include" />
               <e p="LanguageCanvas.cs" t="Include" />
+              <e p="LearnStartViewCanvas.cs" t="Include" />
+              <e p="LearnViewCanvas.cs" t="Include" />
               <e p="ProfileCanvas.cs" t="Include" />
               <e p="VocabularyDetailCanvas.cs" t="Include" />
             </e>
@@ -110,6 +112,14 @@
             <e p="ModalDialogueCanvasBehaviour.cs" t="Include" />
             <e p="NavigationDrawer.cs" t="Include" />
             <e p="ProgressBarBehaviour.cs" t="Include" />
+            <e p="Test" t="Include">
+              <e p="AudioTestAnswer.cs" t="Include" />
+              <e p="AudioTestQuestion.cs" t="Include" />
+              <e p="TestAnswer.cs" t="Include" />
+              <e p="TestQuestion.cs" t="Include" />
+              <e p="TextTestAnswer.cs" t="Include" />
+              <e p="TextTestQuestion.cs" t="Include" />
+            </e>
             <e p="TestingView.cs" t="Include" />
             <e p="TrophyButton.cs" t="Include" />
             <e p="View.cs" t="Include" />
