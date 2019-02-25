@@ -55,6 +55,39 @@ namespace DataAccess.DataHelpers
             return entry;
         }
 
+        public static void GenerateTranslationJsonFromSource()
+        {
+            var entries = 17;
+            string sourceFile = "Dictionary/translation_source";
+
+            var text = Resources.Load<TextAsset>(sourceFile).text;
+            var lines = text.Split('\n').ToList();
+            var dataList = new List<Translation>();
+
+            for (int i = 0; i < entries; i++)
+            {
+                var v = new Translation();
+                dataList.Add(v);
+            }
+
+            lines = lines.Select(line => line.Trim()).ToList();
+
+            var keys = lines.Take(entries).ToList();
+            var de = lines.Skip(entries).Take(entries).ToList();
+            var tw = lines.Skip(2*entries).Take(entries).ToList();
+
+            for (var i = 0; i < dataList.Count; i++)
+            {
+                var tr = dataList[i];
+                tr.Key = keys[i];
+                tr.German = de[i];
+                tr.Taiwanese = tw[i];
+            }
+
+            var json = JsonConvert.SerializeObject(dataList, Formatting.Indented);
+            File.WriteAllText("generated.json", json, System.Text.Encoding.UTF8);
+        }
+        
         public static void GenerateVocabJsonFromSource()
         {
             var entries = 20;

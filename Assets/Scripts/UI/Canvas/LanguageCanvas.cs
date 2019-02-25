@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using DataAccess;
+using DataAccess.DataHelpers;
 using Gamification;
 using Model;
 using UnityEngine;
@@ -8,6 +9,11 @@ using UnityEngine.EventSystems;
 
 public class LanguageCanvas : MonoBehaviour
 {
+    private void Start()
+    {
+        JsonGenerator.GenerateTranslationJsonFromSource();
+    }
+
     public void LanguageSelect()
     {
         var language = EventSystem.current.currentSelectedGameObject.name;

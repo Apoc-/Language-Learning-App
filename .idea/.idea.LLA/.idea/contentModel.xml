@@ -14,6 +14,7 @@
           <e p="Dictionary" t="Include">
             <e p="alphabet_source.txt" t="Include" />
             <e p="source.txt" t="Include" />
+            <e p="translation_source.txt" t="Include" />
           </e>
           <e p="Icons" t="Include">
             <e p="sources.txt" t="Include" />

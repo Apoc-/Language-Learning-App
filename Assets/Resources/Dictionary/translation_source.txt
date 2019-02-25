@@ -1,0 +1,51 @@
+vocabulary
+sayings
+dialogues
+alphabet
+levelUp
+restaurant
+formal
+smalltalk
+shopping
+profile
+dictionary
+alphabet_list
+lookup
+language
+trophy
+trophies
+gratulations
+Vokabeln
+Redewendungen
+Gespräche
+Alphabet
+Gratulation! Du hast ein neues Level erreicht!
+Restaurant
+Formell
+Unterhaltung
+Einkaufen
+Profil
+Wörterbuch
+Zeichenliste
+Nachschlagen
+Ich will Chinesisch lernen
+Trophäe
+Trophäen
+Gratulation! Du hast eine Trophäe verdient!
+單字
+諺語
+對話
+ABC (字母)
+恭喜你晉級！
+餐廳
+正式
+簡答
+購物
+簡介
+字典
+字母清單
+查
+我想要學德文
+獎盃
+獎盃
+恭喜你!得到一個獎盃
