@@ -56,8 +56,8 @@ public class LearnViewCanvas : MonoBehaviour
 
         question.PopulateUI(this, c.Question);
         answer1.PopulateUI(this, c.Answers[0]);
-        answer2.PopulateUI(this, c.Answers[0]);
-        answer3.PopulateUI(this, c.Answers[0]);
+        answer2.PopulateUI(this, c.Answers[1]);
+        answer3.PopulateUI(this, c.Answers[2]);
     }
 
     private void ResetContainers()
