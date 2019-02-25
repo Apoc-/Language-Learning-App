@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 6795824803337401080}
   - component: {fileID: 6383415749212063093}
   m_Layer: 5
-  m_Name: LearntViewCanvas
+  m_Name: LearnViewCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
