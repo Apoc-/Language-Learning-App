@@ -92,7 +92,7 @@ public class ListView : MonoBehaviour
     {
         
         var data = DataProvider.DataCache.Instance.GetDialoguesByCategory(currentCategoryId);
-
+        print(data);
         foreach (var entry in data)
         {
 
