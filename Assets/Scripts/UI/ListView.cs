@@ -92,14 +92,43 @@ public class ListView : MonoBehaviour
     {
         
         var data = DataProvider.DataCache.Instance.GetDialoguesByCategory(currentCategoryId);
-        print(data);
+        // var dialogue = data.Entries;
+        List<DialogueData> dialogue = new List<DialogueData>();
+
+        
         foreach (var entry in data)
         {
+            if(entry.Entries[Language.German].Count == entry.Entries[Language.Taiwanese].Count){
+                for(var i=0 ; i<entry.Entries[Language.German].Count ; i++){
+                    dialogue.Add(new DialogueData(entry.Entries[Language.German][i], entry.Entries[Language.Taiwanese][i]));
 
-            GameObject row = GameObject.Instantiate(DialogueRowPrefab, ListContainer.transform);
-            var row2 = row.GetComponent<DialogueListRow>();
-            row2.PopulateUI(entry);
+                }
+            }
+            bool speeker = true;
+            foreach(var content in dialogue){
+                GameObject row = GameObject.Instantiate(DialogueRowPrefab, ListContainer.transform);
+                var row2 = row.GetComponent<DialogueListRow>();
+                row2.PopulateUI(content, speeker);
+                speeker = !speeker;
+            }
+            // foreach (var content in entry.Entries[Language.German])
+            // {  
+            //     german.Add(content);
+            // }  
+            // foreach (var content in entry.Entries[Language.Taiwanese])
+            // {  
+            //     taiwan.Add(content);
+            // }   
+            // var C = german.Concat<DialogueEntry>(taiwan).ToList<DialogueEntry>();
+            // foreach(var s in C){
+            //     print(s.Text);
+            // }
+
+              
         }
+        // GameObject row = GameObject.Instantiate(DialogueRowPrefab, ListContainer.transform);
+        // var row2 = row.GetComponent<DialogueListRow>();
+        // row2.PopulateUI(content);
 
     }
 
@@ -115,6 +144,6 @@ public class ListView : MonoBehaviour
         ViewHandler.Instance.SwitchToView(ViewToReturnTo);
     }
 
-    
+
     
 }
