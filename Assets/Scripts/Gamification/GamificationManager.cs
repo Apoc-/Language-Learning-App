@@ -46,8 +46,6 @@ namespace Gamification
 
             IncrementProgressBar();
             GiveUserXp();
-            
-            TrophyHandler.CheckTrophyConditions();
         }
 
         private void IncrementProgressBar()

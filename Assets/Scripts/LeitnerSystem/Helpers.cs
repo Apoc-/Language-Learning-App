@@ -31,5 +31,4 @@ namespace LeitnerSystem
             return rng.Next(min, max);
         }
     }
-    
 }
