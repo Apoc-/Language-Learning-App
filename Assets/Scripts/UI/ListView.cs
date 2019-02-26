@@ -90,8 +90,17 @@ public class ListView : MonoBehaviour
 
     private void LoadDialogueData(string currentCategoryId)
     {
-        throw new NotImplementedException();
+        
         var data = DataProvider.DataCache.Instance.GetDialoguesByCategory(currentCategoryId);
+
+        foreach (var entry in data)
+        {
+
+            GameObject row = GameObject.Instantiate(DialogueRowPrefab, ListContainer.transform);
+            var row2 = row.GetComponent<DialogueListRow>();
+            row2.PopulateUI(entry);
+        }
+
     }
 
     private void LoadSayingData(string currentCategoryId)
@@ -106,15 +115,6 @@ public class ListView : MonoBehaviour
         ViewHandler.Instance.SwitchToView(ViewToReturnTo);
     }
 
-    public class Vocabulary
-    {
-        public string German;
-        public string Chinese;
-
-        public Vocabulary(string newGerman, string newChinese)
-        {
-            German = newGerman;
-            Chinese = newChinese;
-        }
-    }
+    
+    
 }
