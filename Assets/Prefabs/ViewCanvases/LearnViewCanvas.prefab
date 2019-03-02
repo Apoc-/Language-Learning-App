@@ -353,7 +353,8 @@ MonoBehaviour:
     type: 3}
   AudioQuestionPrefab: {fileID: 4520797368928452050, guid: 602576d2f8993104aad780c6dbd0758b,
     type: 3}
-  ImageQuestionPrefab: {fileID: 0}
+  ImageQuestionPrefab: {fileID: 4520797368928452050, guid: 6dc61b5ade92ab249b32bb990aeeb640,
+    type: 3}
   TextAnswerPrefab: {fileID: 1315470858500195248, guid: 6f10f413b0a566c48b5bc73f62fa4a14,
     type: 3}
   AudioAnswerPrefab: {fileID: 2111459339896237170, guid: ec2e248f6bc64e54c8b11993aaa91bca,
