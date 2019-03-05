@@ -138,5 +138,51 @@ namespace DataAccess.DataHelpers
             var json = JsonConvert.SerializeObject(dataList, Formatting.Indented);
             File.WriteAllText("generated.json", json, System.Text.Encoding.UTF8);
         }
+
+        public static void GenerateSayingJsonFromSource()
+        {
+            var entries = 6;
+            string sourceFile = "Dictionary/sayings_source";
+
+            var text = Resources.Load<TextAsset>(sourceFile).text;
+            var lines = text.Split('\n').ToList();
+            var dataList = new List<Saying>();
+
+            for (int i = 0; i < entries; i++)
+            {
+                var s = new Saying();
+                dataList.Add(s);
+            }
+
+            lines = lines.Select(line => line.Trim()).ToList();
+
+            var ch1 = lines.Take(entries).ToList();
+            var de1 = lines.Skip(entries).Take(entries).ToList();
+
+            for (var i = 0; i < dataList.Count; i++)
+            {
+                var dat = dataList[i];
+                dat.Id = "ch" + i;
+                dat.Language = Language.Taiwanese;
+                dat.Text = ch1[i];
+                dat.Meaning = de1[i];
+            }
+
+            var de2 = lines.Skip(2 * entries).Take(entries).ToList();
+            var ch2 = lines.Skip(3 * entries).Take(entries).ToList();
+            
+
+            for (var i = 0; i < dataList.Count; i++)
+            {
+                var dat = dataList[i];
+                dat.Id = "de" + i;
+                dat.Language = Language.German;
+                dat.Text = de2[i];
+                dat.Meaning = ch2[i];
+            }
+
+            var json = JsonConvert.SerializeObject(dataList, Formatting.Indented);
+            File.WriteAllText("generated.json", json, System.Text.Encoding.UTF8);
+        }
     }
 }
