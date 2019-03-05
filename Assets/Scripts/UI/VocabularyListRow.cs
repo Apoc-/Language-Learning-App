@@ -19,7 +19,7 @@ public class VocabularyListRow : MonoBehaviour
     {
         this.data = data;
         name = data.Id;
-        transform.Find("Chinese").GetComponent<Text>().text = data.Translation[Language.Chinese];
+        transform.Find("Chinese").GetComponent<Text>().text = data.Translation[Language.Taiwanese];
         transform.Find("German").GetComponent<Text>().text = data.Translation[Language.German];
     }
 }

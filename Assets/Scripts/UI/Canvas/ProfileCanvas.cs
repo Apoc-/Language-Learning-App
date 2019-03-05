@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using DataProvider;
 using Gamification;
@@ -24,31 +25,22 @@ namespace UI.Canvas
 
         private void Update()
         {
-
-            //todo remove debug stuff
-            if (Input.GetKeyDown(KeyCode.KeypadPlus))
+            if (Input.GetKey(KeyCode.KeypadPlus))
             {
                 GamificationManager.Instance.HandleAnsweredQuestion(true);
-                GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
             }
             if (Input.GetKey(KeyCode.Keypad0))
             {
                 var user = GamificationManager.Instance.User;
                 user.Level = 1;
                 user.Trophies = new List<TrophyType>();
-                user.Xp = 0;
-                user.LearningLanguage = Language.None;
-                DataAccess.DAOFactory.UserDAO.WriteUser(user);
             }
-
-            
-
         }
 
         private void OnEnable()
         {
             ResetTrophies();
-            
+
             ViewHandler.Instance.NavigationDrawer.EnableHomeButton();
             var user = GamificationManager.Instance.User;
             //Name.GetComponent<Text>().text = user.Name;
@@ -62,7 +54,7 @@ namespace UI.Canvas
         private void LoadUserTrophies()
         {
             var trophies = GamificationManager.Instance.User.Trophies;
-            
+
             trophies.ForEach(InitializeTrophyEntry);
         }
 
@@ -70,9 +62,33 @@ namespace UI.Canvas
         {
             var trophy = GamificationManager.Instance.TrophyHandler.GetTrophyByType(type);
             var button = Instantiate(TrophyPrefab, TrophyContainer.transform).GetComponent<TrophyButton>();
-            
+
             button.Trophy = trophy;
             button.GetComponent<Image>().sprite = trophy.Image;
+        }
+
+        private int reset = 0;
+
+        public void DebugResetUserData()
+        {
+            reset++;
+            if (reset <= 8)
+            {
+                StartCoroutine(ResetResetcounter());
+                return;
+            }
+
+            GamificationManager.Instance.ResetUserData();
+            DataAccess.DAOFactory.LeitnerBoxDAO.ResetLeitnerBoxData();
+            ResetTrophies();
+
+            ViewHandler.Instance.SwitchToView("LanguageCanvas");
+        }
+
+        private IEnumerator ResetResetcounter()
+        {
+            yield return new WaitForSecondsRealtime(1);
+            reset--;
         }
     }
 }

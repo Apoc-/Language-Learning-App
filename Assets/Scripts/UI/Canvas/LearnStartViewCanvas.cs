@@ -34,6 +34,8 @@ public class LearnStartViewCanvas : MonoBehaviour
                 throw new Exception("StartLearning was called without selecting a Class");
         }
 
+        Gamification.GamificationManager.Instance.EnableProgressBar(questionAmount);
+
         var view = ViewHandler.Instance.SwitchToView("LearnView");
         var learnView = view.GetComponent<LearnViewCanvas>();
         learnView.PopulateUI(session, cards);
@@ -41,7 +43,7 @@ public class LearnStartViewCanvas : MonoBehaviour
 
     public void ReturnButton()
     {
-        if (ViewHandler.Instance.CurrentClass == UI.ClassType.Alphabet)
+        if (ViewHandler.Instance.CurrentClass == UI.ClassType.Alphabet || ViewHandler.Instance.CurrentClass == UI.ClassType.Saying)
         {
             ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.None;
             ViewHandler.Instance.SwitchToView("Dictionary or Learning");
