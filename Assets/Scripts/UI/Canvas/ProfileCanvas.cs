@@ -24,7 +24,7 @@ namespace UI.Canvas
 
         private void Update()
         {
-            if (Input.GetKey(KeyCode.KeypadPlus))
+            if (Input.GetKey(KeyCode.P))
             {
                 GamificationManager.Instance.HandleAnsweredQuestion(true);
             }
