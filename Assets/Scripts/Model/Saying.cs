@@ -52,31 +52,6 @@ namespace Model
         /// </summary>
         public string Meaning { get; set; }
 
-        /// <summary>
-        /// A similar saying in own language
-        /// </summary>
-        public string SimilarSaying { get; set; }
-
-        [JsonProperty("CategoryId")]
-        private string _categoryId;
-
-        private Category _category;
-
-        [JsonIgnore]
-        public Category Category
-        {
-            get
-            {
-                if (_category == null)
-                {
-                    var category = DAOFactory.CategoryDAO.LoadCategories().FirstOrDefault(c => c.Id == _categoryId);
-                    _category = category ?? throw new Exception("Category with id " + _categoryId + " not found");
-                }
-
-                return _category;
-            }
-        }
-
         public AudioData Audio { get; set; }
 
         public string Bopomofo { get; set; }

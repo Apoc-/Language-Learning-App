@@ -127,8 +127,6 @@ public class LearnViewCanvas : MonoBehaviour
 
     public void ReturnButton()
     {
-        Gamification.GamificationManager.Instance.DisableProgressBar();
-
         if (ViewHandler.Instance.CurrentClass == UI.ClassType.Alphabet)
         {
             ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.None;
@@ -200,8 +198,6 @@ public class LearnViewCanvas : MonoBehaviour
 
     private void EndTest()
     {
-        Gamification.GamificationManager.Instance.DisableProgressBar();
-
         session.FinishSession();
         ViewHandler.Instance.SwitchToView("LearnStartView");
     }

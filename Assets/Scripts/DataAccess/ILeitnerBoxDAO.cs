@@ -6,6 +6,5 @@ namespace DataAccess
     {
         Dictionary<string, int> LoadLeitnerboxData();
         void WriteLeitnerboxData(string id, int leitnerBoxNr);
-        void ResetLeitnerBoxData();
     }
 }

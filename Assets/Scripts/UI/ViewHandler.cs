@@ -48,8 +48,6 @@ public class ViewHandler : Singleton<ViewHandler>
 
     public View SwitchToView(View targetView)
     {
-        EndOldAnimations();
-
         if (currentView == targetView) return currentView;
         foreach (var view in views)
         {
@@ -66,15 +64,6 @@ public class ViewHandler : Singleton<ViewHandler>
 
         currentView = targetView;
         return currentView;
-    }
-
-    private void EndOldAnimations()
-    {
-        var animations = currentView.GetComponentsInChildren<EasyTween>();
-        foreach (var anim in animations)
-        {
-            anim.animationParts.FinalEnd();
-        }
     }
 
     public void AboutButtonPressed()

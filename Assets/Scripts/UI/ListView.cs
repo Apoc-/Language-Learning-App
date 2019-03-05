@@ -98,9 +98,9 @@ public class ListView : MonoBehaviour
         
         foreach (var entry in data)
         {
-            if(entry.Entries[Language.German].Count == entry.Entries[Language.Taiwanese].Count){
+            if(entry.Entries[Language.German].Count == entry.Entries[Language.Chinese].Count){
                 for(var i=0 ; i<entry.Entries[Language.German].Count ; i++){
-                    dialogue.Add(new DialogueData(entry.Entries[Language.German][i], entry.Entries[Language.Taiwanese][i]));
+                    dialogue.Add(new DialogueData(entry.Entries[Language.German][i], entry.Entries[Language.Chinese][i]));
 
                 }
             }
@@ -115,7 +115,7 @@ public class ListView : MonoBehaviour
             // {  
             //     german.Add(content);
             // }  
-            // foreach (var content in entry.Entries[Language.Taiwanese])
+            // foreach (var content in entry.Entries[Language.Chinese])
             // {  
             //     taiwan.Add(content);
             // }   
@@ -135,7 +135,7 @@ public class ListView : MonoBehaviour
     private void LoadSayingData(string currentCategoryId)
     {
         throw new NotImplementedException();
-        var data = DataProvider.DataCache.Instance.GetSayingsByCategory(currentCategoryId);
+        //var data = DataProvider.DataCache.Instance.GetSayingsByCategory(currentCategoryId);
     }
 
     public void ReturnButton()
