@@ -81,7 +81,7 @@ namespace DataAccess.DataHelpers
                 var tr = dataList[i];
                 tr.Key = keys[i];
                 tr.German = de[i];
-                tr.Taiwanese = tw[i];
+                tr.Chinese = tw[i];
             }
 
             var json = JsonConvert.SerializeObject(dataList, Formatting.Indented);

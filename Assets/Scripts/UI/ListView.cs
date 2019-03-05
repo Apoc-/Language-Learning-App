@@ -90,22 +90,25 @@ public class ListView : MonoBehaviour
 
     private void LoadDialogueData(string currentCategoryId)
     {
-        
+
         var data = DataProvider.DataCache.Instance.GetDialoguesByCategory(currentCategoryId);
         // var dialogue = data.Entries;
         List<DialogueData> dialogue = new List<DialogueData>();
 
-        
+
         foreach (var entry in data)
         {
-            if(entry.Entries[Language.German].Count == entry.Entries[Language.Chinese].Count){
-                for(var i=0 ; i<entry.Entries[Language.German].Count ; i++){
+            if (entry.Entries[Language.German].Count == entry.Entries[Language.Chinese].Count)
+            {
+                for (var i = 0; i < entry.Entries[Language.German].Count; i++)
+                {
                     dialogue.Add(new DialogueData(entry.Entries[Language.German][i], entry.Entries[Language.Chinese][i]));
 
                 }
             }
             bool speeker = true;
-            foreach(var content in dialogue){
+            foreach (var content in dialogue)
+            {
                 GameObject row = GameObject.Instantiate(DialogueRowPrefab, ListContainer.transform);
                 var row2 = row.GetComponent<DialogueListRow>();
                 row2.PopulateUI(content, speeker);
@@ -124,7 +127,7 @@ public class ListView : MonoBehaviour
             //     print(s.Text);
             // }
 
-              
+
         }
         // GameObject row = GameObject.Instantiate(DialogueRowPrefab, ListContainer.transform);
         // var row2 = row.GetComponent<DialogueListRow>();
@@ -135,7 +138,7 @@ public class ListView : MonoBehaviour
     private void LoadSayingData(string currentCategoryId)
     {
         throw new NotImplementedException();
-        //var data = DataProvider.DataCache.Instance.GetSayingsByCategory(currentCategoryId);
+        var data = DataProvider.DataCache.Instance.GetSayings();
     }
 
     public void ReturnButton()
@@ -145,5 +148,5 @@ public class ListView : MonoBehaviour
     }
 
 
-    
+
 }
