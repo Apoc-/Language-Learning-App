@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: LearnView
+  Id: LearnView
 --- !u!114 &6165673802361387035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,22 +965,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 22429212, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.0000038146973
-      objectReference: {fileID: 0}
-    - target: {fileID: 11429210, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
-      propertyPath: m_Color.r
-      value: 0.26203385
-      objectReference: {fileID: 0}
-    - target: {fileID: 11429210, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
-      propertyPath: m_Color.g
-      value: 0.7924528
-      objectReference: {fileID: 0}
-    - target: {fileID: 11429210, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.25044498
-      objectReference: {fileID: 0}
     - target: {fileID: 11429214, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1003,6 +988,22 @@ PrefabInstance:
     - target: {fileID: 11429214, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429210, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.26203385
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429210, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429210, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.25044498
+      objectReference: {fileID: 0}
+    - target: {fileID: 22429212, guid: b95be68355f9c2440be3969316a2e27b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000038146973
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b95be68355f9c2440be3969316a2e27b, type: 3}

@@ -78,7 +78,7 @@ public class ViewHandler : Singleton<ViewHandler>
 
     private View GetViewByTitle(String title)
     {
-        return views.ToList().FirstOrDefault(v => v.Title == title)
+        return views.ToList().FirstOrDefault(v => v.Id == title)
             ?? throw new Exception("View " + title + " was not found");
     }
 }

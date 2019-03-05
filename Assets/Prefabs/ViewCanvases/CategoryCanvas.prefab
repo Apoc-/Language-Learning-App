@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: Category
+  Id: Category
 --- !u!114 &4092935783519278644
 MonoBehaviour:
   m_ObjectHideFlags: 0
