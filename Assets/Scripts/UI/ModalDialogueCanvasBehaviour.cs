@@ -39,7 +39,7 @@ namespace UI
             var text = DataCache.Instance.GetUiTranslationByKey("gratulations");
             text += "\n<b>{0}</b>";
             
-            if (GamificationManager.Instance.User.UiLanguage == Language.Taiwanese)
+            if (GamificationManager.Instance.User.UiLanguage == Language.Chinese)
             {
                 text = text.Replace("{0}", trophy.Name.Taiwanese);
             }
@@ -61,7 +61,7 @@ namespace UI
         {
             var text = "\n<b>{0}</b>";
             
-            if (GamificationManager.Instance.User.UiLanguage == Language.Taiwanese)
+            if (GamificationManager.Instance.User.UiLanguage == Language.Chinese)
             {
                 text = text.Replace("{0}", trophy.Name.Taiwanese);
             }

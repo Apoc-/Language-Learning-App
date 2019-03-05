@@ -23,7 +23,7 @@ namespace DataProvider
         {
             switch (GamificationManager.Instance.User.UiLanguage)
             {
-                case Language.Taiwanese:
+                case Language.Chinese:
                     return _translations[key].Taiwanese;
                 case Language.German:
                     return _translations[key].German;
@@ -80,28 +80,24 @@ namespace DataProvider
             });
         }
         #endregion
-        
+
         #region Sayings
-        private readonly Dictionary<string, List<Saying>> _sayings = new Dictionary<string, List<Saying>>();
-        public List<Saying> GetSayingsByCategory(string categoryId)
+        private List<Saying> _sayings = new List<Saying>();
+        public List<Saying> GetSayings()
         {
             if (_sayings.Count == 0) LoadSayings();
 
-            return _sayings[categoryId];
+            return _sayings;
         }
 
         private void LoadSayings()
         {
             var sayings = DAOFactory.SayingDAO.LoadSayings();
-            var sayingCategoryIds = new List<string>
+
+            _sayings = sayings.Where(s =>
             {
-                "birthday", "festivals", "weather", "behaviour"
-            };
-            
-            sayingCategoryIds.ForEach(id =>
-            {
-                _sayings[id] = sayings.Where(d => d.Category.Id == id).ToList();
-            });
+                return s.Language == GamificationManager.Instance.User.LearningLanguage;
+            }).ToList();
         }
         #endregion
         

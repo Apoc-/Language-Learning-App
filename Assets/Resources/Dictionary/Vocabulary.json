@@ -4,14 +4,14 @@
       "Id": "mouse",
       "Translation": {
         "German": "Maus",
-        "Taiwanese": "老鼠"
+        "Chinese": "老鼠"
       },
       "Audio": {
         "German": {
           "Path": "Audio/mouse_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/mouse_tw"
+        "Chinese": {
+          "Path": "Audio/mouse_cn"
         }
       },
       "Image": {
@@ -24,14 +24,14 @@
       "Id": "cow",
       "Translation": {
         "German": "Kuh",
-        "Taiwanese": "牛"
+        "Chinese": "牛"
       },
       "Audio": {
         "German": {
           "Path": "Audio/cow_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/cow_tw"
+        "Chinese": {
+          "Path": "Audio/cow_cn"
         }
       },
       "Image": {
@@ -44,14 +44,14 @@
       "Id": "pig",
       "Translation": {
         "German": "Schwein",
-        "Taiwanese": "豬"
+        "Chinese": "豬"
       },
       "Audio": {
         "German": {
           "Path": "Audio/pig_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/pig_tw"
+        "Chinese": {
+          "Path": "Audio/pig_cn"
         }
       },
       "Image": {
@@ -64,14 +64,14 @@
       "Id": "rooster",
       "Translation": {
         "German": "Hahn",
-        "Taiwanese": "公雞"
+        "Chinese": "公雞"
       },
       "Audio": {
         "German": {
           "Path": "Audio/rooster_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/rooster_tw"
+        "Chinese": {
+          "Path": "Audio/rooster_cn"
         }
       },
       "Image": {
@@ -84,14 +84,14 @@
       "Id": "monkey",
       "Translation": {
         "German": "Affe",
-        "Taiwanese": "猴"
+        "Chinese": "猴"
       },
       "Audio": {
         "German": {
           "Path": "Audio/monkey_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/monkey_tw"
+        "Chinese": {
+          "Path": "Audio/monkey_cn"
         }
       },
       "Image": {
@@ -104,14 +104,14 @@
       "Id": "dog",
       "Translation": {
         "German": "Hund",
-        "Taiwanese": "狗"
+        "Chinese": "狗"
       },
       "Audio": {
         "German": {
           "Path": "Audio/dog_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/dog_tw"
+        "Chinese": {
+          "Path": "Audio/dog_cn"
         }
       },
       "Image": {
@@ -124,14 +124,14 @@
       "Id": "rabbit",
       "Translation": {
         "German": "Hase",
-        "Taiwanese": "兔"
+        "Chinese": "兔"
       },
       "Audio": {
         "German": {
           "Path": "Audio/rabbit_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/rabbit_tw"
+        "Chinese": {
+          "Path": "Audio/rabbit_cn"
         }
       },
       "Image": {
@@ -144,14 +144,14 @@
       "Id": "snake",
       "Translation": {
         "German": "Schlange",
-        "Taiwanese": "蛇"
+        "Chinese": "蛇"
       },
       "Audio": {
         "German": {
           "Path": "Audio/snake_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/snake_tw"
+        "Chinese": {
+          "Path": "Audio/snake_cn"
         }
       },
       "Image": {
@@ -164,14 +164,14 @@
       "Id": "tiger",
       "Translation": {
         "German": "Tiger",
-        "Taiwanese": "虎"
+        "Chinese": "虎"
       },
       "Audio": {
         "German": {
           "Path": "Audio/tiger_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/tiger_tw"
+        "Chinese": {
+          "Path": "Audio/tiger_cn"
         }
       },
       "Image": {
@@ -184,14 +184,14 @@
       "Id": "horse",
       "Translation": {
         "German": "Pferd",
-        "Taiwanese": "馬"
+        "Chinese": "馬"
       },
       "Audio": {
         "German": {
           "Path": "Audio/horse_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/horse_tw"
+        "Chinese": {
+          "Path": "Audio/horse_cn"
         }
       },
       "Image": {
@@ -204,14 +204,14 @@
       "Id": "sheep",
       "Translation": {
         "German": "Schaf",
-        "Taiwanese": "羊"
+        "Chinese": "羊"
       },
       "Audio": {
         "German": {
           "Path": "Audio/sheep_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/sheep_tw"
+        "Chinese": {
+          "Path": "Audio/sheep_cn"
         }
       },
       "Image": {
@@ -224,14 +224,14 @@
       "Id": "bull",
       "Translation": {
         "German": "Stier",
-        "Taiwanese": "公牛"
+        "Chinese": "公牛"
       },
       "Audio": {
         "German": {
           "Path": "Audio/bull_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/bull_tw"
+        "Chinese": {
+          "Path": "Audio/bull_cn"
         }
       },
       "Image": {
@@ -244,14 +244,14 @@
       "Id": "zebra",
       "Translation": {
         "German": "Zebra",
-        "Taiwanese": "斑馬"
+        "Chinese": "斑馬"
       },
       "Audio": {
         "German": {
           "Path": "Audio/zebra_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/zebra_tw"
+        "Chinese": {
+          "Path": "Audio/zebra_cn"
         }
       },
       "Image": {
@@ -264,14 +264,14 @@
       "Id": "rhino",
       "Translation": {
         "German": "Nashorn",
-        "Taiwanese": "犀牛"
+        "Chinese": "犀牛"
       },
       "Audio": {
         "German": {
           "Path": "Audio/rhino_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/rhino_tw"
+        "Chinese": {
+          "Path": "Audio/rhino_cn"
         }
       },
       "Image": {
@@ -284,14 +284,14 @@
       "Id": "kangoroo",
       "Translation": {
         "German": "Känguru",
-        "Taiwanese": "袋鼠"
+        "Chinese": "袋鼠"
       },
       "Audio": {
         "German": {
           "Path": "Audio/kangoroo_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/kangoroo_tw"
+        "Chinese": {
+          "Path": "Audio/kangoroo_cn"
         }
       },
       "Image": {
@@ -304,14 +304,14 @@
       "Id": "aligator",
       "Translation": {
         "German": "Aligator",
-        "Taiwanese": "鱷魚"
+        "Chinese": "鱷魚"
       },
       "Audio": {
         "German": {
           "Path": "Audio/aligator_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/aligator_tw"
+        "Chinese": {
+          "Path": "Audio/aligator_cn"
         }
       },
       "Image": {
@@ -324,14 +324,14 @@
       "Id": "dolpin",
       "Translation": {
         "German": "Delphin",
-        "Taiwanese": "海豚"
+        "Chinese": "海豚"
       },
       "Audio": {
         "German": {
           "Path": "Audio/dolpin_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/dolpin_tw"
+        "Chinese": {
+          "Path": "Audio/dolpin_cn"
         }
       },
       "Image": {
@@ -344,14 +344,14 @@
       "Id": "giraffe",
       "Translation": {
         "German": "Giraffe",
-        "Taiwanese": "長頸鹿"
+        "Chinese": "長頸鹿"
       },
       "Audio": {
         "German": {
           "Path": "Audio/giraffe_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/giraffe_tw"
+        "Chinese": {
+          "Path": "Audio/giraffe_cn"
         }
       },
       "Image": {
@@ -364,14 +364,14 @@
       "Id": "elephant",
       "Translation": {
         "German": "Elefant",
-        "Taiwanese": "大象"
+        "Chinese": "大象"
       },
       "Audio": {
         "German": {
           "Path": "Audio/elephant_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/elephant_tw"
+        "Chinese": {
+          "Path": "Audio/elephant_cn"
         }
       },
       "Image": {
@@ -384,14 +384,14 @@
       "Id": "bird",
       "Translation": {
         "German": "Vogel",
-        "Taiwanese": "鳥"
+        "Chinese": "鳥"
       },
       "Audio": {
         "German": {
           "Path": "Audio/bird_de"
         },
-        "Taiwanese": {
-          "Path": "Audio/bird_tw"
+        "Chinese": {
+          "Path": "Audio/bird_cn"
         }
       },
       "Image": {
@@ -404,14 +404,14 @@
     "Id": "bus",
     "Translation": {
       "German": "Bus",
-      "Taiwanese": "巴士"
+      "Chinese": "巴士"
     },
     "Audio": {
       "German": {
         "Path": "Audio/bus_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/bus_tw"
+      "Chinese": {
+        "Path": "Audio/bus_cn"
       }
     },
     "Image": {
@@ -424,14 +424,14 @@
     "Id": "train",
     "Translation": {
       "German": "Zug",
-      "Taiwanese": "火車"
+      "Chinese": "火車"
     },
     "Audio": {
       "German": {
         "Path": "Audio/train_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/train_tw"
+      "Chinese": {
+        "Path": "Audio/train_cn"
       }
     },
     "Image": {
@@ -444,14 +444,14 @@
     "Id": "metro",
     "Translation": {
       "German": "Metro",
-      "Taiwanese": "地鐵"
+      "Chinese": "地鐵"
     },
     "Audio": {
       "German": {
         "Path": "Audio/metro_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/metro_tw"
+      "Chinese": {
+        "Path": "Audio/metro_cn"
       }
     },
     "Image": {
@@ -464,14 +464,14 @@
     "Id": "car",
     "Translation": {
       "German": "Auto",
-      "Taiwanese": "汽車"
+      "Chinese": "汽車"
     },
     "Audio": {
       "German": {
         "Path": "Audio/car_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/car_tw"
+      "Chinese": {
+        "Path": "Audio/car_cn"
       }
     },
     "Image": {
@@ -484,14 +484,14 @@
     "Id": "scooter",
     "Translation": {
       "German": "Roller",
-      "Taiwanese": "摩托車"
+      "Chinese": "摩托車"
     },
     "Audio": {
       "German": {
         "Path": "Audio/scooter_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/scooter_tw"
+      "Chinese": {
+        "Path": "Audio/scooter_cn"
       }
     },
     "Image": {
@@ -504,14 +504,14 @@
     "Id": "motorcycle",
     "Translation": {
       "German": "Motorrad",
-      "Taiwanese": "重型機車"
+      "Chinese": "重型機車"
     },
     "Audio": {
       "German": {
         "Path": "Audio/motorcycle_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/motorcycle_tw"
+      "Chinese": {
+        "Path": "Audio/motorcycle_cn"
       }
     },
     "Image": {
@@ -524,14 +524,14 @@
     "Id": "bike",
     "Translation": {
       "German": "Fahrrad",
-      "Taiwanese": "腳踏車"
+      "Chinese": "腳踏車"
     },
     "Audio": {
       "German": {
         "Path": "Audio/bike_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/bike_tw"
+      "Chinese": {
+        "Path": "Audio/bike_cn"
       }
     },
     "Image": {
@@ -544,14 +544,14 @@
     "Id": "ship",
     "Translation": {
       "German": "Schiff",
-      "Taiwanese": "船"
+      "Chinese": "船"
     },
     "Audio": {
       "German": {
         "Path": "Audio/ship_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/ship_tw"
+      "Chinese": {
+        "Path": "Audio/ship_cn"
       }
     },
     "Image": {
@@ -564,14 +564,14 @@
     "Id": "ambulance",
     "Translation": {
       "German": "Krankenwagen",
-      "Taiwanese": "救護車"
+      "Chinese": "救護車"
     },
     "Audio": {
       "German": {
         "Path": "Audio/ambulance_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/ambulance_tw"
+      "Chinese": {
+        "Path": "Audio/ambulance_cn"
       }
     },
     "Image": {
@@ -584,14 +584,14 @@
     "Id": "airplane",
     "Translation": {
       "German": "Flugzeug",
-      "Taiwanese": "飛機"
+      "Chinese": "飛機"
     },
     "Audio": {
       "German": {
         "Path": "Audio/airplane_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/airplane_tw"
+      "Chinese": {
+        "Path": "Audio/airplane_cn"
       }
     },
     "Image": {
@@ -604,14 +604,14 @@
     "Id": "street",
     "Translation": {
       "German": "Strasse",
-      "Taiwanese": "街道"
+      "Chinese": "街道"
     },
     "Audio": {
       "German": {
         "Path": "Audio/street_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/street_tw"
+      "Chinese": {
+        "Path": "Audio/street_cn"
       }
     },
     "Image": {
@@ -624,14 +624,14 @@
     "Id": "highway",
     "Translation": {
       "German": "Autobahn",
-      "Taiwanese": "高速公路"
+      "Chinese": "高速公路"
     },
     "Audio": {
       "German": {
         "Path": "Audio/highway_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/highway_tw"
+      "Chinese": {
+        "Path": "Audio/highway_cn"
       }
     },
     "Image": {
@@ -644,14 +644,14 @@
     "Id": "traffic sign",
     "Translation": {
       "German": "Verkehrsschild",
-      "Taiwanese": "交通號誌"
+      "Chinese": "交通號誌"
     },
     "Audio": {
       "German": {
         "Path": "Audio/traffic sign_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/traffic sign_tw"
+      "Chinese": {
+        "Path": "Audio/traffic sign_cn"
       }
     },
     "Image": {
@@ -664,14 +664,14 @@
     "Id": "traffic light",
     "Translation": {
       "German": "Ampel",
-      "Taiwanese": "紅綠燈"
+      "Chinese": "紅綠燈"
     },
     "Audio": {
       "German": {
         "Path": "Audio/traffic light_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/traffic light_tw"
+      "Chinese": {
+        "Path": "Audio/traffic light_cn"
       }
     },
     "Image": {
@@ -684,14 +684,14 @@
     "Id": "hot air balloon",
     "Translation": {
       "German": "Heißluftballon",
-      "Taiwanese": "熱氣球"
+      "Chinese": "熱氣球"
     },
     "Audio": {
       "German": {
         "Path": "Audio/hot air balloon_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/hot air balloon_tw"
+      "Chinese": {
+        "Path": "Audio/hot air balloon_cn"
       }
     },
     "Image": {
@@ -704,14 +704,14 @@
     "Id": "street sign",
     "Translation": {
       "German": "Straßenschild",
-      "Taiwanese": "路標"
+      "Chinese": "路標"
     },
     "Audio": {
       "German": {
         "Path": "Audio/street sign_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/street sign_tw"
+      "Chinese": {
+        "Path": "Audio/street sign_cn"
       }
     },
     "Image": {
@@ -724,14 +724,14 @@
     "Id": "truck",
     "Translation": {
       "German": "Lastkraftwagen",
-      "Taiwanese": "卡車"
+      "Chinese": "卡車"
     },
     "Audio": {
       "German": {
         "Path": "Audio/truck_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/truck_tw"
+      "Chinese": {
+        "Path": "Audio/truck_cn"
       }
     },
     "Image": {
@@ -744,14 +744,14 @@
     "Id": "helmet",
     "Translation": {
       "German": "Helm",
-      "Taiwanese": "安全帽"
+      "Chinese": "安全帽"
     },
     "Audio": {
       "German": {
         "Path": "Audio/helmet_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/helmet_tw"
+      "Chinese": {
+        "Path": "Audio/helmet_cn"
       }
     },
     "Image": {
@@ -764,14 +764,14 @@
     "Id": "seatbelt",
     "Translation": {
       "German": "Gurt",
-      "Taiwanese": "安全帶"
+      "Chinese": "安全帶"
     },
     "Audio": {
       "German": {
         "Path": "Audio/seatbelt_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/seatbelt_tw"
+      "Chinese": {
+        "Path": "Audio/seatbelt_cn"
       }
     },
     "Image": {
@@ -784,14 +784,14 @@
     "Id": "horn",
     "Translation": {
       "German": "Hupe",
-      "Taiwanese": "喇叭"
+      "Chinese": "喇叭"
     },
     "Audio": {
       "German": {
         "Path": "Audio/horn_de"
       },
-      "Taiwanese": {
-        "Path": "Audio/horn_tw"
+      "Chinese": {
+        "Path": "Audio/horn_cn"
       }
     },
     "Image": {
@@ -803,14 +803,14 @@
   "Id": "bus",
   "Translation": {
     "German": "Bus",
-    "Taiwanese": "巴士"
+    "Chinese": "巴士"
   },
   "Audio": {
     "German": {
       "Path": "Audio/bus_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/bus_tw"
+    "Chinese": {
+      "Path": "Audio/bus_cn"
     }
   },
   "Image": {
@@ -823,14 +823,14 @@
   "Id": "train",
   "Translation": {
     "German": "Zug",
-    "Taiwanese": "火車"
+    "Chinese": "火車"
   },
   "Audio": {
     "German": {
       "Path": "Audio/train_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/train_tw"
+    "Chinese": {
+      "Path": "Audio/train_cn"
     }
   },
   "Image": {
@@ -843,14 +843,14 @@
   "Id": "metro",
   "Translation": {
     "German": "Metro",
-    "Taiwanese": "地鐵"
+    "Chinese": "地鐵"
   },
   "Audio": {
     "German": {
       "Path": "Audio/metro_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/metro_tw"
+    "Chinese": {
+      "Path": "Audio/metro_cn"
     }
   },
   "Image": {
@@ -863,14 +863,14 @@
   "Id": "car",
   "Translation": {
     "German": "Auto",
-    "Taiwanese": "汽車"
+    "Chinese": "汽車"
   },
   "Audio": {
     "German": {
       "Path": "Audio/car_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/car_tw"
+    "Chinese": {
+      "Path": "Audio/car_cn"
     }
   },
   "Image": {
@@ -883,14 +883,14 @@
   "Id": "scooter",
   "Translation": {
     "German": "Roller",
-    "Taiwanese": "摩托車"
+    "Chinese": "摩托車"
   },
   "Audio": {
     "German": {
       "Path": "Audio/scooter_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/scooter_tw"
+    "Chinese": {
+      "Path": "Audio/scooter_cn"
     }
   },
   "Image": {
@@ -903,14 +903,14 @@
   "Id": "motorcycle",
   "Translation": {
     "German": "Motorrad",
-    "Taiwanese": "重型機車"
+    "Chinese": "重型機車"
   },
   "Audio": {
     "German": {
       "Path": "Audio/motorcycle_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/motorcycle_tw"
+    "Chinese": {
+      "Path": "Audio/motorcycle_cn"
     }
   },
   "Image": {
@@ -923,14 +923,14 @@
   "Id": "bike",
   "Translation": {
     "German": "Fahrrad",
-    "Taiwanese": "腳踏車"
+    "Chinese": "腳踏車"
   },
   "Audio": {
     "German": {
       "Path": "Audio/bike_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/bike_tw"
+    "Chinese": {
+      "Path": "Audio/bike_cn"
     }
   },
   "Image": {
@@ -943,14 +943,14 @@
   "Id": "ship",
   "Translation": {
     "German": "Schiff",
-    "Taiwanese": "船"
+    "Chinese": "船"
   },
   "Audio": {
     "German": {
       "Path": "Audio/ship_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/ship_tw"
+    "Chinese": {
+      "Path": "Audio/ship_cn"
     }
   },
   "Image": {
@@ -963,14 +963,14 @@
   "Id": "ambulance",
   "Translation": {
     "German": "Krankenwagen",
-    "Taiwanese": "救護車"
+    "Chinese": "救護車"
   },
   "Audio": {
     "German": {
       "Path": "Audio/ambulance_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/ambulance_tw"
+    "Chinese": {
+      "Path": "Audio/ambulance_cn"
     }
   },
   "Image": {
@@ -983,14 +983,14 @@
   "Id": "airplane",
   "Translation": {
     "German": "Flugzeug",
-    "Taiwanese": "飛機"
+    "Chinese": "飛機"
   },
   "Audio": {
     "German": {
       "Path": "Audio/airplane_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/airplane_tw"
+    "Chinese": {
+      "Path": "Audio/airplane_cn"
     }
   },
   "Image": {
@@ -1003,14 +1003,14 @@
   "Id": "street",
   "Translation": {
     "German": "Strasse",
-    "Taiwanese": "街道"
+    "Chinese": "街道"
   },
   "Audio": {
     "German": {
       "Path": "Audio/street_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/street_tw"
+    "Chinese": {
+      "Path": "Audio/street_cn"
     }
   },
   "Image": {
@@ -1023,14 +1023,14 @@
   "Id": "highway",
   "Translation": {
     "German": "Autobahn",
-    "Taiwanese": "高速公路"
+    "Chinese": "高速公路"
   },
   "Audio": {
     "German": {
       "Path": "Audio/highway_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/highway_tw"
+    "Chinese": {
+      "Path": "Audio/highway_cn"
     }
   },
   "Image": {
@@ -1043,14 +1043,14 @@
   "Id": "traffic sign",
   "Translation": {
     "German": "Verkehrsschild",
-    "Taiwanese": "交通號誌"
+    "Chinese": "交通號誌"
   },
   "Audio": {
     "German": {
       "Path": "Audio/traffic sign_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/traffic sign_tw"
+    "Chinese": {
+      "Path": "Audio/traffic sign_cn"
     }
   },
   "Image": {
@@ -1063,14 +1063,14 @@
   "Id": "traffic light",
   "Translation": {
     "German": "Ampel",
-    "Taiwanese": "紅綠燈"
+    "Chinese": "紅綠燈"
   },
   "Audio": {
     "German": {
       "Path": "Audio/traffic light_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/traffic light_tw"
+    "Chinese": {
+      "Path": "Audio/traffic light_cn"
     }
   },
   "Image": {
@@ -1083,14 +1083,14 @@
   "Id": "hot air balloon",
   "Translation": {
     "German": "Heißluftballon",
-    "Taiwanese": "熱氣球"
+    "Chinese": "熱氣球"
   },
   "Audio": {
     "German": {
       "Path": "Audio/hot air balloon_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/hot air balloon_tw"
+    "Chinese": {
+      "Path": "Audio/hot air balloon_cn"
     }
   },
   "Image": {
@@ -1103,14 +1103,14 @@
   "Id": "street sign",
   "Translation": {
     "German": "Straßenschild",
-    "Taiwanese": "路標"
+    "Chinese": "路標"
   },
   "Audio": {
     "German": {
       "Path": "Audio/street sign_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/street sign_tw"
+    "Chinese": {
+      "Path": "Audio/street sign_cn"
     }
   },
   "Image": {
@@ -1123,14 +1123,14 @@
   "Id": "truck",
   "Translation": {
     "German": "Lastkraftwagen",
-    "Taiwanese": "卡車"
+    "Chinese": "卡車"
   },
   "Audio": {
     "German": {
       "Path": "Audio/truck_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/truck_tw"
+    "Chinese": {
+      "Path": "Audio/truck_cn"
     }
   },
   "Image": {
@@ -1143,14 +1143,14 @@
   "Id": "helmet",
   "Translation": {
     "German": "Helm",
-    "Taiwanese": "安全帽"
+    "Chinese": "安全帽"
   },
   "Audio": {
     "German": {
       "Path": "Audio/helmet_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/helmet_tw"
+    "Chinese": {
+      "Path": "Audio/helmet_cn"
     }
   },
   "Image": {
@@ -1163,14 +1163,14 @@
   "Id": "seatbelt",
   "Translation": {
     "German": "Gurt",
-    "Taiwanese": "安全帶"
+    "Chinese": "安全帶"
   },
   "Audio": {
     "German": {
       "Path": "Audio/seatbelt_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/seatbelt_tw"
+    "Chinese": {
+      "Path": "Audio/seatbelt_cn"
     }
   },
   "Image": {
@@ -1183,14 +1183,14 @@
   "Id": "horn",
   "Translation": {
     "German": "Hupe",
-    "Taiwanese": "喇叭"
+    "Chinese": "喇叭"
   },
   "Audio": {
     "German": {
       "Path": "Audio/horn_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/horn_tw"
+    "Chinese": {
+      "Path": "Audio/horn_cn"
     }
   },
   "Image": {
@@ -1203,14 +1203,14 @@
   "Id": "rice",
   "Translation": {
     "German": "Reis",
-    "Taiwanese": "米"
+    "Chinese": "米"
   },
   "Audio": {
     "German": {
       "Path": "Audio/rice_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/rice_tw"
+    "Chinese": {
+      "Path": "Audio/rice_cn"
     }
   },
   "Image": {
@@ -1223,14 +1223,14 @@
   "Id": "noodles",
   "Translation": {
     "German": "Nudeln",
-    "Taiwanese": "面"
+    "Chinese": "面"
   },
   "Audio": {
     "German": {
       "Path": "Audio/noodles_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/noodles_tw"
+    "Chinese": {
+      "Path": "Audio/noodles_cn"
     }
   },
   "Image": {
@@ -1243,14 +1243,14 @@
   "Id": "steak",
   "Translation": {
     "German": "Steak",
-    "Taiwanese": "牛排"
+    "Chinese": "牛排"
   },
   "Audio": {
     "German": {
       "Path": "Audio/steak_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/steak_tw"
+    "Chinese": {
+      "Path": "Audio/steak_cn"
     }
   },
   "Image": {
@@ -1263,14 +1263,14 @@
   "Id": "meat",
   "Translation": {
     "German": "Fleisch",
-    "Taiwanese": "肉"
+    "Chinese": "肉"
   },
   "Audio": {
     "German": {
       "Path": "Audio/meat_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/meat_tw"
+    "Chinese": {
+      "Path": "Audio/meat_cn"
     }
   },
   "Image": {
@@ -1283,14 +1283,14 @@
   "Id": "chicken",
   "Translation": {
     "German": "Hühnchen",
-    "Taiwanese": "雞肉"
+    "Chinese": "雞肉"
   },
   "Audio": {
     "German": {
       "Path": "Audio/chicken_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/chicken_tw"
+    "Chinese": {
+      "Path": "Audio/chicken_cn"
     }
   },
   "Image": {
@@ -1303,14 +1303,14 @@
   "Id": "vegetables",
   "Translation": {
     "German": "Gemüse",
-    "Taiwanese": "蔬菜"
+    "Chinese": "蔬菜"
   },
   "Audio": {
     "German": {
       "Path": "Audio/vegetables_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/vegetables_tw"
+    "Chinese": {
+      "Path": "Audio/vegetables_cn"
     }
   },
   "Image": {
@@ -1323,14 +1323,14 @@
   "Id": "pork",
   "Translation": {
     "German": "Schweinefleisch",
-    "Taiwanese": "豬肉"
+    "Chinese": "豬肉"
   },
   "Audio": {
     "German": {
       "Path": "Audio/pork_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/pork_tw"
+    "Chinese": {
+      "Path": "Audio/pork_cn"
     }
   },
   "Image": {
@@ -1343,14 +1343,14 @@
   "Id": "dessert",
   "Translation": {
     "German": "Nachtisch",
-    "Taiwanese": "甜點"
+    "Chinese": "甜點"
   },
   "Audio": {
     "German": {
       "Path": "Audio/dessert_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/dessert_tw"
+    "Chinese": {
+      "Path": "Audio/dessert_cn"
     }
   },
   "Image": {
@@ -1363,14 +1363,14 @@
   "Id": "tea",
   "Translation": {
     "German": "Tee",
-    "Taiwanese": "茶"
+    "Chinese": "茶"
   },
   "Audio": {
     "German": {
       "Path": "Audio/tea_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/tea_tw"
+    "Chinese": {
+      "Path": "Audio/tea_cn"
     }
   },
   "Image": {
@@ -1383,14 +1383,14 @@
   "Id": "coffee",
   "Translation": {
     "German": "Kaffee",
-    "Taiwanese": "咖啡"
+    "Chinese": "咖啡"
   },
   "Audio": {
     "German": {
       "Path": "Audio/coffee_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/coffee_tw"
+    "Chinese": {
+      "Path": "Audio/coffee_cn"
     }
   },
   "Image": {
@@ -1403,14 +1403,14 @@
   "Id": "apple",
   "Translation": {
     "German": "Apfel",
-    "Taiwanese": "蘋果"
+    "Chinese": "蘋果"
   },
   "Audio": {
     "German": {
       "Path": "Audio/apple_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/apple_tw"
+    "Chinese": {
+      "Path": "Audio/apple_cn"
     }
   },
   "Image": {
@@ -1423,14 +1423,14 @@
   "Id": "banana",
   "Translation": {
     "German": "Banane",
-    "Taiwanese": "香蕉"
+    "Chinese": "香蕉"
   },
   "Audio": {
     "German": {
       "Path": "Audio/banana_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/banana_tw"
+    "Chinese": {
+      "Path": "Audio/banana_cn"
     }
   },
   "Image": {
@@ -1443,14 +1443,14 @@
   "Id": "fruit",
   "Translation": {
     "German": "Früchte",
-    "Taiwanese": "水果"
+    "Chinese": "水果"
   },
   "Audio": {
     "German": {
       "Path": "Audio/fruit_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/fruit_tw"
+    "Chinese": {
+      "Path": "Audio/fruit_cn"
     }
   },
   "Image": {
@@ -1463,14 +1463,14 @@
   "Id": "cheese",
   "Translation": {
     "German": "Käse",
-    "Taiwanese": "起司"
+    "Chinese": "起司"
   },
   "Audio": {
     "German": {
       "Path": "Audio/cheese_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/cheese_tw"
+    "Chinese": {
+      "Path": "Audio/cheese_cn"
     }
   },
   "Image": {
@@ -1483,14 +1483,14 @@
   "Id": "bread",
   "Translation": {
     "German": "Brot",
-    "Taiwanese": "麵包"
+    "Chinese": "麵包"
   },
   "Audio": {
     "German": {
       "Path": "Audio/bread_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/bread_tw"
+    "Chinese": {
+      "Path": "Audio/bread_cn"
     }
   },
   "Image": {
@@ -1503,14 +1503,14 @@
   "Id": "milk",
   "Translation": {
     "German": "Milch",
-    "Taiwanese": "牛奶"
+    "Chinese": "牛奶"
   },
   "Audio": {
     "German": {
       "Path": "Audio/milk_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/milk_tw"
+    "Chinese": {
+      "Path": "Audio/milk_cn"
     }
   },
   "Image": {
@@ -1523,14 +1523,14 @@
   "Id": "cake",
   "Translation": {
     "German": "Kuchen",
-    "Taiwanese": "蛋糕"
+    "Chinese": "蛋糕"
   },
   "Audio": {
     "German": {
       "Path": "Audio/cake_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/cake_tw"
+    "Chinese": {
+      "Path": "Audio/cake_cn"
     }
   },
   "Image": {
@@ -1543,14 +1543,14 @@
   "Id": "beer",
   "Translation": {
     "German": "Bier",
-    "Taiwanese": "啤酒"
+    "Chinese": "啤酒"
   },
   "Audio": {
     "German": {
       "Path": "Audio/beer_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/beer_tw"
+    "Chinese": {
+      "Path": "Audio/beer_cn"
     }
   },
   "Image": {
@@ -1563,14 +1563,14 @@
   "Id": "fried rice",
   "Translation": {
     "German": "gebratener Reis",
-    "Taiwanese": "炒飯"
+    "Chinese": "炒飯"
   },
   "Audio": {
     "German": {
       "Path": "Audio/fried rice_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/fried rice_tw"
+    "Chinese": {
+      "Path": "Audio/fried rice_cn"
     }
   },
   "Image": {
@@ -1583,14 +1583,14 @@
   "Id": "hotpot",
   "Translation": {
     "German": "Eintopf",
-    "Taiwanese": "火鍋"
+    "Chinese": "火鍋"
   },
   "Audio": {
     "German": {
       "Path": "Audio/hotpot_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/hotpot_tw"
+    "Chinese": {
+      "Path": "Audio/hotpot_cn"
     }
   },
   "Image": {
@@ -1602,14 +1602,14 @@
   "Id": "hospital",
   "Translation": {
     "German": "Krankenhaus",
-    "Taiwanese": "醫院"
+    "Chinese": "醫院"
   },
   "Audio": {
     "German": {
       "Path": "Audio/hospital_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/hospital_tw"
+    "Chinese": {
+      "Path": "Audio/hospital_cn"
     }
   },
   "Image": {
@@ -1622,14 +1622,14 @@
   "Id": "school",
   "Translation": {
     "German": "Schule",
-    "Taiwanese": "學校"
+    "Chinese": "學校"
   },
   "Audio": {
     "German": {
       "Path": "Audio/school_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/school_tw"
+    "Chinese": {
+      "Path": "Audio/school_cn"
     }
   },
   "Image": {
@@ -1642,14 +1642,14 @@
   "Id": "university",
   "Translation": {
     "German": "Universiät",
-    "Taiwanese": "大學"
+    "Chinese": "大學"
   },
   "Audio": {
     "German": {
       "Path": "Audio/university_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/university_tw"
+    "Chinese": {
+      "Path": "Audio/university_cn"
     }
   },
   "Image": {
@@ -1662,14 +1662,14 @@
   "Id": "train station",
   "Translation": {
     "German": "Bahnhof",
-    "Taiwanese": "火車站"
+    "Chinese": "火車站"
   },
   "Audio": {
     "German": {
       "Path": "Audio/train station_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/train station_tw"
+    "Chinese": {
+      "Path": "Audio/train station_cn"
     }
   },
   "Image": {
@@ -1682,14 +1682,14 @@
   "Id": "police station",
   "Translation": {
     "German": "Polizeistation",
-    "Taiwanese": "警察局"
+    "Chinese": "警察局"
   },
   "Audio": {
     "German": {
       "Path": "Audio/police station_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/police station_tw"
+    "Chinese": {
+      "Path": "Audio/police station_cn"
     }
   },
   "Image": {
@@ -1702,14 +1702,14 @@
   "Id": "airport",
   "Translation": {
     "German": "Flughafen",
-    "Taiwanese": "機場"
+    "Chinese": "機場"
   },
   "Audio": {
     "German": {
       "Path": "Audio/airport_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/airport_tw"
+    "Chinese": {
+      "Path": "Audio/airport_cn"
     }
   },
   "Image": {
@@ -1722,14 +1722,14 @@
   "Id": "harbor",
   "Translation": {
     "German": "Hafen",
-    "Taiwanese": "港口"
+    "Chinese": "港口"
   },
   "Audio": {
     "German": {
       "Path": "Audio/harbor_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/harbor_tw"
+    "Chinese": {
+      "Path": "Audio/harbor_cn"
     }
   },
   "Image": {
@@ -1742,14 +1742,14 @@
   "Id": "park",
   "Translation": {
     "German": "Park",
-    "Taiwanese": "公園"
+    "Chinese": "公園"
   },
   "Audio": {
     "German": {
       "Path": "Audio/park_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/park_tw"
+    "Chinese": {
+      "Path": "Audio/park_cn"
     }
   },
   "Image": {
@@ -1762,14 +1762,14 @@
   "Id": "library",
   "Translation": {
     "German": "Bücherei",
-    "Taiwanese": "圖書館"
+    "Chinese": "圖書館"
   },
   "Audio": {
     "German": {
       "Path": "Audio/library_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/library_tw"
+    "Chinese": {
+      "Path": "Audio/library_cn"
     }
   },
   "Image": {
@@ -1782,14 +1782,14 @@
   "Id": "restaurant",
   "Translation": {
     "German": "Restaurant",
-    "Taiwanese": "餐廳"
+    "Chinese": "餐廳"
   },
   "Audio": {
     "German": {
       "Path": "Audio/restaurant_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/restaurant_tw"
+    "Chinese": {
+      "Path": "Audio/restaurant_cn"
     }
   },
   "Image": {
@@ -1802,14 +1802,14 @@
   "Id": "hotel",
   "Translation": {
     "German": "Hotel",
-    "Taiwanese": "飯店"
+    "Chinese": "飯店"
   },
   "Audio": {
     "German": {
       "Path": "Audio/hotel_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/hotel_tw"
+    "Chinese": {
+      "Path": "Audio/hotel_cn"
     }
   },
   "Image": {
@@ -1822,14 +1822,14 @@
   "Id": "cinema",
   "Translation": {
     "German": "Kino",
-    "Taiwanese": "電影院"
+    "Chinese": "電影院"
   },
   "Audio": {
     "German": {
       "Path": "Audio/cinema_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/cinema_tw"
+    "Chinese": {
+      "Path": "Audio/cinema_cn"
     }
   },
   "Image": {
@@ -1842,14 +1842,14 @@
   "Id": "house",
   "Translation": {
     "German": "Haus",
-    "Taiwanese": "家"
+    "Chinese": "家"
   },
   "Audio": {
     "German": {
       "Path": "Audio/house_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/house_tw"
+    "Chinese": {
+      "Path": "Audio/house_cn"
     }
   },
   "Image": {
@@ -1862,14 +1862,14 @@
   "Id": "zoo",
   "Translation": {
     "German": "Zoo",
-    "Taiwanese": "動物園"
+    "Chinese": "動物園"
   },
   "Audio": {
     "German": {
       "Path": "Audio/zoo_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/zoo_tw"
+    "Chinese": {
+      "Path": "Audio/zoo_cn"
     }
   },
   "Image": {
@@ -1882,14 +1882,14 @@
   "Id": "theater",
   "Translation": {
     "German": "Theater",
-    "Taiwanese": "劇院"
+    "Chinese": "劇院"
   },
   "Audio": {
     "German": {
       "Path": "Audio/theater_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/theater_tw"
+    "Chinese": {
+      "Path": "Audio/theater_cn"
     }
   },
   "Image": {
@@ -1902,14 +1902,14 @@
   "Id": "museum",
   "Translation": {
     "German": "Museum",
-    "Taiwanese": "博物館"
+    "Chinese": "博物館"
   },
   "Audio": {
     "German": {
       "Path": "Audio/museum_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/museum_tw"
+    "Chinese": {
+      "Path": "Audio/museum_cn"
     }
   },
   "Image": {
@@ -1922,14 +1922,14 @@
   "Id": "amusement park",
   "Translation": {
     "German": "Vergnügungspark",
-    "Taiwanese": "遊樂園"
+    "Chinese": "遊樂園"
   },
   "Audio": {
     "German": {
       "Path": "Audio/amusement park_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/amusement park_tw"
+    "Chinese": {
+      "Path": "Audio/amusement park_cn"
     }
   },
   "Image": {
@@ -1942,14 +1942,14 @@
   "Id": "department store",
   "Translation": {
     "German": "Kaufhaus",
-    "Taiwanese": "百貨公司"
+    "Chinese": "百貨公司"
   },
   "Audio": {
     "German": {
       "Path": "Audio/department store_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/department store_tw"
+    "Chinese": {
+      "Path": "Audio/department store_cn"
     }
   },
   "Image": {
@@ -1962,14 +1962,14 @@
   "Id": "swimming pool",
   "Translation": {
     "German": "Schwimmbad",
-    "Taiwanese": "游泳池"
+    "Chinese": "游泳池"
   },
   "Audio": {
     "German": {
       "Path": "Audio/swimming pool_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/swimming pool_tw"
+    "Chinese": {
+      "Path": "Audio/swimming pool_cn"
     }
   },
   "Image": {
@@ -1982,14 +1982,14 @@
   "Id": "skyscraper",
   "Translation": {
     "German": "Wolkenkratzer",
-    "Taiwanese": "摩天大樓"
+    "Chinese": "摩天大樓"
   },
   "Audio": {
     "German": {
       "Path": "Audio/skyscraper_de"
     },
-    "Taiwanese": {
-      "Path": "Audio/skyscraper_tw"
+    "Chinese": {
+      "Path": "Audio/skyscraper_cn"
     }
   },
   "Image": {

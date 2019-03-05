@@ -1,26 +1,98 @@
 ﻿[
   {
-    "CategoryId": null,
-    "Id": "grube",
-    "Language": "German",
-    "Text": "Wer anderen eine Grube gräbt, fällt selbst hinein.",
-    "Meaning": "知",
-    "SimilarSaying": "idk",
-    "Audio": {
-      "Path": "grube"
-    },
-    "Bopomofo": "ㄅㄆㄇㄈ"
+    "Id": "ch0",
+    "Language": "Chinese",
+    "Text": "壽比南山",
+    "Meaning": "Jemandem wünschen so alt zu werden wie ein Berg groß ist.",
+    "Audio": null,
+    "Bopomofo": null
   },
   {
-    "CategoryId": null,
-    "Id": "grube",
-    "Language": "Taiwanese",
-    "Text": "Wer anderen eine Grube gräbt, fällt selbst hinein.",
-    "Meaning": "知",
-    "SimilarSaying": "idk",
-    "Audio": {
-      "Path": "grube"
-    },
-    "Bopomofo": "ㄅㄆㄇㄈ"
+    "Id": "ch1",
+    "Language": "Chinese",
+    "Text": "春天後母心",
+    "Meaning": "Das Wetter im Frühling ist so wechselhaft wie die Erwartungen einer Stiefmutter.",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "ch2",
+    "Language": "Chinese",
+    "Text": "牛就是牛，牽到北京也是牛",
+    "Meaning": "Man kann sich nicht plötzlich ändern. \"Eine Kuh in Beijing ist immernoch eine Kuh\".",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "ch3",
+    "Language": "Chinese",
+    "Text": "一分耕耘，一分收穫",
+    "Meaning": "Um etwas zu erreichen, muss man dafür auch etwas tun.",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "ch4",
+    "Language": "Chinese",
+    "Text": "人不可貌相",
+    "Meaning": "Man sollte andere nicht nur nach dem äusseren beurteilen.",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "ch5",
+    "Language": "Chinese",
+    "Text": "螳螂捕蟬，黃雀在後",
+    "Meaning": "Wenn man sich einer Aufgabe widmet, sollte man trotzdem wachsam sein. \"Die Gottesanbeterin verfolgt die Zikade ohne die Drossel hinter sich zu bemerken.\"",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "de0",
+    "Language": "German",
+    "Text": "Man soll die Feste feiern, wie sie fallen.",
+    "Meaning": "活在當下，莫看明天",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "de1",
+    "Language": "German",
+    "Text": "Zeit ist Geld.",
+    "Meaning": "時間就是金錢",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "de2",
+    "Language": "German",
+    "Text": "Auge um Auge, Zahn um Zahn.",
+    "Meaning": "以牙還牙，以眼還眼",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "de3",
+    "Language": "German",
+    "Text": "Im Wein liegt Wahrheit.",
+    "Meaning": "酒後吐真言",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "de4",
+    "Language": "German",
+    "Text": "Liebe geht durch den Magen.",
+    "Meaning": "要抓住男人的心要先抓住他的胃",
+    "Audio": null,
+    "Bopomofo": null
+  },
+  {
+    "Id": "de5",
+    "Language": "German",
+    "Text": "Wer im Glashaus sitzt, sollte nicht mit Steinen werfen.",
+    "Meaning": "指責別人前先檢討自己",
+    "Audio": null,
+    "Bopomofo": null
   }
 ]
