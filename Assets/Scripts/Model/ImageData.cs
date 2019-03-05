@@ -16,9 +16,10 @@ namespace Model
         {
             get
             {
-                _image = _image 
-                    ?? Resources.Load<Sprite>(Path) 
-                    ?? throw new Exception("Resource of Type Sprite was not found in " + Path);
+                _image = _image
+                    ?? Resources.Load<Sprite>(Path)
+                    //?? throw new Exception("Resource of Type Sprite was not found in " + Path);
+                    ?? null; //todo hacky hack hack
 
                 return _image;
             }

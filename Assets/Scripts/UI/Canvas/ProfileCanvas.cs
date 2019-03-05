@@ -24,16 +24,29 @@ namespace UI.Canvas
 
         private void Update()
         {
+<<<<<<< HEAD
             if (Input.GetKey(KeyCode.P))
+=======
+
+            //todo remove debug stuff
+            if (Input.GetKeyDown(KeyCode.KeypadPlus))
+>>>>>>> cd4bc87510dbd435b8c21630d6b4883459e638f6
             {
                 GamificationManager.Instance.HandleAnsweredQuestion(true);
+                GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
             }
             if (Input.GetKey(KeyCode.Keypad0))
             {
                 var user = GamificationManager.Instance.User;
                 user.Level = 1;
                 user.Trophies = new List<TrophyType>();
+                user.Xp = 0;
+                user.LearningLanguage = Language.None;
+                DataAccess.DAOFactory.UserDAO.WriteUser(user);
             }
+
+            
+
         }
 
         private void OnEnable()

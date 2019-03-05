@@ -12,8 +12,12 @@ public class LanguageCanvas : MonoBehaviour
     public NavigationDrawer NavigationDrawer;
     private void Start()
     {
+<<<<<<< HEAD
         NavigationDrawer.DisableAllButton();
         JsonGenerator.GenerateTranslationJsonFromSource();
+=======
+        JsonGenerator.GenerateSayingJsonFromSource();
+>>>>>>> cd4bc87510dbd435b8c21630d6b4883459e638f6
     }
 
     public void LanguageSelect()
@@ -25,12 +29,12 @@ public class LanguageCanvas : MonoBehaviour
         {
             case "German":
                 user.LearningLanguage = Language.German;
-                user.UiLanguage = Language.Taiwanese;
+                user.UiLanguage = Language.Chinese;
                 
                 ViewHandler.Instance.SwitchToView("Class");
                 break;
             case "Chinese":
-                user.LearningLanguage = Language.Taiwanese;
+                user.LearningLanguage = Language.Chinese;
                 user.UiLanguage = Language.German;
                 
                 ViewHandler.Instance.SwitchToView("Class");

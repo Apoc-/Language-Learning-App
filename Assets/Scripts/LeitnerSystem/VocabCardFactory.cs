@@ -69,14 +69,14 @@ namespace LeitnerSystem
 
         private static string GetLocalTranslation(Vocabulary vocab)
         {
-            var lang = GamificationManager.Instance.User.LearningLanguage;
+            var lang = GamificationManager.Instance.User.UiLanguage;
 
-            return vocab.Translation[vocab.Translation.Keys.ToList().First(k => k != lang)];
+            return vocab.Translation[vocab.Translation.Keys.ToList().First(k => k == lang)];
         }
 
         private static List<string> GetLocalTranslations(List<Vocabulary> vocabs)
         {
-            var lang = GamificationManager.Instance.User.LearningLanguage;
+            var lang = GamificationManager.Instance.User.UiLanguage;
 
             return vocabs.Select(item => item.Translation[lang]).ToList();
         }

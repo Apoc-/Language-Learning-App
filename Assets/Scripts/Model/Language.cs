@@ -7,6 +7,6 @@ namespace Model
     {
         None,
         German,
-        Taiwanese
+        Chinese
     }
 }

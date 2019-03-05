@@ -5,7 +5,7 @@
     "Name": {
       "Key": "",
       "German": "Tiere",
-      "Taiwanese": "動物"
+      "Chinese": "動物"
     }
   },
   {
@@ -14,7 +14,7 @@
     "Name": {
       "Key": "",
       "German": "Verkehr",
-      "Taiwanese": "交通"
+      "Chinese": "交通"
     }
   },
   {
@@ -23,7 +23,7 @@
     "Name": {
       "Key": "",
       "German": "Essen",
-      "Taiwanese": "食物"
+      "Chinese": "食物"
     }
   },
   {
@@ -32,7 +32,7 @@
     "Name": {
       "Key": "",
       "German": "Orte",
-      "Taiwanese": "地點"
+      "Chinese": "地點"
     }
   },
   {
@@ -41,7 +41,7 @@
     "Name": {
       "Key": "",
       "German": "Restaurant",
-      "Taiwanese": "restaurant"
+      "Chinese": "restaurant"
     }
   },
   {
@@ -50,7 +50,7 @@
     "Name": {
       "Key": "",
       "German": "Formell",
-      "Taiwanese": "formal"
+      "Chinese": "formal"
     }
   },
   {
@@ -59,7 +59,7 @@
     "Name": {
       "Key": "",
       "German": "Unterhaltung",
-      "Taiwanese": "smalltalk"
+      "Chinese": "smalltalk"
     }
   },
   {
@@ -68,7 +68,7 @@
     "Name": {
       "Key": "",
       "German": "Einkaufen",
-      "Taiwanese": "shopping"
+      "Chinese": "shopping"
     }
   },
   {
@@ -77,7 +77,7 @@
     "Name": {
       "Key": "",
       "German": "Geburtstag",
-      "Taiwanese": "birthday"
+      "Chinese": "birthday"
     }
   },
   {
@@ -86,7 +86,7 @@
     "Name": {
       "Key": "",
       "German": "Feste",
-      "Taiwanese": "festivals"
+      "Chinese": "festivals"
     }
   },
   {
@@ -95,7 +95,7 @@
     "Name": {
       "Key": "",
       "German": "Wetter",
-      "Taiwanese": "weather"
+      "Chinese": "weather"
     }
   },
   {
@@ -104,7 +104,7 @@
     "Name": {
       "Key": "",
       "German": "Verhalten",
-      "Taiwanese": "behaviour"
+      "Chinese": "behaviour"
     }
   }
 ]
