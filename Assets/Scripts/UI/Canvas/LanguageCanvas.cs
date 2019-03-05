@@ -12,12 +12,7 @@ public class LanguageCanvas : MonoBehaviour
     public NavigationDrawer NavigationDrawer;
     private void Start()
     {
-<<<<<<< HEAD
-        NavigationDrawer.DisableAllButton();
-        JsonGenerator.GenerateTranslationJsonFromSource();
-=======
         JsonGenerator.GenerateSayingJsonFromSource();
->>>>>>> cd4bc87510dbd435b8c21630d6b4883459e638f6
     }
 
     public void LanguageSelect()

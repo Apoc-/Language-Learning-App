@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DataAccess;
+using DataAccess.DataHelpers;
 
 public class NameSelectionCanvas : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class NameSelectionCanvas : MonoBehaviour
     {
 
         NavigationDrawer.DisableAllButton();
-        JsonGenerator.GenerateTranslationJsonFromSource();
+        JsonGenerator.GenerateSayingJsonFromSource();
     }
 
     // Update is called once per frame

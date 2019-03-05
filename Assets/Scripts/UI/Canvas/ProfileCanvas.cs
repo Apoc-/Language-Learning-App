@@ -24,13 +24,8 @@ namespace UI.Canvas
 
         private void Update()
         {
-<<<<<<< HEAD
-            if (Input.GetKey(KeyCode.P))
-=======
-
             //todo remove debug stuff
             if (Input.GetKeyDown(KeyCode.KeypadPlus))
->>>>>>> cd4bc87510dbd435b8c21630d6b4883459e638f6
             {
                 GamificationManager.Instance.HandleAnsweredQuestion(true);
                 GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
