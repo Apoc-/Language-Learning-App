@@ -24,7 +24,7 @@ namespace DataProvider
             switch (GamificationManager.Instance.User.UiLanguage)
             {
                 case Language.Chinese:
-                    return _translations[key].Taiwanese;
+                    return _translations[key].Chinese;
                 case Language.German:
                     return _translations[key].German;
                 default:

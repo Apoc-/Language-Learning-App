@@ -41,7 +41,7 @@ namespace UI
             
             if (GamificationManager.Instance.User.UiLanguage == Language.Chinese)
             {
-                text = text.Replace("{0}", trophy.Name.Taiwanese);
+                text = text.Replace("{0}", trophy.Name.Chinese);
             }
             else
             {
@@ -63,7 +63,7 @@ namespace UI
             
             if (GamificationManager.Instance.User.UiLanguage == Language.Chinese)
             {
-                text = text.Replace("{0}", trophy.Name.Taiwanese);
+                text = text.Replace("{0}", trophy.Name.Chinese);
             }
             else
             {

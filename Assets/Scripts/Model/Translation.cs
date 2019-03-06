@@ -9,6 +9,6 @@ namespace Model
 
         public string German { get; set; }
 
-        public string Taiwanese { get; set; }
+        public string Chinese { get; set; }
     }
 }

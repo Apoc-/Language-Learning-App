@@ -19,7 +19,7 @@ namespace DataAccess
             var json = File.ReadAllText(path, Encoding.UTF8);
             return JsonConvert.DeserializeObject<Dictionary<string, int>>(json);
         }
-
+        
         public void WriteLeitnerboxData(string id, int leitnerBoxNr)
         {
             var data = LoadLeitnerboxData();
@@ -33,6 +33,12 @@ namespace DataAccess
                 data.Add(id, leitnerBoxNr);
             }
 
+            File.WriteAllText(path, JsonConvert.SerializeObject(data), Encoding.UTF8);
+        }
+
+        public void ResetLeitnerBoxData()
+        {
+            var data = new Dictionary<string, int>();
             File.WriteAllText(path, JsonConvert.SerializeObject(data), Encoding.UTF8);
         }
     }

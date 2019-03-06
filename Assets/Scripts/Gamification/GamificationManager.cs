@@ -1,4 +1,5 @@
-﻿using DataAccess;
+﻿using System;
+using DataAccess;
 using Model;
 
 namespace Gamification
@@ -73,7 +74,26 @@ namespace Gamification
             User.Level += 1;
             ViewHandler.Instance.ModalDialogueCanvas.EnableLevelUpDialogue();
         }
-        
+
+        public void EnableProgressBar(int questionAmount)
+        {
+            ViewHandler.Instance.Header.ProgressBar.SetProgressBarSize(questionAmount);
+            ViewHandler.Instance.Header.ProgressBar.SetProgress(0);
+
+            ViewHandler.Instance.Header.ProgressBar.gameObject.SetActive(true);
+        }
+
+        public void ResetUserData()
+        {
+            DAOFactory.UserDAO.WriteUser(new User());
+            User = new User();
+        }
+
+        public void DisableProgressBar()
+        {
+            ViewHandler.Instance.Header.ProgressBar.gameObject.SetActive(false);
+        }
+
         #region singleton
         private static GamificationManager _instance;
         public static GamificationManager Instance

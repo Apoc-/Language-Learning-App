@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using DataProvider;
 using Gamification;
@@ -72,6 +73,30 @@ namespace UI.Canvas
             
             button.Trophy = trophy;
             button.GetComponent<Image>().sprite = trophy.Image;
+        }
+
+        private int reset = 0;
+
+        public void DebugResetUserData()
+        {
+            reset++;
+            if (reset <= 7)
+            {
+                StartCoroutine(ResetResetcounter());
+                return;
+            }
+
+            GamificationManager.Instance.ResetUserData();
+            DataAccess.DAOFactory.LeitnerBoxDAO.ResetLeitnerBoxData();
+            ResetTrophies();
+
+            ViewHandler.Instance.SwitchToView("LanguageCanvas");
+        }
+
+        private IEnumerator ResetResetcounter()
+        {
+            yield return new WaitForSecondsRealtime(1);
+            reset--;
         }
     }
 }

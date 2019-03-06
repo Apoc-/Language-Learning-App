@@ -54,7 +54,7 @@ namespace Gamification
                 {
                     Key = "Level 2 Trophy",
                     German = "Level 2 Trophäe",
-                    Taiwanese = ""
+                    Chinese = ""
                 }
             };
             _trophyDictionary[TrophyType.Level10] = new Trophy
@@ -66,7 +66,7 @@ namespace Gamification
                 {
                     Key = "Level 10 Trophy",
                     German = "Level 10 Trophäe",
-                    Taiwanese = ""
+                    Chinese = ""
                 }
             };
             _trophyDictionary[TrophyType.Level20] = new Trophy
@@ -78,7 +78,7 @@ namespace Gamification
                 {
                     Key = "Level 20 Trophy",
                     German = "Level 20 Trophäe",
-                    Taiwanese = ""
+                    Chinese = ""
                 }
             };
             _trophyDictionary[TrophyType.AnimalsSeen] = new Trophy
@@ -90,7 +90,7 @@ namespace Gamification
                 {
                     Key = "Level 20 Trophy",
                     German = "Level 20 Trophäe",
-                    Taiwanese = ""
+                    Chinese = ""
                 }
             };
             _trophyDictionary[TrophyType.VocabSeen] = new Trophy
@@ -102,7 +102,7 @@ namespace Gamification
                 {
                     Key = "Vocab Monger",
                     German = "Level 20 Trophäe",
-                    Taiwanese = ""
+                    Chinese = ""
                 }
             };
             _trophyDictionary[TrophyType.SayingSeen] = new Trophy
@@ -114,7 +114,7 @@ namespace Gamification
                 {
                     Key = "Saying Seen",
                     German = "Level 20 Trophäe",
-                    Taiwanese = ""
+                    Chinese = ""
                 }
             };
             _trophyDictionary[TrophyType.AlphabetSeen] = new Trophy
@@ -126,7 +126,7 @@ namespace Gamification
                 {
                     Key = "Vocab Monger",
                     German = "Alphabet Seen Trophy",
-                    Taiwanese = ""
+                    Chinese = ""
                 }
             };
         }
