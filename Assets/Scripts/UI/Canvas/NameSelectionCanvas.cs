@@ -32,9 +32,11 @@ public class NameSelectionCanvas : MonoBehaviour
     public void NameInput()
     {
         InputName = InputFeild.text;
-        Gamification.GamificationManager.Instance.User.Name = InputName;
-        ViewHandler.Instance.SwitchToView("LanguageCanvas");
-        Debug.Log("User name is " + InputName); 
+        var user = Gamification.GamificationManager.Instance.User;
+        user.Name = InputName;
+        DAOFactory.UserDAO.WriteUser(user);
+        ViewHandler.Instance.SwitchToView("Class");
+        
     }
     public void ResetInput()
     {

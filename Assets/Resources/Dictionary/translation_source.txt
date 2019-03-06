@@ -15,6 +15,7 @@ language
 trophy
 trophies
 gratulations
+alias
 Vokabeln
 Redewendungen
 Gespräche
@@ -32,6 +33,7 @@ Ich will Chinesisch lernen
 Trophäe
 Trophäen
 Gratulation! Du hast eine Trophäe verdient!
+Name
 單字
 諺語
 對話
@@ -49,3 +51,4 @@ ABC (字母)
 獎盃
 獎盃
 恭喜你!得到一個獎盃
+綽號

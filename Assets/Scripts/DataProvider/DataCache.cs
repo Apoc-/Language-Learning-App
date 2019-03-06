@@ -31,6 +31,11 @@ namespace DataProvider
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        public bool CheckForUiTranslationByKey(string key)
+        {
+            return _translations.ContainsKey(key);
+        }
         
         private void LoadLocalizationData()
         {
