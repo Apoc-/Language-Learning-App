@@ -18,7 +18,7 @@ public class NameSelectionCanvas : MonoBehaviour
     private void Start()
     {
 
-        NavigationDrawer.DisableAllButton();
+        NavigationDrawer.DisableAllButtons();
         JsonGenerator.GenerateSayingJsonFromSource();
         
     }

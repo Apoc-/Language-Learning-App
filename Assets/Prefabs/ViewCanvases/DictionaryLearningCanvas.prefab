@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e8a0490004478ab7a03700a2d33782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Dictionary or Learning
+  Title: 
   Id: Dictionary or Learning
 --- !u!114 &7382233351065068621
 MonoBehaviour:

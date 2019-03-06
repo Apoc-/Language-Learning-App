@@ -1,62 +1,74 @@
 ﻿[
   {
     "CategoryId": null,
-    "Id": "ch0",
+    "Id": "cn0",
     "Language": "Chinese",
     "Text": "壽比南山",
     "Meaning": "Jemandem wünschen so alt zu werden wie ein Berg groß ist.",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/cn0"
+    },
     "Bopomofo": null
   },
   {
     "CategoryId": null,
-    "Id": "ch1",
+    "Id": "cn1",
     "Language": "Chinese",
     "Text": "春天後母心",
     "Meaning": "Das Wetter im Frühling ist so wechselhaft wie die Erwartungen einer Stiefmutter.",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/cn1"
+    },
     "Bopomofo": null
   },
   {
     "CategoryId": null,
-    "Id": "ch2",
+    "Id": "cn2",
     "Language": "Chinese",
     "Text": "牛就是牛，牽到北京也是牛",
     "Meaning": "Man kann sich nicht plötzlich ändern. \"Eine Kuh in Beijing ist immernoch eine Kuh\".",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/cn2"
+    },
     "Bopomofo": null
   },
   {
     "CategoryId": null,
-    "Id": "ch3",
+    "Id": "cn3",
     "Language": "Chinese",
     "Text": "一分耕耘，一分收穫",
     "Meaning": "Um etwas zu erreichen, muss man dafür auch etwas tun.",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/cn3"
+    },
     "Bopomofo": null
   },
   {
     "CategoryId": null,
-    "Id": "ch4",
+    "Id": "cn4",
     "Language": "Chinese",
     "Text": "人不可貌相",
     "Meaning": "Man sollte andere nicht nur nach dem äusseren beurteilen.",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/cn4"
+    },
     "Bopomofo": null
   },
   {
     "CategoryId": null,
-    "Id": "ch5",
+    "Id": "cn5",
     "Language": "Chinese",
     "Text": "螳螂捕蟬，黃雀在後",
     "Meaning": "Wenn man sich einer Aufgabe widmet, sollte man trotzdem wachsam sein. \"Die Gottesanbeterin verfolgt die Zikade ohne die Drossel hinter sich zu bemerken.\"",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/cn5"
+    },
     "Bopomofo": null
   },
   {
@@ -66,7 +78,9 @@
     "Text": "Man soll die Feste feiern, wie sie fallen.",
     "Meaning": "活在當下，莫看明天",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/de0"
+    },
     "Bopomofo": null
   },
   {
@@ -76,7 +90,9 @@
     "Text": "Zeit ist Geld.",
     "Meaning": "時間就是金錢",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/de1"
+    },
     "Bopomofo": null
   },
   {
@@ -86,7 +102,9 @@
     "Text": "Auge um Auge, Zahn um Zahn.",
     "Meaning": "以牙還牙，以眼還眼",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/de2"
+    },
     "Bopomofo": null
   },
   {
@@ -96,7 +114,9 @@
     "Text": "Im Wein liegt Wahrheit.",
     "Meaning": "酒後吐真言",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/de3"
+    },
     "Bopomofo": null
   },
   {
@@ -106,7 +126,9 @@
     "Text": "Liebe geht durch den Magen.",
     "Meaning": "要抓住男人的心要先抓住他的胃",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/de4"
+    },
     "Bopomofo": null
   },
   {
@@ -116,7 +138,9 @@
     "Text": "Wer im Glashaus sitzt, sollte nicht mit Steinen werfen.",
     "Meaning": "指責別人前先檢討自己",
     "SimilarSaying": null,
-    "Audio": null,
+    "Audio": {
+      "Path": "Audio/Sayings/de5"
+    },
     "Bopomofo": null
   }
 ]

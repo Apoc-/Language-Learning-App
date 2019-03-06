@@ -6,6 +6,11 @@ using UnityEngine.EventSystems;
 
 public class ClassCanvas : MonoBehaviour
 {
+    public void OnEnable()
+    {
+        ViewHandler.Instance.NavigationDrawer.EnableMenuButton();
+    }
+
     public void ClassSelect()
     {
         var Class = EventSystem.current.currentSelectedGameObject.name;
