@@ -25,7 +25,6 @@ namespace UI.Canvas
 
         private void Update()
         {
-
             //todo remove debug stuff
             if (Input.GetKeyDown(KeyCode.KeypadPlus))
             {

@@ -11,6 +11,7 @@ namespace DataAccess
 
         public User LoadUser()
         {
+            
             var obj = JsonConvert.SerializeObject(new User());
             if (!File.Exists(path)) File.WriteAllText(path, JsonConvert.SerializeObject(new User()));
 

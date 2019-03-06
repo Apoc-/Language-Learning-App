@@ -311,13 +311,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 8477059534407084360}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 2
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -366,7 +366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000016286109, y: -234.50089}
+  m_AnchoredPosition: {x: 0.000036148707, y: -649.4633}
   m_SizeDelta: {x: 469, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8477059534407084364
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 1258360569993613245}
   - component: {fileID: 13634039857699999}
   m_Layer: 5
-  m_Name: 'ListViewCanvas '
+  m_Name: ListViewCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,3 +628,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: ListView
+  Id: ListView

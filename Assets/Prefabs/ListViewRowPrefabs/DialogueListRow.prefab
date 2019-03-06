@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 245, y: 74.7}
-  m_SizeDelta: {x: 705.3, y: 213.4}
+  m_AnchoredPosition: {x: -9.8, y: 157}
+  m_SizeDelta: {x: 383.4, y: 261.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4151584295033598965
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: d6d5c89ef987e4252a78a3921ead2892, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -108,7 +108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -217, y: -23}
+  m_AnchoredPosition: {x: -206, y: -43}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2815027704750659995
@@ -182,8 +182,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77, y: 11}
-  m_SizeDelta: {x: 632.6, y: 53.6}
+  m_AnchoredPosition: {x: -40.3, y: 0}
+  m_SizeDelta: {x: 325.7, y: 91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2200624549810831257
 CanvasRenderer:
@@ -214,8 +214,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_Font: {fileID: 12800000, guid: 4195a08b7cabd6b4a827466e57664dce, type: 3}
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: If you see this that's mean fucked up
+  m_Text: If you see this that's mean some bug
 --- !u!1 &3524466397182347550
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,10 +259,10 @@ RectTransform:
   m_Father: {fileID: 2566938396785542488}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 246, y: 97}
-  m_SizeDelta: {x: 858.19995, y: 139.4}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -33, y: -95}
+  m_SizeDelta: {x: 752.6, y: 234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3936548881899180950
 GameObject:
@@ -301,10 +301,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 38.19995, y: 132}
-  m_SizeDelta: {x: 863.7, y: 263.8}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -0.000012159, y: -229.7}
+  m_SizeDelta: {x: 1080, y: 459.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1964895734201299166
 CanvasRenderer:
@@ -391,7 +391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 677, y: -15}
+  m_AnchoredPosition: {x: 176, y: -41}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6296925320414168657
@@ -463,10 +463,10 @@ RectTransform:
   m_Father: {fileID: 2566938396785542488}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -607, y: 94}
-  m_SizeDelta: {x: 117.900024, y: 100}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -33, y: -95}
+  m_SizeDelta: {x: 537.7, y: 216.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7538620998972615151
 GameObject:
@@ -502,8 +502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 225, y: 72.1}
-  m_SizeDelta: {x: 705.3, y: 216.2}
+  m_AnchoredPosition: {x: -9.9, y: 154.20004}
+  m_SizeDelta: {x: 382.7, y: 255.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6901184910412737114
 CanvasRenderer:
@@ -534,7 +534,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: c1655d570726e44119946bdfab990163, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -576,8 +576,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76, y: 57}
-  m_SizeDelta: {x: 629.8, y: 97.9}
+  m_AnchoredPosition: {x: -40.3, y: 104.2}
+  m_SizeDelta: {x: 325.7, y: 90.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2033007330791233707
 CanvasRenderer:
@@ -608,8 +608,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_Font: {fileID: 12800000, guid: 4195a08b7cabd6b4a827466e57664dce, type: 3}
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -620,4 +620,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: If you see this that's mean fucked up
+  m_Text: If you see this that's mean some bug

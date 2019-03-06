@@ -202,6 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: ProfileCanvas
+  Id: ProfileCanvas
 --- !u!114 &1122904403812539408
 MonoBehaviour:
   m_ObjectHideFlags: 0

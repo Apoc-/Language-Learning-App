@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: LearnView
+  Id: LearnView
 --- !u!114 &6165673802361387035
 MonoBehaviour:
   m_ObjectHideFlags: 0

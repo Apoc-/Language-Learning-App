@@ -22,6 +22,12 @@ public class NavigationDrawer : MonoBehaviour
                 MenuButton.SetActive(true);
         }
 
+        public void DisableAllButton()
+        {
+                HomeButton.SetActive(false);
+                MenuButton.SetActive(false);
+        }
+
         public void OnHomebuttonPress()
         {
                 ViewHandler.Instance.SwitchToView("Class");

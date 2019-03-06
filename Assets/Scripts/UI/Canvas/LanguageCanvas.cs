@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 
 public class LanguageCanvas : MonoBehaviour
 {
+    public NavigationDrawer NavigationDrawer;
     private void Start()
     {
         JsonGenerator.GenerateSayingJsonFromSource();
