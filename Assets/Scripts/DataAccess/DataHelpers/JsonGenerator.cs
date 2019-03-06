@@ -162,10 +162,12 @@ namespace DataAccess.DataHelpers
             for (var i = 0; i < entries; i++)
             {
                 var dat = dataList[i];
-                dat.Id = "ch" + i;
+                dat.Id = "cn" + i;
                 dat.Language = Language.Chinese;
                 dat.Text = ch1[i];
                 dat.Meaning = de1[i];
+                dat.Audio = new AudioData();
+                dat.Audio.Path = "Audio/Sayings/" + dat.Id;
             }
 
             var de2 = lines.Skip(2*entries).Take(entries).ToList();
@@ -179,6 +181,8 @@ namespace DataAccess.DataHelpers
                 dat.Language = Language.German;
                 dat.Text = de2[i];
                 dat.Meaning = ch2[i];
+                dat.Audio = new AudioData();
+                dat.Audio.Path = "Audio/Sayings/" + dat.Id;
             }
 
             var json = JsonConvert.SerializeObject(dataList, Formatting.Indented);

@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.75686276, g: 0.09411765, b: 0.35686275, a: 1}
+  m_Color: {r: 0.827451, g: 0.18431373, b: 0.18431373, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -258,6 +258,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 437491706700487527}
     m_Modifications:
+    - target: {fileID: 7906426157076143720, guid: 220dd3777eff8364fa391b0b497eb730,
+        type: 3}
+      propertyPath: m_Name
+      value: ProgressBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906426157076143720, guid: 220dd3777eff8364fa391b0b497eb730,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7906426157076143719, guid: 220dd3777eff8364fa391b0b497eb730,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,16 +372,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906426157076143720, guid: 220dd3777eff8364fa391b0b497eb730,
-        type: 3}
-      propertyPath: m_Name
-      value: ProgressBar
-      objectReference: {fileID: 0}
-    - target: {fileID: 7906426157076143720, guid: 220dd3777eff8364fa391b0b497eb730,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7906426157076143718, guid: 220dd3777eff8364fa391b0b497eb730,
         type: 3}
