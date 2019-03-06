@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DataAccess;
 using DataAccess.DataHelpers;
+using UnityEngine.UI;
 
 public class NameSelectionCanvas : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class NameSelectionCanvas : MonoBehaviour
     public NavigationDrawer NavigationDrawer;
     
     public string InputName;
+    public InputField InputFeild;
     public GameObject ConfirmButton;
     public GameObject ResetButton;
 
@@ -18,6 +20,7 @@ public class NameSelectionCanvas : MonoBehaviour
 
         NavigationDrawer.DisableAllButton();
         JsonGenerator.GenerateSayingJsonFromSource();
+        
     }
 
     // Update is called once per frame
@@ -25,4 +28,19 @@ public class NameSelectionCanvas : MonoBehaviour
     {
         
     }
+
+    public void NameInput()
+    {
+        InputName = InputFeild.text;
+        Gamification.GamificationManager.Instance.User.Name = InputName;
+        ViewHandler.Instance.SwitchToView("LanguageCanvas");
+        Debug.Log("User name is " + InputName); 
+    }
+    public void ResetInput()
+    {
+        Debug.Log("fic");
+        InputFeild.Select();
+        InputFeild.text = "";
+    }
+
 }
