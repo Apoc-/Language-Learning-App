@@ -71,9 +71,15 @@ public class ViewHandler : Singleton<ViewHandler>
     private void EndOldAnimations()
     {
         var animations = currentView.GetComponentsInChildren<EasyTween>();
+
         foreach (var anim in animations)
         {
-            //anim.animationParts.FinalEnd();
+            // Only modify the actual Wave Animation, no unique components aside from EasyTween, but all are clones
+            if (anim.name.Contains("(Clone)"))
+            {
+                anim.gameObject.SetActive(false);
+                anim.animationParts.ObjectState = UITween.AnimationParts.State.OPEN;
+            }
         }
     }
 
