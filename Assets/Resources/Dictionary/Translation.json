@@ -62,7 +62,12 @@
   {
     "Key": "lookup",
     "German": "Nachschlagen",
-    "Chinese": "查"
+    "Chinese": "查閱"
+  },
+  {
+    "Key": "test",
+    "German": "Testen",
+    "Chinese": "測驗"
   },
   {
     "Key": "language",
@@ -83,5 +88,20 @@
     "Key": "gratulations",
     "German": "Gratulation! Du hast eine Trophäe verdient!",
     "Chinese": "恭喜你!得到一個獎盃"
-  }
+},
+{
+    "Key":"alias",
+    "German": "Name",
+    "Chinese": "綽號"
+},
+{
+    "Key" : "confirm",
+    "German" : "Bestätigen",
+    "Chinese" : "確認"
+},
+{
+    "Key" : "reset",
+    "German" : "Löschen",
+    "Chinese" : "重設"
+}
 ]

@@ -13,16 +13,24 @@ namespace Gamification
         private int _xpStep = 150;
         
         public User User { get; private set; }
-        public TrophyHandler TrophyHandler { get; private set; }
+
+        private TrophyHandler _trophyHandler;
+        public TrophyHandler TrophyHandler
+        {
+            get
+            {
+                if (_trophyHandler == null)
+                {
+                    _trophyHandler = new TrophyHandler();
+                }
+
+                return _trophyHandler;
+            }
+        }
 
         private GamificationManager()
         {
             User = DAOFactory.UserDAO.LoadUser();   
-        }
-
-        public void InitializeTrophyHandler()
-        {
-            TrophyHandler = new TrophyHandler();
         }
         
         public void InitializeAnswerProgressBar(int size)

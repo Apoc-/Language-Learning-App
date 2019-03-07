@@ -12,7 +12,7 @@ public class LanguageCanvas : MonoBehaviour
     public NavigationDrawer NavigationDrawer;
     private void Start()
     {
-        JsonGenerator.GenerateSayingJsonFromSource();
+        ViewHandler.Instance.NavigationDrawer.DisableAllButtons();
     }
 
     public void LanguageSelect()
@@ -26,13 +26,13 @@ public class LanguageCanvas : MonoBehaviour
                 user.LearningLanguage = Language.German;
                 user.UiLanguage = Language.Chinese;
                 
-                ViewHandler.Instance.SwitchToView("Class");
+                ViewHandler.Instance.SwitchToView("NameSelection");
                 break;
             case "Chinese":
                 user.LearningLanguage = Language.Chinese;
                 user.UiLanguage = Language.German;
                 
-                ViewHandler.Instance.SwitchToView("Class");
+                ViewHandler.Instance.SwitchToView("NameSelection");
                 break;
 
             default:
@@ -41,6 +41,6 @@ public class LanguageCanvas : MonoBehaviour
         }
         
         DAOFactory.UserDAO.WriteUser(user);
-        GamificationManager.Instance.InitializeTrophyHandler();
+        
     }
 }

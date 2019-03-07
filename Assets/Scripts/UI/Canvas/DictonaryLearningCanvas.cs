@@ -6,6 +6,11 @@ using UnityEngine.EventSystems;
 
 public class DictonaryLearningCanvas : MonoBehaviour
 {
+    public void OnEnable()
+    {
+        ViewHandler.Instance.NavigationDrawer.EnableBackButton("Dictionary or Learning");
+    }
+
     public void DictionaryOrLearningOptions()
     {
         var selected = EventSystem.current.currentSelectedGameObject.name;
@@ -17,7 +22,7 @@ public class DictonaryLearningCanvas : MonoBehaviour
                     || ViewHandler.Instance.CurrentClass == ClassType.Saying)
                 {
                     var view = ViewHandler.Instance.SwitchToView("LearnStartView");
-                    view.GetComponent<LearnStartViewCanvas>().ViewToReturnTo = "Dictionary or Learning";
+                    //view.GetComponent<LearnStartViewCanvas>().ViewToReturnTo = "Dictionary or Learning";
                 }
                 else
                 {

@@ -37,7 +37,17 @@ public class ViewHandler : Singleton<ViewHandler>
     private void Start()
     {
         views = GetComponentsInChildren<View>(true).ToList();
-        currentView = GetViewByTitle("Category");
+        
+        if(GamificationManager.Instance.User.LearningLanguage == Model.Language.None || 
+            GamificationManager.Instance.User.Name == null)
+        {
+            initialView = GetViewByTitle("LanguageCanvas");
+        } else
+        {
+            initialView = GetViewByTitle("Class");
+        }
+
+        //currentView = GetViewByTitle(initialView.Id);
         SwitchToView(initialView);
     }
 
@@ -56,7 +66,14 @@ public class ViewHandler : Singleton<ViewHandler>
             if (view == targetView)
             {
                 view.gameObject.SetActive(true);
-                Header.title.text = targetView.Title;
+                var text = targetView.Title;
+                var cache = DataProvider.DataCache.Instance;
+
+                if (cache.CheckForUiTranslationByKey(text))
+                {
+                    text = DataProvider.DataCache.Instance.GetUiTranslationByKey(text);
+                }
+                Header.title.text = text;
             }
             else
             {
@@ -70,6 +87,8 @@ public class ViewHandler : Singleton<ViewHandler>
 
     private void EndOldAnimations()
     {
+        if (currentView == null) return;
+
         var animations = currentView.GetComponentsInChildren<EasyTween>();
 
         foreach (var anim in animations)
