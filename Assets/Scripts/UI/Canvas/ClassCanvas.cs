@@ -8,12 +8,22 @@ using UnityEngine.EventSystems;
 public class ClassCanvas : MonoBehaviour
 {
     public bool EnableIntegrityCheck;
+    private bool first = true;
+
+    public void Start()
+    {
+        if (Gamification.GamificationManager.Instance.User.Xp > 0)
+        {
+            Gamification.GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
+        }
+    }
 
     public void OnEnable()
     {
         ViewHandler.Instance.NavigationDrawer.EnableMenuButton();
         CheckDataIntegrity();
-        Gamification.GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
+
+        
     }
 
     private void CheckDataIntegrity()

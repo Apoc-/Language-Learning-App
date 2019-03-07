@@ -3,12 +3,27 @@ using System.Collections.Generic;
 using UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DictonaryLearningCanvas : MonoBehaviour
 {
+    public GameObject DictButton;
+    public GameObject TestButton;
+
     public void OnEnable()
     {
         ViewHandler.Instance.NavigationDrawer.EnableBackButton("Dictionary or Learning");
+
+  
+        if (ViewHandler.Instance.CurrentClass == ClassType.Dialogue)
+        {
+            TestButton.GetComponent<Button>().interactable = false;
+            TestButton.GetComponent<Image>().color = Color.gray / 2;
+        } else
+        {
+            TestButton.GetComponent<Button>().interactable = true;
+            TestButton.GetComponent<Image>().color = Color.white;
+        }
     }
 
     public void DictionaryOrLearningOptions()
