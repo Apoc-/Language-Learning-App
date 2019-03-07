@@ -1392,6 +1392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22064a0b2c577f4e935396e3dd30c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DictButton: {fileID: 6949670798469739277}
+  TestButton: {fileID: 2945449902893261333}
 --- !u!1 &6949670799361543746
 GameObject:
   m_ObjectHideFlags: 0

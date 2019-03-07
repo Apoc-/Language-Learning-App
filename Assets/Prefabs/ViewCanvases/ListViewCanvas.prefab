@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -514.9787}
+  m_AnchoredPosition: {x: 0, y: -438.2924}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8477059534407084364
@@ -368,7 +368,8 @@ MonoBehaviour:
     type: 3}
   VocabularyRowPrefab: {fileID: 7313714687361128300, guid: d6c4ef80e1b8a460e844d54cee03e557,
     type: 3}
-  SayingRowPrefab: {fileID: 0}
+  SayingRowPrefab: {fileID: 3936548881899180950, guid: 43bdbe2e4a08b8c4e85afac28f1624de,
+    type: 3}
   DialogueRowPrefab: {fileID: 3936548881899180950, guid: 6de7ddfbdb3214b9fb1c150f8970fe61,
     type: 3}
   ListContainer: {fileID: 8477059534407084361}
