@@ -16,7 +16,7 @@ public class DictonaryLearningCanvas : MonoBehaviour
         var selected = EventSystem.current.currentSelectedGameObject.name;
         switch (selected)
         {
-            case "Learning":
+            case "Test":
                 ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.Learn;
                 if (ViewHandler.Instance.CurrentClass == ClassType.Alphabet
                     || ViewHandler.Instance.CurrentClass == ClassType.Saying)
@@ -31,7 +31,7 @@ public class DictonaryLearningCanvas : MonoBehaviour
 
                 break;
 
-            case "Dictionary":
+            case "Lookup":
                 ViewHandler.Instance.LearnOrDictionary = ViewHandler.LearnOrDic.Dictionary;
                 if (ViewHandler.Instance.CurrentClass == ClassType.Alphabet
                     || ViewHandler.Instance.CurrentClass == ClassType.Saying)
