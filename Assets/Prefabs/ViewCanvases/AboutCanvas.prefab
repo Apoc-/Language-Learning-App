@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5650969311369037367}
   - component: {fileID: 1263454231082515974}
   - component: {fileID: 8454957317118378689}
-  - component: {fileID: 7040695536909206135}
+  - component: {fileID: 8176810443348325001}
   m_Layer: 5
   m_Name: AboutCanvas
   m_TagString: Untagged
@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e8a0490004478ab7a03700a2d33782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Name Input
-  Id: NameSelection
---- !u!114 &7040695536909206135
+  Title: About us
+  Id: AboutCanvas
+--- !u!114 &8176810443348325001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,14 +127,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1583251952452601507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6566df397c2640f89558fe8205b3cf8, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d726ee9375c94748979e868b95324c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NavigationDrawer: {fileID: 0}
-  InputName: 
-  InputFeild: {fileID: 0}
-  ConfirmButton: {fileID: 0}
-  ResetButton: {fileID: 0}
 --- !u!1 &2759710332718145318
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,8 +164,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 432}
-  m_SizeDelta: {x: 714.9, y: 104.7}
+  m_AnchoredPosition: {x: 7, y: -210}
+  m_SizeDelta: {x: 900, y: 104.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1246533306642080912
 CanvasRenderer:
@@ -202,18 +197,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 36
-    m_FontStyle: 0
+    m_FontSize: 48
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 3
+    m_MaxSize: 48
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Type your name here.
+  m_Text: Team Introduction
 --- !u!1 &7269598883445830588
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,8 +243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 653}
-  m_SizeDelta: {x: 714.9, y: 104.7}
+  m_AnchoredPosition: {x: 7, y: 571.19995}
+  m_SizeDelta: {x: 900, y: 171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &855899995111986897
 CanvasRenderer:
@@ -280,19 +275,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 36
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: 8de5cb11ffec16e40855ac5f09a66a75, type: 3}
+    m_FontSize: 48
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 3
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Type your name here.
+  m_Text: "Language Learning App for \nTaiwanese And German"
 --- !u!1 &8181363151220139737
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,8 +322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 432}
-  m_SizeDelta: {x: 714.9, y: 104.7}
+  m_AnchoredPosition: {x: 6.9999943, y: -600.00024}
+  m_SizeDelta: {x: 900, y: 626.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3146561712451992118
 CanvasRenderer:
@@ -359,19 +354,22 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9ed05575ec10d5945b92b508fd95ba5b, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Type your name here.
+  m_Text: "We are the fifth group from Gateway to Taiwan\nour member from Germany
+    we have:\n\nRen\xE9 Ziegler\nMatthias Kleinhenz\nWolfgang Heinz\n\nand the members
+    in Taiwan we have:\n\n\u9127\u5B87\u7FD4 Shaun\n\u5289\u5FC5\u752F Alyssa\n\u65B9\u8A8C\u7DEF
+    Ji-Man"
 --- !u!1 &8798846253662384975
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,8 +404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 432}
-  m_SizeDelta: {x: 714.9, y: 104.7}
+  m_AnchoredPosition: {x: 0.0000076293945, y: 175}
+  m_SizeDelta: {x: 812.8, y: 573.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3946790169461278179
 CanvasRenderer:
@@ -438,7 +436,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9ed05575ec10d5945b92b508fd95ba5b, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -450,4 +448,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Type your name here.
+  m_Text: 'We build an Android App that can teach German and Chinese with Bopomofo/Alphabet,
+    vocabulary, general conversation and saying, also we record the audio for all
+    the content in App that user can able to learn by listening, and use testing basic
+    on Leitner system to make the learning more rememberable, all these learning processes
+    we design it as a Game like app, we believe that will encourage user to do learning
+    every day.
+
+    The more important purpose for our App is that we can make cultural exchange between
+    Taiwan and Germany people.'
