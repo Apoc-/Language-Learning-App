@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Gamification;
 using Model;
-using UnityEditor.U2D;
 using UnityEngine;
 
 namespace LeitnerSystem

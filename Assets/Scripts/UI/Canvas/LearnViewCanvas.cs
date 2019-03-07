@@ -143,7 +143,7 @@ public class LearnViewCanvas : MonoBehaviour
     
     public void SelectAnswer(TestAnswer testAnswer)
     {
-        if (ConfirmButton.activeSelf) return;
+        if (ConfirmButton.transform.Find("Content 2").gameObject.activeSelf) return;
 
         currentAnswers.ForEach(a =>
         {

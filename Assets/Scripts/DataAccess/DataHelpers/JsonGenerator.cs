@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 using Model;
 using Newtonsoft.Json;
-using UnityEditorInternal;
 using UnityEngine;
 using Vuforia;
 
