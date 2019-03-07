@@ -31,7 +31,14 @@ public class LearnViewCanvas : MonoBehaviour
     public GameObject ImageAnswerPrefab;
 
     public AudioSource AudioSource;
-    
+
+    private float answeredQuestions = 0;
+    private float correctlyAnsweredQuestions = 0;
+
+    private void OnDisable()
+    {
+        Gamification.GamificationManager.Instance.DisableProgressBar();
+    }
 
     public void PopulateUI(LeitnerSession session, List<Card> cards)
     {
@@ -140,10 +147,10 @@ public class LearnViewCanvas : MonoBehaviour
             ViewHandler.Instance.SwitchToView("Category");
         }
     }
-    
+
     public void SelectAnswer(TestAnswer testAnswer)
     {
-        if (ConfirmButton.transform.Find("Content 2").gameObject.activeSelf) return;
+        if (ConfirmButton.transform.Find("Content 2").gameObject.activeSelf && ConfirmButton.activeSelf) return;
 
         currentAnswers.ForEach(a =>
         {
@@ -173,9 +180,12 @@ public class LearnViewCanvas : MonoBehaviour
         TestAnswer selectedAnswer = currentAnswers.FirstOrDefault(ta => ta.IsSelected);
         var correct = currentCard.AnswerWith(selectedAnswer.GetAnswer());
 
+        answeredQuestions++;
+
         if (correct)
         {
             selectedAnswer.Background.color = AnswerCorrectColor;
+            correctlyAnsweredQuestions++;
         }
         else
         {
@@ -205,6 +215,10 @@ public class LearnViewCanvas : MonoBehaviour
         Gamification.GamificationManager.Instance.DisableProgressBar();
 
         session.FinishSession();
+
+        int percentage = (int)(correctlyAnsweredQuestions / answeredQuestions * 100);
+
+        ViewHandler.Instance.ModalDialogueCanvas.EnableResultScreenDialogue(percentage);
         ViewHandler.Instance.SwitchToView("LearnStartView");
     }
 

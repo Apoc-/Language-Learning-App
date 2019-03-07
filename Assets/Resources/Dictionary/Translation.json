@@ -88,6 +88,11 @@
     "Key": "gratulations",
     "German": "Gratulation! Du hast eine Trophäe verdient!",
     "Chinese": "恭喜你!得到一個獎盃"
+},  
+{
+    "Key": "grats",
+    "German": "Gratulation!",
+    "Chinese": "恭喜你!"
 },
 {
     "Key":"alias",
