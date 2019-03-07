@@ -68,7 +68,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -405,6 +405,8 @@ MonoBehaviour:
   DialogueRowPrefab: {fileID: 3936548881899180950, guid: 6de7ddfbdb3214b9fb1c150f8970fe61,
     type: 3}
   ListContainer: {fileID: 8477059534407084361}
+  Separator: {fileID: 7689557819581698845, guid: 78c23ae5113e9b2489ecd10b2adc2aef,
+    type: 3}
   ViewToReturnTo: 
 --- !u!114 &13634039857699999
 MonoBehaviour:
@@ -418,7 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e8a0490004478ab7a03700a2d33782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: ListView
+  Title: lookup
   Id: ListView
 --- !u!1 &8655068363656552562
 GameObject:

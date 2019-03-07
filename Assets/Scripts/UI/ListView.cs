@@ -15,6 +15,7 @@ public class ListView : MonoBehaviour
     public GameObject DialogueRowPrefab;
 
     public GameObject ListContainer;
+    public GameObject Separator;
 
     public string ViewToReturnTo;
 
@@ -133,6 +134,9 @@ public class ListView : MonoBehaviour
             // foreach(var s in C){
             //     print(s.Text);
             // }
+            //add seperator
+            
+            Instantiate(Separator, ListContainer.transform);
 
 
         }
