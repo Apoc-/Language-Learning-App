@@ -149,8 +149,14 @@ public class ListView : MonoBehaviour
 
     private void LoadSayingData(string currentCategoryId)
     {
-        throw new NotImplementedException();
+        ChangeBackgroundColor(Color.white);
         var data = DataProvider.DataCache.Instance.GetSayings();
+        foreach (var entry in data)
+        {
+            GameObject row = GameObject.Instantiate(SayingRowPrefab, ListContainer.transform);
+            var row2 = row.GetComponent<SayingListRow>();
+            row2.PopulateUI(entry);
+        }
     }
 
     public void ReturnButton()
