@@ -15,7 +15,7 @@ public class DictonaryLearningCanvas : MonoBehaviour
         ViewHandler.Instance.NavigationDrawer.EnableBackButton("Dictionary or Learning");
 
   
-        if (ViewHandler.Instance.CurrentClass == ClassType.Dialogue)
+        if (ViewHandler.Instance.CurrentClass == ClassType.Dialogue || ViewHandler.Instance.CurrentClass == ClassType.Saying)
         {
             TestButton.GetComponent<Button>().interactable = false;
             TestButton.GetComponent<Image>().color = Color.gray / 2;

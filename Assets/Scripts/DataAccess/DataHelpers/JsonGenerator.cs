@@ -4,7 +4,6 @@ using System.Linq;
 using Model;
 using Newtonsoft.Json;
 using UnityEngine;
-using Vuforia;
 
 namespace DataAccess.DataHelpers
 {
