@@ -13,6 +13,7 @@ public class ClassCanvas : MonoBehaviour
     {
         ViewHandler.Instance.NavigationDrawer.EnableMenuButton();
         CheckDataIntegrity();
+        Gamification.GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
     }
 
     private void CheckDataIntegrity()

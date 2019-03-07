@@ -52,9 +52,9 @@ namespace Gamification
                 Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
-                    Key = "Level 2 Trophy",
-                    German = "Level 2 Trophäe",
-                    Chinese = ""
+                    Key = "Beginner Trophy",
+                    German = "Anfänger Trophäe",
+                    Chinese = "初學者獎杯"
                 }
             };
             _trophyDictionary[TrophyType.Level10] = new Trophy
@@ -64,57 +64,9 @@ namespace Gamification
                 Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
-                    Key = "Level 10 Trophy",
-                    German = "Level 10 Trophäe",
-                    Chinese = ""
-                }
-            };
-            _trophyDictionary[TrophyType.Level20] = new Trophy
-            {
-                TrophyType = TrophyType.Level20,
-                UnlockCondition = LevelDependantCondition(20),
-                Image = Resources.Load<Sprite>(defaultSpritePath),
-                Name = new Translation
-                {
-                    Key = "Level 20 Trophy",
-                    German = "Level 20 Trophäe",
-                    Chinese = ""
-                }
-            };
-            _trophyDictionary[TrophyType.AnimalsSeen] = new Trophy
-            {
-                TrophyType = TrophyType.AnimalsSeen,
-                UnlockCondition = LevelDependantCondition(20),
-                Image = Resources.Load<Sprite>(defaultSpritePath),
-                Name = new Translation
-                {
-                    Key = "Level 20 Trophy",
-                    German = "Level 20 Trophäe",
-                    Chinese = ""
-                }
-            };
-            _trophyDictionary[TrophyType.VocabSeen] = new Trophy
-            {
-                TrophyType = TrophyType.VocabSeen,
-                UnlockCondition = VocabSeenCondition(),
-                Image = Resources.Load<Sprite>(defaultSpritePath),
-                Name = new Translation
-                {
-                    Key = "Vocab Monger",
-                    German = "Level 20 Trophäe",
-                    Chinese = ""
-                }
-            };
-            _trophyDictionary[TrophyType.SayingSeen] = new Trophy
-            {
-                TrophyType = TrophyType.SayingSeen,
-                UnlockCondition = SayingsSeenCondition(),
-                Image = Resources.Load<Sprite>(defaultSpritePath),
-                Name = new Translation
-                {
-                    Key = "Saying Seen",
-                    German = "Level 20 Trophäe",
-                    Chinese = ""
+                    Key = "Intermediate trophy",
+                    German = "Grundlagen Trophäe",
+                    Chinese = "中級獎杯"
                 }
             };
             _trophyDictionary[TrophyType.AlphabetSeen] = new Trophy
@@ -124,9 +76,21 @@ namespace Gamification
                 Image = Resources.Load<Sprite>(defaultSpritePath),
                 Name = new Translation
                 {
-                    Key = "Vocab Monger",
-                    German = "Alphabet Seen Trophy",
-                    Chinese = ""
+                    Key = "AlphabetSeen",
+                    German = "ABC-Schützen Trophäe",
+                    Chinese = "ABC 獎盃 "
+                }
+            };
+            _trophyDictionary[TrophyType.SecondLogin] = new Trophy
+            {
+                TrophyType = TrophyType.SecondLogin,
+                UnlockCondition = HasBeenLoggedIn(),
+                Image = Resources.Load<Sprite>(defaultSpritePath),
+                Name = new Translation
+                {
+                    Key = "SecondLogin",
+                    German = "Zurückkehrer Trophäe",
+                    Chinese = "回歸獎盃"
                 }
             };
         }
