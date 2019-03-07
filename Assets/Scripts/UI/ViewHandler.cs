@@ -88,8 +88,8 @@ public class ViewHandler : Singleton<ViewHandler>
     private void EndOldAnimations()
     {
         if (currentView == null) return;
-
-        var animations = currentView.GetComponentsInChildren<EasyTween>();
+        
+        var animations = transform.root.gameObject.GetComponentsInChildren<EasyTween>();
 
         foreach (var anim in animations)
         {
