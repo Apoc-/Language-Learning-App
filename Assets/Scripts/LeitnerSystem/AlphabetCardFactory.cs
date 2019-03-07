@@ -54,7 +54,8 @@ namespace LeitnerSystem
 
         private static List<AudioClip> GetAudios(List<AlphabetEntry> entries)
         {
-            return entries.Select(entry => entry.ContextFreeAudio.Audio).ToList();
+            var val = entries.Select(entry => entry.ContextFreeAudio.Audio).ToList();
+            return val;
         }
 
         private static CardFormat GetRandomCardFormat()

@@ -9,6 +9,7 @@ public class ClassCanvas : MonoBehaviour
     public void OnEnable()
     {
         ViewHandler.Instance.NavigationDrawer.EnableMenuButton();
+        Gamification.GamificationManager.Instance.TrophyHandler.CheckTrophyConditions();
     }
 
     public void ClassSelect()

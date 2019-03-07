@@ -84,7 +84,7 @@ namespace LeitnerSystem
         {
             AddAudioAnswer(askedAudio, true);
             AddAudioAnswer(wrongAudio[0], false);
-            AddAudioAnswer(wrongAudio[0], false);
+            AddAudioAnswer(wrongAudio[1], false);
 
             return this;
         }
