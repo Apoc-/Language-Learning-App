@@ -62,7 +62,12 @@
   {
     "Key": "lookup",
     "German": "Nachschlagen",
-    "Chinese": "查"
+    "Chinese": "查閱"
+  },
+  {
+    "Key": "test",
+    "German": "Testen",
+    "Chinese": "測驗"
   },
   {
     "Key": "language",
