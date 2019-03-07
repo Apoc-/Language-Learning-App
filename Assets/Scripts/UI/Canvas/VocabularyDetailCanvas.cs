@@ -11,6 +11,8 @@ public class VocabularyDetailCanvas : MonoBehaviour
     public Text LocalText;
     public AudioSource AudioSource;
 
+    public Text BopomofoText;
+
     private Vocabulary data;
     private User user;
 
@@ -20,6 +22,9 @@ public class VocabularyDetailCanvas : MonoBehaviour
         this.user = Gamification.GamificationManager.Instance.User;
 
         ForeignText.text = data.Translation[user.LearningLanguage];
+        BopomofoText.text = "(" + data.Bopomofo + ")";
+        BopomofoText.gameObject.SetActive(user.LearningLanguage == Language.Chinese);
+
         LocalText.text = data.Translation[user.UiLanguage];
         Image.sprite = data.Image.Sprite;
     }
