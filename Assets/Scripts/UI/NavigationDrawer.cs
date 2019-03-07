@@ -10,7 +10,10 @@ public class NavigationDrawer : MonoBehaviour
     {
         ViewHandler.Instance.SwitchToView("ProfileCanvas");
     }
-
+    public void AboutCanvas()
+    {
+        ViewHandler.Instance.SwitchToView("AboutCanvas");
+    }
     public void EnableHomeButton()
     {
         DisableAllButtons();
