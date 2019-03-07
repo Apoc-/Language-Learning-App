@@ -76,6 +76,8 @@ public class LearnViewCanvas : MonoBehaviour
         currentAnswers.Add(answer2);
         currentAnswers.Add(answer3);
 
+        c.Answers.Shuffle();
+
         question.PopulateUI(this, c.Question);
         answer1.PopulateUI(this, c.Answers[0]);
         answer2.PopulateUI(this, c.Answers[1]);
