@@ -55,6 +55,15 @@ public class ListView : MonoBehaviour
             default:
                 break;
         }
+
+        StartCoroutine(ScrollToTop());
+    }
+
+    private IEnumerator ScrollToTop()
+    {
+        yield return null;
+        ScrollRect sr = GetComponentInChildren<ScrollRect>();
+        sr.normalizedPosition = new Vector2(0, 1);
     }
 
     private void ResetList()
