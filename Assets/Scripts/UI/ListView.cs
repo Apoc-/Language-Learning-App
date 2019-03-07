@@ -66,6 +66,8 @@ public class ListView : MonoBehaviour
 
     private void LoadAlphabetData()
     {
+        // setting Canvas background to white that will look good
+        ChangeBackgroundColor(new Color32(0,0,0,0));
         var data = DataProvider.DataCache.Instance.GetAlphabet();
 
         foreach (var entry in data.Entries)
@@ -78,6 +80,9 @@ public class ListView : MonoBehaviour
 
     private void LoadVocabularyData(string currentCategoryId)
     {
+        // setting Canvas background to white that will look good
+        ChangeBackgroundColor(new Color32(0,0,0,0));
+
         var data = DataProvider.DataCache.Instance.GetVocabularyByCategory(currentCategoryId);
 
         foreach (var entry in data)
@@ -91,6 +96,8 @@ public class ListView : MonoBehaviour
     private void LoadDialogueData(string currentCategoryId)
     {
 
+        // setting Canvas background to white that will look good
+        ChangeBackgroundColor(Color.white);
         var data = DataProvider.DataCache.Instance.GetDialoguesByCategory(currentCategoryId);
         // var dialogue = data.Entries;
         List<DialogueData> dialogue = new List<DialogueData>();
@@ -133,6 +140,11 @@ public class ListView : MonoBehaviour
         // var row2 = row.GetComponent<DialogueListRow>();
         // row2.PopulateUI(content);
 
+    }
+    private void ChangeBackgroundColor(Color color)
+    {
+        
+        ListContainer.GetComponent<Image>().color = color;
     }
 
     private void LoadSayingData(string currentCategoryId)
