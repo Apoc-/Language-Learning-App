@@ -41,7 +41,7 @@
     "Name": {
       "Key": "",
       "German": "Restaurant",
-      "Chinese": "restaurant"
+      "Chinese": "餐廳"
     }
   },
   {
@@ -50,7 +50,7 @@
     "Name": {
       "Key": "",
       "German": "Formell",
-      "Chinese": "formal"
+      "Chinese": "正式"
     }
   },
   {
@@ -59,7 +59,7 @@
     "Name": {
       "Key": "",
       "German": "Unterhaltung",
-      "Chinese": "smalltalk"
+      "Chinese": "簡答"
     }
   },
   {
@@ -68,7 +68,7 @@
     "Name": {
       "Key": "",
       "German": "Einkaufen",
-      "Chinese": "shopping"
+      "Chinese": "購物"
     }
   },
   {
