@@ -23,9 +23,17 @@ namespace UI.Canvas
                 GameObject row = Instantiate(CategoryItemPrefab, Table.transform);
                 row.name = item.Id;
 
-                //row.transform.Find("Image").GetComponent<Image>().sprite = item.ItemImage;
-                row.transform.Find("Title").GetComponent<Text>().text = item.Id;
-                row.transform.Find("Description").GetComponent<Text>().text = item.Name.German;
+                var user = Gamification.GamificationManager.Instance.User;
+                var text = "";
+                if (user.UiLanguage == Language.German)
+                {
+                    text = item.Name.German;
+                } else
+                {
+                    text = item.Name.Chinese;
+                }
+
+                row.GetComponentInChildren<Text>().text = text;
             }
         }
     
