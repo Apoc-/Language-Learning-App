@@ -51,7 +51,7 @@ namespace UI.Canvas
             
             ViewHandler.Instance.NavigationDrawer.EnableHomeButton();
             var user = GamificationManager.Instance.User;
-            //Name.GetComponent<Text>().text = user.Name;
+            // Name.GetComponent<Text>().text = user.Name;
             //todo fix
             Name.GetComponent<Text>().text = "Chuck Norris";
             Level.GetComponent<Text>().text = "Level " + user.Level;
