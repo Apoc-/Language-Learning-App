@@ -103,5 +103,10 @@
     "Key" : "reset",
     "German" : "Löschen",
     "Chinese" : "重設"
+},
+{
+    "Key" : "questions",
+    "German" : "Wieviele Fragen möchtest du beantworten?",
+    "Chinese" : "你想回答幾個問題？"
 }
 ]
