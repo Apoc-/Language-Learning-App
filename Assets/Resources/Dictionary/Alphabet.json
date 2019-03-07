@@ -699,16 +699,16 @@
         }
       },
       {
-        "Id": "ㄧ",
-        "Character": "ㄧ",
+        "Id": "一",
+        "Character": "一",
         "ContextFreeAudio": {
-          "Path": "Audio/ㄧ_free"
+          "Path": "Audio/一_free"
         },
         "ContextSensitiveAudio": {
-          "Path": "Audio/ㄧ_sensitive"
+          "Path": "Audio/一_sensitive"
         },
         "ExampleWordAudio": {
-          "Path": "Audio/ㄧ_example"
+          "Path": "Audio/一_example"
         }
       },
       {
